@@ -5,9 +5,9 @@ import requests
 
 APPROVED_FREE_MODELS = {
     'gemini-3.6-flash',
+    'gemini-3.7-flash',
+    'gemini-3.5-flash',
     'gemini-3.1-flash-lite',
-    'gemini-2.5-flash',
-    'gemini-2.5-flash-lite',
 }
 
 
@@ -20,13 +20,15 @@ def extract_json_text(data: dict) -> dict:
 
 
 class GeminiClient:
-    def __init__(self, api_key: str, model: str = 'gemini-2.5-flash'):
+    def __init__(self, api_key: str, model: str = 'gemini-3.6-flash'):
         if model not in APPROVED_FREE_MODELS:
             raise RuntimeError(f'Model {model} is not approved for zero-cost mode')
         self.api_key = api_key
         self.model = model
 
     def generate_json(self, prompt: str, *, use_google_search: bool = False, timeout: int = 60) -> dict:
+        if use_google_search:
+            raise RuntimeError('Google Search grounding is disabled in zero-cost mode')
         url = f'https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent'
         payload = {
             'contents': [{'role': 'user', 'parts': [{'text': prompt}]}],
@@ -36,8 +38,6 @@ class GeminiClient:
                 'maxOutputTokens': 2200,
             },
         }
-        if use_google_search:
-            payload['tools'] = [{'google_search': {}}]
         last = None
         for attempt in range(3):
             try:

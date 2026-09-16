@@ -1,11 +1,12 @@
 import json
 from pipeline.trends.models import TrendCandidate
+from pipeline.research.gdelt import build_evidence_pack, fetch_articles
 from .models import HookCandidate, ScriptCandidate
 from .tournament import normalize_hooks, choose_best_script
 
 
-def build_research_prompt(topic: TrendCandidate) -> str:
-    return f'''FACT PACK\nResearch the trending topic below using current web search. Return JSON only.\n\nTopic: {topic.title}\nTrend source: {topic.source}\nSource URL: {topic.source_url}\n\nRules:\n- Verify every factual claim with reliable current sources.\n- Prefer primary/official sources and major reputable reporting.\n- Do not invent facts, quotes, dates, numbers, motives, or reactions.\n- If evidence is uncertain or contradictory, say so.\n- Keep only facts useful for a 25-50 second short video.\n\nReturn exactly: {{"summary":"...","facts":["..."],"search_terms":["..."],"sources":[{{"title":"...","url":"..."}}]}}'''
+def build_research_prompt(topic: TrendCandidate, evidence: dict) -> str:
+    return f'''FACT PACK\nCreate a concise current fact pack for the trending topic below. Return JSON only.\n\nTopic: {topic.title}\nTrend source: {topic.source}\nCurrent evidence: {json.dumps(evidence, ensure_ascii=False)}\n\nRules:\n- Use only the supplied evidence.\n- Never invent facts, quotes, dates, numbers, motives, reactions, or source details.\n- Treat article headlines as discovery evidence, not proof of details that are not stated.\n- If evidence is thin or conflicting, explicitly say so in the summary and facts.\n- Keep only information useful for a 25-50 second short video.\n- Preserve the supplied source URLs in the sources list.\n\nReturn exactly: {{"summary":"...","facts":["..."],"search_terms":["..."],"sources":[{{"title":"...","url":"..."}}]}}'''
 
 
 def _hook_prompt(topic: TrendCandidate, research: dict) -> str:
@@ -28,7 +29,9 @@ def _normalize_scripts(payload: dict) -> list[ScriptCandidate]:
 
 
 def generate_winning_script(topic: TrendCandidate, client, minimum_score: float = 82):
-    research=client.generate_json(build_research_prompt(topic), use_google_search=True)
+    articles = fetch_articles(topic.title)
+    evidence = build_evidence_pack(topic, articles)
+    research=client.generate_json(build_research_prompt(topic, evidence))
     hooks=normalize_hooks(client.generate_json(_hook_prompt(topic,research)))
     if len(hooks) < 2:
         raise RuntimeError('Hook tournament returned too few valid candidates')
