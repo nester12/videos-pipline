@@ -1,8 +1,6 @@
 import os
 import shutil
 import subprocess
-import numpy as np
-import soundfile as sf
 
 SAMPLE_RATE=24000
 
@@ -13,6 +11,8 @@ def get_duration(path: str) -> float:
 
 
 def synthesize_kokoro(text: str, output_path: str, voice: str = 'am_michael', speed: float = 1.0) -> str:
+    import numpy as np
+    import soundfile as sf
     if not shutil.which('ffmpeg'):
         raise RuntimeError('ffmpeg is required')
     try:

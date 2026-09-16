@@ -40,3 +40,9 @@ def test_ass_subtitles_generate_timed_grouped_dialogue():
     assert '[Events]' in ass
     assert ass.count('Dialogue:')==2
     assert 'ONE TWO THREE FOUR' in ass
+
+
+def test_audio_module_does_not_load_production_packages_at_import_time():
+    import pipeline.audio.voice as voice
+    assert 'np' not in voice.__dict__
+    assert 'sf' not in voice.__dict__
