@@ -1,6 +1,8 @@
+import requests
+
 from pipeline.trends.models import TrendCandidate
 from pipeline.writing.gemini import GeminiClient
-from pipeline.research.gdelt import normalize_articles, build_evidence_pack
+from pipeline.research.gdelt import normalize_articles, build_evidence_pack, fetch_articles
 from pipeline.writing.production import build_research_prompt
 
 
@@ -41,3 +43,10 @@ def test_research_prompt_uses_supplied_current_evidence_not_paid_grounding():
     prompt = build_research_prompt(topic, evidence)
     assert 'https://example.com/story' in prompt
     assert 'Use only the supplied evidence' in prompt
+
+
+def test_gdelt_failure_returns_empty_evidence_instead_of_stopping_pipeline(monkeypatch):
+    def fail(*args, **kwargs):
+        raise requests.RequestException('rate limited')
+    monkeypatch.setattr('pipeline.research.gdelt.requests.get', fail)
+    assert fetch_articles('AI browser update') == []
