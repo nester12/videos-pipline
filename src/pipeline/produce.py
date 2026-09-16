@@ -69,7 +69,7 @@ def produce_one(config: dict | None = None) -> ProductionResult:
     for k,v in learned.items(): weights[k]=v
     topic=select_topic(trends,recent,weights)
 
-    gemini=GeminiClient(require_env('GEMINI_API_KEY'), model=os.getenv('GEMINI_MODEL','gemini-2.5-flash'))
+    gemini=GeminiClient(require_env('GEMINI_API_KEY'), model=os.getenv('GEMINI_MODEL','gemini-3.6-flash'))
     winner,research,hooks=generate_winning_script(topic,gemini,minimum_score=minimum)
     beats=build_scene_plan(winner,target_beats=int(prod.get('target_scene_beats',7)))
     if len(beats)<3: return ProductionResult('skipped','scene plan too short')

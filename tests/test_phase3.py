@@ -24,15 +24,18 @@ def test_research_prompt_requests_verifiable_fact_pack():
     assert 'do not invent' in prompt.lower()
 
 
-def test_generate_winning_script_runs_three_stage_tournament():
+def test_generate_winning_script_runs_three_stage_tournament(monkeypatch):
     topic=TrendCandidate('AI browser update','youtube',1,100,'technology','https://example.com')
+    monkeypatch.setattr('pipeline.writing.production.fetch_articles', lambda _: [
+        {'title':'AI browser update','url':'https://example.com/story','domain':'example.com','seen_date':'20260916T120000Z'}
+    ])
     client=FakeClient()
     result, research, hooks=generate_winning_script(topic, client, minimum_score=80)
     assert result.score==91
     assert hooks[0].text=='Hook B'
     assert research['summary']=='A verified update'
     assert len(client.calls)==3
-    assert client.calls[0][1]['use_google_search'] is True
+    assert client.calls[0][1].get('use_google_search', False) is False
 
 
 def test_ass_subtitles_generate_timed_grouped_dialogue():
