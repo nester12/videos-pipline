@@ -51,14 +51,19 @@ def fetch_articles(topic: str, *, timeout: int = 25, max_records: int = 12) -> l
         'sort': 'hybridrel',
         'format': 'json',
     }
-    response = requests.get(
-        GDELT_DOC_URL,
-        params=params,
-        timeout=timeout,
-        headers={'User-Agent': 'zero-cost-video-pipeline/1.1'},
-    )
-    response.raise_for_status()
-    return normalize_articles(response.json())
+    try:
+        response = requests.get(
+            GDELT_DOC_URL,
+            params=params,
+            timeout=timeout,
+            headers={'User-Agent': 'zero-cost-video-pipeline/1.1'},
+        )
+        response.raise_for_status()
+        return normalize_articles(response.json())
+    except (requests.RequestException, ValueError):
+        # GDELT is a best-effort free evidence source. A rate limit or outage
+        # must never push the pipeline toward a paid fallback or crash CI.
+        return []
 
 
 def build_evidence_pack(topic: TrendCandidate, articles: list[dict]) -> dict:
@@ -68,6 +73,7 @@ def build_evidence_pack(topic: TrendCandidate, articles: list[dict]) -> dict:
         'trend_source_url': topic.source_url,
         'region': topic.region,
         'articles': list(articles)[:8],
+        'evidence_status': 'current_articles_available' if articles else 'thin_evidence',
         'evidence_rule': (
             'Headlines and source links are current discovery evidence only. '
             'Do not infer details that are not supported by this evidence.'
