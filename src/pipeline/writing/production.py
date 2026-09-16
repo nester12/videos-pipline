@@ -5,8 +5,9 @@ from .models import HookCandidate, ScriptCandidate
 from .tournament import normalize_hooks, choose_best_script
 
 
-def build_research_prompt(topic: TrendCandidate, evidence: dict) -> str:
-    return f'''FACT PACK\nCreate a concise current fact pack for the trending topic below. Return JSON only.\n\nTopic: {topic.title}\nTrend source: {topic.source}\nCurrent evidence: {json.dumps(evidence, ensure_ascii=False)}\n\nRules:\n- Use only the supplied evidence.\n- Never invent facts, quotes, dates, numbers, motives, reactions, or source details.\n- Treat article headlines as discovery evidence, not proof of details that are not stated.\n- If evidence is thin or conflicting, explicitly say so in the summary and facts.\n- Keep only information useful for a 25-50 second short video.\n- Preserve the supplied source URLs in the sources list.\n\nReturn exactly: {{"summary":"...","facts":["..."],"search_terms":["..."],"sources":[{{"title":"...","url":"..."}}]}}'''
+def build_research_prompt(topic: TrendCandidate, evidence: dict | None = None) -> str:
+    evidence = evidence or build_evidence_pack(topic, [])
+    return f'''FACT PACK\nCreate a concise current fact pack for the trending topic below. Return JSON only.\n\nTopic: {topic.title}\nTrend source: {topic.source}\nCurrent evidence: {json.dumps(evidence, ensure_ascii=False)}\n\nRules:\n- Use only the supplied evidence.\n- Do not invent facts, quotes, dates, numbers, motives, reactions, or source details.\n- Treat article headlines as discovery evidence, not proof of details that are not stated.\n- If evidence is thin or conflicting, explicitly say so in the summary and facts.\n- Keep only information useful for a 25-50 second short video.\n- Preserve the supplied source URLs in the sources list.\n\nReturn exactly: {{"summary":"...","facts":["..."],"search_terms":["..."],"sources":[{{"title":"...","url":"..."}}]}}'''
 
 
 def _hook_prompt(topic: TrendCandidate, research: dict) -> str:
