@@ -1,0 +1,51 @@
+name: produce-video
+on:
+  schedule:
+    - cron: '17 11,16,20 * * *'
+      timezone: 'Europe/London'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: production-video
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install Python dependencies
+        run: pip install -r requirements-production.txt
+      - name: Produce one video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: PYTHONPATH=src python -m pipeline.produce
+      - name: Upload finished package for review/posting
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-package-${{ github.run_id }}
+          path: output/
+          retention-days: 1
+          if-no-files-found: error
+      - name: Save learning state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recent_topics.json data/recent_assets.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "data: update production memory"
+          git pull --rebase origin main
+          git push

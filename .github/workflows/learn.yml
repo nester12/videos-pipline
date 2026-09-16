@@ -1,0 +1,25 @@
+name: learn-performance
+on:
+  schedule:
+    - cron: '41 6 * * *'
+      timezone: 'Europe/London'
+  workflow_dispatch:
+
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: TikTok analytics status
+        env:
+          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$TIKTOK_ACCESS_TOKEN" ]; then
+            echo "TikTok OAuth is not connected yet; learning job exits without error."
+            exit 0
+          fi
+          echo "OAuth token is configured. Metrics ingestion will activate after official account authorization is completed."
