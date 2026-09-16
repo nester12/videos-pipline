@@ -40,10 +40,14 @@ class GeminiClient:
             try:
                 r = requests.post(url, params={'key': self.api_key}, json=payload, timeout=timeout)
                 if r.status_code == 200:
-                    return extract_json_text(r.json())
-                last = RuntimeError(f'Gemini HTTP {r.status_code}: {r.text[:300]}')
-                if r.status_code not in {429, 500, 502, 503, 504}:
-                    break
+                    try:
+                        return extract_json_text(r.json())
+                    except json.JSONDecodeError as exc:
+                        last = exc
+                else:
+                    last = RuntimeError(f'Gemini HTTP {r.status_code}: {r.text[:300]}')
+                    if r.status_code not in {429, 500, 502, 503, 504}:
+                        break
             except requests.RequestException as exc:
                 last = exc
             if attempt < 2:
