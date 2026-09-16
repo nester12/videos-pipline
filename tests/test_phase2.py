@@ -23,6 +23,32 @@ def test_gemini_client_refuses_unapproved_model():
         GeminiClient('x', model='some-paid-model')
 
 
+def test_gemini_client_retries_when_success_response_contains_malformed_json(monkeypatch):
+    calls=[]
+
+    class FakeResponse:
+        status_code=200
+        text=''
+        def __init__(self, payload): self.payload=payload
+        def json(self): return self.payload
+
+    responses=[
+        FakeResponse({'candidates':[{'content':{'parts':[{'text':'{"scripts":[{"text":"broken"}'}]}}]}),
+        FakeResponse({'candidates':[{'content':{'parts':[{'text':'{"scripts": []}'}]}}]}),
+    ]
+
+    def fake_post(*args, **kwargs):
+        calls.append(1)
+        return responses.pop(0)
+
+    monkeypatch.setattr('pipeline.writing.gemini.requests.post', fake_post)
+    monkeypatch.setattr('pipeline.writing.gemini.time.sleep', lambda *_: None)
+
+    result=GeminiClient('x').generate_json('prompt')
+    assert result=={'scripts':[]}
+    assert len(calls)==2
+
+
 def test_scene_plan_breaks_script_into_multiple_beats():
     script=ScriptCandidate('This is the first point. Then something surprising happens. Finally the reason becomes clear.',90,'hook')
     beats=build_scene_plan(script, target_beats=3)
