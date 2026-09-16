@@ -1,0 +1,19 @@
+regions:
+  - GB
+  - US
+
+category_weights:
+  technology: 1.20
+  gaming: 1.05
+  internet: 1.10
+  story: 0.90
+
+production:
+  min_seconds: 25
+  max_seconds: 55
+  minimum_script_score: 82
+  target_scene_beats: 7
+  max_scene_beats: 9
+  caption_words: 4
+  voice: am_michael
+  voice_speed: 1.0

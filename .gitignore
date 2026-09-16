@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+work/
+output/
+*.wav
+*.mp4
+.env
