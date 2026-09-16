@@ -1,0 +1,38 @@
+name: produce-video-now
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/run-now-trigger'
+      - '.github/workflows/run-now.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  produce-now:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install Python dependencies
+        run: pip install -r requirements-production.txt
+      - name: Produce one video now
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: PYTHONPATH=src python -m pipeline.produce
+      - name: Upload finished package
+        uses: actions/upload-artifact@v4
+        with:
+          name: first-live-video-${{ github.run_id }}
+          path: output/
+          retention-days: 1
+          if-no-files-found: error
