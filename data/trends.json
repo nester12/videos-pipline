@@ -1,6 +1,6 @@
 [
   {
-    "title": "real sociedad vs bournemouth",
+    "title": "hyrox race",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -9,7 +9,34 @@
     "region": "GB"
   },
   {
-    "title": "simon reeve",
+    "title": "warren beatty",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "callum mcgregor",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "neil lennon",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "eu biometric border control problems",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -18,7 +45,25 @@
     "region": "GB"
   },
   {
-    "title": "aneurin donald",
+    "title": "nick woltemade",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "cher",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "infant",
     "source": "google_trends",
     "freshness": 0.551,
     "velocity": 100.0,
@@ -27,25 +72,7 @@
     "region": "GB"
   },
   {
-    "title": "bournemouth fc",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "mob land season 2",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "celtic vs ferencváros",
+    "title": "femicide",
     "source": "google_trends",
     "freshness": 0.6000000000000001,
     "velocity": 5000.0,
@@ -54,37 +81,10 @@
     "region": "GB"
   },
   {
-    "title": "hoffenheim",
+    "title": "ms rachel",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "the great british sewing bee",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "what has ed sheeran done",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "man city vs norwich city",
-    "source": "google_trends",
-    "freshness": 0.75,
-    "velocity": 20000.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
@@ -92,26 +92,26 @@
   {
     "title": "Architects - \"Machine\"",
     "source": "youtube",
-    "freshness": 0.8312248765641534,
-    "velocity": 9244.337992188415,
-    "category": "internet",
+    "freshness": 0.8122456132308201,
+    "velocity": 8956.419989933256,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=z5e-Fud8Nxs",
     "region": "GB"
   },
   {
     "title": "The Hunger Games: Sunrise on the Reaping (2026) Official Trailer 2 - Joseph Zada",
     "source": "youtube",
-    "freshness": 0.8252741490509259,
-    "velocity": 122366.38890259604,
-    "category": "technology",
+    "freshness": 0.8062948857175926,
+    "velocity": 117915.36639817031,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=lYXtL5TreOE",
     "region": "GB"
   },
   {
     "title": "Good Luck on This Meccha Chameleon Map",
     "source": "youtube",
-    "freshness": 0.8623161464054232,
-    "velocity": 98643.42686724533,
+    "freshness": 0.84333688307209,
+    "velocity": 93760.48307891583,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=_2hPnNeJjEE",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "Trizz - Crocodile Tears (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8550509347652117,
-    "velocity": 545.3475599830725,
+    "freshness": 0.8360716714318783,
+    "velocity": 565.3603147064244,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=YrB-1SeDxE8",
     "region": "GB"
@@ -128,17 +128,17 @@
   {
     "title": "Helluva Boss Season 3 Part 1 - Official Trailer | Prime Video",
     "source": "youtube",
-    "freshness": 0.855029440056217,
-    "velocity": 34551.8017558975,
-    "category": "technology",
+    "freshness": 0.8360501767228836,
+    "velocity": 32206.68163197567,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=WylSo1LhWfY",
     "region": "GB"
   },
   {
     "title": "ROBLOX EVIL HOMER!",
     "source": "youtube",
-    "freshness": 0.9071260009027777,
-    "velocity": 27053.935087116246,
+    "freshness": 0.8881467375694444,
+    "velocity": 28771.96449442991,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ZUswzhFSt1I",
     "region": "GB"
@@ -146,26 +146,26 @@
   {
     "title": "Nobody's Bay Bay",
     "source": "youtube",
-    "freshness": 0.8550509347652117,
-    "velocity": 7194.850846900167,
-    "category": "internet",
+    "freshness": 0.8360716714318783,
+    "velocity": 7579.023574014975,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Ys-ycxChrzE",
     "region": "GB"
   },
   {
     "title": "The Hunger Games: Sunrise on the Reaping Cast REACTS to New Trailer + Message for Jennifer Lawrence",
     "source": "youtube",
-    "freshness": 0.8967109876752646,
-    "velocity": 5828.018145847634,
-    "category": "technology",
+    "freshness": 0.8777317243419313,
+    "velocity": 6357.799181130786,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6IsMsWONUDY",
     "region": "GB"
   },
   {
     "title": "This Family Is Crazy!",
     "source": "youtube",
-    "freshness": 0.849129969156746,
-    "velocity": 9558.56628659709,
+    "freshness": 0.8301507058234128,
+    "velocity": 9209.03920800289,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=cBlO_MElMO4",
     "region": "GB"
@@ -173,26 +173,26 @@
   {
     "title": "Trivium - Dead Inside Of Me (Official Video)",
     "source": "youtube",
-    "freshness": 0.8312347971990741,
-    "velocity": 13363.875404561591,
-    "category": "internet",
+    "freshness": 0.8122555338657408,
+    "velocity": 12783.11091000191,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=I5qZI_v8eGs",
     "region": "GB"
   },
   {
     "title": "SACRIFICE Official Trailer (2026) Chris Evans, Anya Taylor-Joy",
     "source": "youtube",
-    "freshness": 0.8394490829133598,
-    "velocity": 6349.380171859733,
-    "category": "technology",
+    "freshness": 0.8204698195800264,
+    "velocity": 7175.972131342223,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=bzGU0b5XAKc",
     "region": "GB"
   },
   {
     "title": "I Become the Man Utd Manager… in FC 27",
     "source": "youtube",
-    "freshness": 0.8418383024900793,
-    "velocity": 32434.332258587943,
+    "freshness": 0.8228590391567461,
+    "velocity": 32719.940318012545,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=PENzcCRNkcE",
     "region": "GB"
@@ -200,107 +200,107 @@
   {
     "title": "Anderson .Paak, Cordae - A Good Day (Official Video)",
     "source": "youtube",
-    "freshness": 0.8521045061937831,
-    "velocity": 14959.243888820643,
-    "category": "internet",
+    "freshness": 0.8331252428604498,
+    "velocity": 17813.758759095912,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=8zxzlAyMg2U",
     "region": "GB"
   },
   {
     "title": "Ghosts: The Possession of Button House - Official Trailer",
     "source": "youtube",
-    "freshness": 0.6586240167757936,
-    "velocity": 20647.252697466258,
-    "category": "technology",
+    "freshness": 0.6396447534424603,
+    "velocity": 20920.873223272603,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=iLKGXt5JHKk",
     "region": "GB"
   },
   {
     "title": "Behzinga Tries To Complete Minecraft... #5",
     "source": "youtube",
-    "freshness": 0.8491018606911376,
-    "velocity": 8921.02893271133,
+    "freshness": 0.8301225973578042,
+    "velocity": 8804.07324326844,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=t4nXEoK58v4",
     "region": "GB"
   },
   {
+    "title": "The Script - Hall of Fame (lyrics)",
+    "source": "youtube",
+    "freshness": 0.34200917143187826,
+    "velocity": 3174.128769534045,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=bzW8c9towZU",
+    "region": "GB"
+  },
+  {
+    "title": "Official Trailer | Scrubs Season 2",
+    "source": "youtube",
+    "freshness": 0.8290247137599206,
+    "velocity": 61817.41368842579,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=PYvHf75iiRw",
+    "region": "GB"
+  },
+  {
+    "title": "NOOB vs PRO: Superhero Tower Battle! (Minecraft)",
+    "source": "youtube",
+    "freshness": 0.8182029545006614,
+    "velocity": 24861.515145010664,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=K385UJ4rQQA",
+    "region": "GB"
+  },
+  {
     "title": "ADÉLA - Ain’t In LA (Live) | Spotify RADAR",
     "source": "youtube",
-    "freshness": 0.8589232892625661,
-    "velocity": 17173.154450462283,
-    "category": "technology",
+    "freshness": 0.8399440259292328,
+    "velocity": 16889.62708190125,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=P1KGml6DcV0",
     "region": "GB"
   },
   {
     "title": "The Celebrity Traitors - Series 2 | Official Trailer - BBC",
     "source": "youtube",
-    "freshness": 0.6943399559292328,
-    "velocity": 13686.092598017622,
-    "category": "technology",
+    "freshness": 0.6753606925958995,
+    "velocity": 13617.273941043846,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=4H1zx-HKQj0",
     "region": "GB"
   },
   {
-    "title": "NOOB vs PRO: Superhero Tower Battle! (Minecraft)",
+    "title": "VIDA de ABELHA no Minecraft!",
     "source": "youtube",
-    "freshness": 0.8371822178339947,
-    "velocity": 26129.414593030826,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=K385UJ4rQQA",
-    "region": "GB"
-  },
-  {
-    "title": "Assala - Ragaet Assala Ala El Sham  | أصالة - رجعت أصالة على الشام",
-    "source": "youtube",
-    "freshness": 0.5460793739186509,
-    "velocity": 14125.083325730175,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=I6yDvA5vmqw",
-    "region": "GB"
-  },
-  {
-    "title": "Official Trailer | Scrubs Season 2",
-    "source": "youtube",
-    "freshness": 0.8480039770932539,
-    "velocity": 61817.56357722953,
-    "category": "technology",
-    "source_url": "https://www.youtube.com/watch?v=PYvHf75iiRw",
-    "region": "GB"
-  },
-  {
-    "title": "My First Day of the FC27 Web App!",
-    "source": "youtube",
-    "freshness": 0.8754758686276455,
-    "velocity": 7796.251360055339,
+    "freshness": 0.05,
+    "velocity": 518.5833596707733,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=DN8fLWJ1jYw",
+    "source_url": "https://www.youtube.com/watch?v=ZE4rm9ky1kw",
     "region": "GB"
   },
   {
-    "title": "The Script - Hall of Fame (lyrics)",
+    "title": "Movin' to the Sun (Soul Edition)",
     "source": "youtube",
-    "freshness": 0.3609884347652117,
-    "velocity": 2895.1987363651506,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=bzW8c9towZU",
+    "freshness": 0.546443695241402,
+    "velocity": 5675.16298500348,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=WPgaEjyMYt4",
     "region": "GB"
   },
   {
     "title": "LANTERNS Episode 6 Trailer Breakdown: WHO KILLED HAL??",
     "source": "youtube",
-    "freshness": 0.8749881040773809,
-    "velocity": 17510.952576124397,
-    "category": "technology",
+    "freshness": 0.8560088407440476,
+    "velocity": 16536.522850028126,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=V4B7y3XzOLs",
     "region": "GB"
   },
   {
     "title": "WHAT A START!! FC 27 ROAD TO GLORY #1",
     "source": "youtube",
-    "freshness": 0.8431428659821428,
-    "velocity": 4499.772566870152,
+    "freshness": 0.8241636026488095,
+    "velocity": 4469.65806435894,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=jVg_5veflBc",
     "region": "GB"
@@ -308,14 +308,77 @@
   {
     "title": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
     "source": "youtube",
-    "freshness": 0.5633760009027777,
-    "velocity": 103302.09221734593,
-    "category": "internet",
+    "freshness": 0.5443967375694444,
+    "velocity": 103185.05222674312,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Tk9TM7-eTmw",
     "region": "GB"
   },
   {
-    "title": "grand theft auto vi",
+    "title": "todd blanche",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "warrantless immigration arrests injunction california",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "earthquake",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "earthquake today",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "chris olave",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "shooting",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "intercon chemical bacteria contamination recall",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "dengue",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -324,43 +387,7 @@
     "region": "US"
   },
   {
-    "title": "lexington high school",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "debby ryan brain injury",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "ofi vs hoffenheim",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "josh allen stats",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "kyle harrison",
+    "title": "kylie kelce",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -369,16 +396,7 @@
     "region": "US"
   },
   {
-    "title": "dunkin bears hat",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "why did leo nelson and josh get kicked off the challenge",
+    "title": "kennedy center demolished",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -390,25 +408,25 @@
     "title": "Saii Kay, Dabz Wills - Maris Talaigu (Official Music Video)",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 612.8270932669695,
-    "category": "technology",
+    "velocity": 612.4833325048415,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=RcU67qwHf4w",
     "region": "US"
   },
   {
     "title": "Helluva Boss Season 3 Part 1 Official Trailer",
     "source": "youtube",
-    "freshness": 0.8580895151488095,
-    "velocity": 40617.40554498119,
-    "category": "technology",
+    "freshness": 0.8391103334308863,
+    "velocity": 38074.22894601218,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-Fq4VRxhdKI",
     "region": "US"
   },
   {
     "title": "FAILROOMS",
     "source": "youtube",
-    "freshness": 0.854733033667328,
-    "velocity": 62972.07228663991,
+    "freshness": 0.8357538519494048,
+    "velocity": 59733.11788588986,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=9Abn4SDm4D0",
     "region": "US"
@@ -416,17 +434,17 @@
   {
     "title": "Jhené Aiko - Nothing Nice To Say (Official Video)",
     "source": "youtube",
-    "freshness": 0.8978514199107143,
-    "velocity": 7266.0847311482985,
-    "category": "technology",
+    "freshness": 0.878872238192791,
+    "velocity": 7590.224495563882,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=5c2GOzSJLbg",
     "region": "US"
   },
   {
     "title": "GRIEF 97% 🔴 75%+ x45 🔴 STREAM 388",
     "source": "youtube",
-    "freshness": 0.9254456659424604,
-    "velocity": 62459.08164777331,
+    "freshness": 0.906466484224537,
+    "velocity": 50524.79708029572,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Pft5tHatyCk",
     "region": "US"
@@ -435,25 +453,25 @@
     "title": "Yu Les",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 172.278275884093,
-    "category": "internet",
+    "velocity": 171.1272440069404,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=SfUA-zcHJkA",
     "region": "US"
   },
   {
     "title": "Sacrifice | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.8381688802281746,
-    "velocity": 19511.81609613249,
-    "category": "technology",
+    "freshness": 0.8191896985102514,
+    "velocity": 19357.6004386399,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=u5qW1gMMSVI",
     "region": "US"
   },
   {
     "title": "We Attempted Minecraft Skyblock...",
     "source": "youtube",
-    "freshness": 0.8728977162070106,
-    "velocity": 17075.533349574598,
+    "freshness": 0.8539185344890873,
+    "velocity": 16595.884919398515,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=PA1gmII1GLA",
     "region": "US"
@@ -461,17 +479,17 @@
   {
     "title": "Wildwood – Final Trailer | Get Tickets Now",
     "source": "youtube",
-    "freshness": 0.8222975177943121,
-    "velocity": 115879.54809487873,
-    "category": "technology",
+    "freshness": 0.8033183360763889,
+    "velocity": 119033.90101162954,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=bJQGtSeLPII",
     "region": "US"
   },
   {
     "title": "The Backrooms Appeared In My House…",
     "source": "youtube",
-    "freshness": 0.8788897796990741,
-    "velocity": 18820.125321761123,
+    "freshness": 0.8599105979811508,
+    "velocity": 17923.588263778274,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=KcEtpAk1eXw",
     "region": "US"
@@ -479,8 +497,8 @@
   {
     "title": "Path of Titans: Leedsichthys Update - Launch Trailer",
     "source": "youtube",
-    "freshness": 0.869924832609127,
-    "velocity": 5736.792815126104,
+    "freshness": 0.8509456508912037,
+    "velocity": 5298.722404075158,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Aw-sTvzpr5E",
     "region": "US"
@@ -488,8 +506,8 @@
   {
     "title": "So I tried Marvel’s Wolverine..",
     "source": "youtube",
-    "freshness": 0.837218152714947,
-    "velocity": 35568.56469706811,
+    "freshness": 0.8182389709970238,
+    "velocity": 33356.39597993023,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=36s8KRxB6Ts",
     "region": "US"
@@ -497,17 +515,17 @@
   {
     "title": "BWay Yungy - ''Do Drugz'' Official Video",
     "source": "youtube",
-    "freshness": 0.8792055865773809,
-    "velocity": 2313.996560129963,
-    "category": "internet",
+    "freshness": 0.8602264048594577,
+    "velocity": 2343.5433270576546,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=OehfJmfO9CE",
     "region": "US"
   },
   {
     "title": "Monster Hunter Wilds: Ascendance - 1st Trailer | TGS 2026 Extended Cut",
     "source": "youtube",
-    "freshness": 0.8354010230853175,
-    "velocity": 16873.98383788328,
+    "freshness": 0.8164218413673942,
+    "velocity": 15540.80508380075,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=EWvjrwfYztQ",
     "region": "US"
@@ -515,27 +533,27 @@
   {
     "title": "Other Mommy | Official Trailer 2",
     "source": "youtube",
-    "freshness": 0.6943395151488095,
-    "velocity": 99385.20828811228,
-    "category": "technology",
+    "freshness": 0.6753603334308862,
+    "velocity": 98552.41704640083,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-mnTITqqiT0",
     "region": "US"
   },
   {
     "title": "This Might Be a CRAZY Playoff Run! Wheel of CUT! Ep. #19",
     "source": "youtube",
-    "freshness": 0.8788616712334656,
-    "velocity": 12022.805943233134,
-    "category": "internet",
+    "freshness": 0.8598824895155424,
+    "velocity": 11282.579167271619,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=QiZeRYP5Gl4",
     "region": "US"
   },
   {
     "title": "Cazzu - Noches de Latinaje | \"El Hombre Que Yo Amo\" de Myriam Hernandez",
     "source": "youtube",
-    "freshness": 0.8907581659424603,
-    "velocity": 13228.13268980209,
-    "category": "internet",
+    "freshness": 0.871778984224537,
+    "velocity": 14294.096489128782,
+    "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=lzklN17GxoA",
     "region": "US"
   }
