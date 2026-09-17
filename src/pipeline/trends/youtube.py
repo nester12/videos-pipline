@@ -1,15 +1,26 @@
 from datetime import datetime, timezone
+import re
 import requests
 from .models import TrendCandidate
 
 URL = 'https://www.googleapis.com/youtube/v3/videos'
 
+TECH_TERMS = re.compile(r'\b(ai|artificial intelligence|openai|chatgpt|gemini|tech|technology|iphone|android|computer|robot|software|cyber|cybersecurity|app|browser)\b', re.I)
+GAMING_TERMS = re.compile(r'\b(game|gaming|xbox|playstation|nintendo|steam|fortnite|minecraft|roblox)\b', re.I)
+INTERNET_TERMS = re.compile(r'\b(internet|online|viral|reddit|tiktok|youtube|discord|streamer|meme|creator|social media)\b', re.I)
+ENTERTAINMENT_CATEGORIES = {'1', '10', '17', '23', '24'}
+
 
 def _category(category_id: str, title: str) -> str:
-    if category_id == '20': return 'gaming'
-    if category_id == '28': return 'technology'
-    t = title.lower()
-    return 'technology' if 'ai' in t or 'tech' in t else 'internet'
+    if category_id == '20' or GAMING_TERMS.search(title):
+        return 'gaming'
+    if category_id == '28' or TECH_TERMS.search(title):
+        return 'technology'
+    if INTERNET_TERMS.search(title):
+        return 'internet'
+    if category_id in ENTERTAINMENT_CATEGORIES:
+        return 'entertainment'
+    return 'internet'
 
 
 def parse_youtube_response(data: dict, region: str, now_iso: str | None = None) -> list[TrendCandidate]:

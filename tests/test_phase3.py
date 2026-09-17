@@ -1,6 +1,6 @@
 from pipeline.writing.production import build_research_prompt, generate_winning_script
 from pipeline.trends.models import TrendCandidate
-from pipeline.render.captions import build_ass_subtitles
+from pipeline.render.captions import build_ass_subtitles, segment_captions
 
 
 class FakeClient:
@@ -43,6 +43,12 @@ def test_ass_subtitles_generate_timed_grouped_dialogue():
     assert '[Events]' in ass
     assert ass.count('Dialogue:')==2
     assert 'ONE TWO THREE FOUR' in ass
+
+
+def test_caption_segments_limit_long_visual_lines():
+    groups=segment_captions('massive curiosity among fans is building quickly', max_words=4, max_chars=24)
+    assert all(len(group) <= 24 or len(group.split()) == 1 for group in groups)
+    assert 'massive curiosity among fans' not in groups
 
 
 def test_audio_module_does_not_load_production_packages_at_import_time():
