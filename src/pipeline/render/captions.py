@@ -1,6 +1,17 @@
-def segment_captions(text: str, max_words: int = 5) -> list[str]:
+def segment_captions(text: str, max_words: int = 5, max_chars: int = 24) -> list[str]:
     words=text.split()
-    return [' '.join(words[i:i+max_words]) for i in range(0,len(words),max_words)]
+    groups=[]
+    current=[]
+    for word in words:
+        candidate=' '.join(current+[word])
+        if current and (len(current) >= max_words or len(candidate) > max_chars):
+            groups.append(' '.join(current))
+            current=[word]
+        else:
+            current.append(word)
+    if current:
+        groups.append(' '.join(current))
+    return groups
 
 
 def _ass_time(seconds: float) -> str:
@@ -12,8 +23,8 @@ def _ass_time(seconds: float) -> str:
     return f'{h}:{m:02d}:{s:02d}.{cs:02d}'
 
 
-def build_ass_subtitles(text: str, duration: float, max_words: int = 5) -> str:
-    groups=segment_captions(text,max_words=max_words)
+def build_ass_subtitles(text: str, duration: float, max_words: int = 5, max_chars: int = 24) -> str:
+    groups=segment_captions(text,max_words=max_words,max_chars=max_chars)
     total_words=max(sum(len(g.split()) for g in groups),1)
     header='''[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Default,DejaVu Sans,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,5,0,2,80,80,410,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n'''
     lines=[]; cursor=0.0
