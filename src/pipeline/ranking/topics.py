@@ -18,6 +18,8 @@ def score_topic(candidate, recent_topics: list[str], category_weights: dict[str,
 def rank_topics(candidates, recent_topics: list[str], category_weights: dict[str,float]):
     safe=[]
     for c in candidates:
+        if c.category not in category_weights:
+            continue
         ok,_=is_safe_topic(c.title)
         if ok: safe.append((score_topic(c,recent_topics,category_weights),c))
     safe.sort(key=lambda x:x[0], reverse=True)
