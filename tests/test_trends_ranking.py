@@ -21,6 +21,18 @@ def test_youtube_response_normalizes_velocity():
     assert items[0].velocity >= 50000
 
 
+def test_youtube_trailer_is_not_misread_as_ai_because_trailer_contains_ai_letters():
+    data={'items':[{'id':'x','snippet':{'title':'THE VVAAN - Official Trailer','publishedAt':'2026-09-16T10:00:00Z','categoryId':'24'},'statistics':{'viewCount':'120000'}}]}
+    items = parse_youtube_response(data, 'GB', now_iso='2026-09-16T12:00:00+00:00')
+    assert items[0].category == 'entertainment'
+
+
+def test_niche_keyword_can_override_broad_youtube_entertainment_category():
+    data={'items':[{'id':'x','snippet':{'title':'OpenAI launches a new browser feature','publishedAt':'2026-09-16T10:00:00Z','categoryId':'24'},'statistics':{'viewCount':'120000'}}]}
+    items = parse_youtube_response(data, 'GB', now_iso='2026-09-16T12:00:00+00:00')
+    assert items[0].category == 'technology'
+
+
 def test_dedupe_prefers_higher_signal():
     a=TrendCandidate('AI phone launch','google_trends',0.8,10,'technology')
     b=TrendCandidate(' ai  phone launch ','youtube',0.9,20,'technology')
@@ -44,3 +56,10 @@ def test_rank_keeps_safe_topic():
     safe=TrendCandidate('new AI browser','youtube',0.9,100,'technology')
     out=rank_topics([safe], [], {'technology':1.2})
     assert [x.title for x in out] == ['new AI browser']
+
+
+def test_rank_excludes_categories_not_enabled_in_config():
+    entertainment=TrendCandidate('Official movie trailer','youtube',1.0,999999,'entertainment')
+    tech=TrendCandidate('New AI browser','youtube',0.8,100,'technology')
+    out=rank_topics([entertainment, tech], [], {'technology':1.2, 'gaming':1.05, 'internet':1.1, 'story':0.9})
+    assert [x.title for x in out] == ['New AI browser']
