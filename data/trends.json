@@ -1,6 +1,6 @@
 [
   {
-    "title": "andreas christopheros",
+    "title": "michele kang",
     "source": "google_trends",
     "freshness": 0.551,
     "velocity": 100.0,
@@ -9,25 +9,16 @@
     "region": "GB"
   },
   {
-    "title": "polar vortex",
+    "title": "monster lizzie borden netflix",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "jorge jesus",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "control resonant",
+    "title": "vladimir putin",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -36,16 +27,7 @@
     "region": "GB"
   },
   {
-    "title": "sale",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "landlord",
+    "title": "govanhill",
     "source": "google_trends",
     "freshness": 0.551,
     "velocity": 100.0,
@@ -54,25 +36,34 @@
     "region": "GB"
   },
   {
-    "title": "rugby",
+    "title": "strictly",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "bmw pga championship",
+    "title": "man city vs liverpool",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "on football boots",
+    "title": "darts tonight",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "kick",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -81,19 +72,28 @@
     "region": "GB"
   },
   {
-    "title": "dai cornell",
+    "title": "athlos",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
-    "category": "technology",
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "florence pugh",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
     "title": "Troye Sivan - Party (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9126227391468253,
-    "velocity": 28733.43459166805,
+    "freshness": 0.8884556133597884,
+    "velocity": 33133.457467449465,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Yvl4QSAyWR4",
     "region": "GB"
@@ -101,26 +101,26 @@
   {
     "title": "Lanterns | Midseason Trailer | HBO Max",
     "source": "youtube",
-    "freshness": 0.8531336518452382,
-    "velocity": 81582.5564766632,
+    "freshness": 0.8289665260582011,
+    "velocity": 76102.3053948837,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-05WmSAmLK4",
     "region": "GB"
   },
   {
-    "title": "POOR vs RICH Block Battle! (Minecraft)",
+    "title": "How To Start FC 27 Ultimate Team!",
     "source": "youtube",
-    "freshness": 0.8650483343849207,
-    "velocity": 29184.170221255143,
+    "freshness": 0.856183787962963,
+    "velocity": 6113.995454422221,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=DpSGngkq6nA",
+    "source_url": "https://www.youtube.com/watch?v=TpzK-GOSXTY",
     "region": "GB"
   },
   {
     "title": "ROSÉ - new trick (OFFICIAL MUSIC VIDEO)",
     "source": "youtube",
-    "freshness": 0.9126227391468253,
-    "velocity": 550765.97903331,
+    "freshness": 0.8884556133597884,
+    "velocity": 547571.3103286026,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Lufa9QAFFeY",
     "region": "GB"
@@ -128,26 +128,26 @@
   {
     "title": "Call of Duty: Modern Warfare 4 | Campaign Trailer",
     "source": "youtube",
-    "freshness": 0.83571632380291,
-    "velocity": 1704102.4812607295,
+    "freshness": 0.811549198015873,
+    "velocity": 1560435.847492603,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=yLFRQaQT0qM",
     "region": "GB"
   },
   {
-    "title": "How To Start FC 27 Ultimate Team!",
+    "title": "POOR vs RICH Block Battle! (Minecraft)",
     "source": "youtube",
-    "freshness": 0.88035091375,
-    "velocity": 5872.530072438035,
+    "freshness": 0.8408812085978836,
+    "velocity": 29184.47015671496,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=TpzK-GOSXTY",
+    "source_url": "https://www.youtube.com/watch?v=DpSGngkq6nA",
     "region": "GB"
   },
   {
     "title": "Freya Skye - bad taste",
     "source": "youtube",
-    "freshness": 0.8709593793584656,
-    "velocity": 21543.188607980435,
+    "freshness": 0.8467922535714285,
+    "velocity": 20912.741831319963,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=cpssBqNhNrk",
     "region": "GB"
@@ -155,8 +155,8 @@
   {
     "title": "TYSON | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.8590413899404762,
-    "velocity": 40006.340108325174,
+    "freshness": 0.8348742641534391,
+    "velocity": 40622.93998420698,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=o1S5LsYhfEg",
     "region": "GB"
@@ -164,8 +164,8 @@
   {
     "title": "Wolverine",
     "source": "youtube",
-    "freshness": 0.8918075936441799,
-    "velocity": 91060.43530122147,
+    "freshness": 0.8676404678571429,
+    "velocity": 88378.46397214255,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=YEIZUhyEQ5c",
     "region": "GB"
@@ -173,44 +173,17 @@
   {
     "title": "Digga, Malie Donn - Badder Than Dem (Music Video)",
     "source": "youtube",
-    "freshness": 0.8828558740674604,
-    "velocity": 2762.876578985671,
+    "freshness": 0.8586887482804233,
+    "velocity": 2951.1012353875894,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=WpXCnBju8gI",
     "region": "GB"
   },
   {
-    "title": "LANTERNS MIDSEASON TRAILER BREAKDOWN + Batman Gotham Connections!",
-    "source": "youtube",
-    "freshness": 0.9051078581944445,
-    "velocity": 21178.117244733206,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=CJ5sHEPFLh8",
-    "region": "GB"
-  },
-  {
-    "title": "My First Day of FC27",
-    "source": "youtube",
-    "freshness": 0.8951111650727513,
-    "velocity": 14807.286673517705,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=J8FGLt1WnDA",
-    "region": "GB"
-  },
-  {
-    "title": "My Body Isn't Ready (Orchestral Version Live From Sound City)",
-    "source": "youtube",
-    "freshness": 0.8683320645436508,
-    "velocity": 13097.477766062282,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=mhttBMJO2Tg",
-    "region": "GB"
-  },
-  {
     "title": "WIFE AND DOG Official Trailer (2026) Benedict Cumberbatch, Guy Ritchie",
     "source": "youtube",
-    "freshness": 0.8600797497288359,
-    "velocity": 7287.186794077176,
+    "freshness": 0.835912623941799,
+    "velocity": 7934.7243311166485,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9YrBKFJOvFc",
     "region": "GB"
@@ -218,8 +191,8 @@
   {
     "title": "Pink Fairy Cottage on Festivale SMP | Ep. 6",
     "source": "youtube",
-    "freshness": 0.8754104375595239,
-    "velocity": 17621.001423708556,
+    "freshness": 0.8512433117724868,
+    "velocity": 17105.513399960837,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=RPCQ89UiX3M",
     "region": "GB"
@@ -227,17 +200,44 @@
   {
     "title": "Still Brickin x Mazza_L20- Started From Nothing (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8769167206283068,
-    "velocity": 1443.8540037401433,
+    "freshness": 0.8527495948412698,
+    "velocity": 1625.0662699957913,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=xDVfORyY0H0",
     "region": "GB"
   },
   {
+    "title": "LANTERNS MIDSEASON TRAILER BREAKDOWN + Batman Gotham Connections!",
+    "source": "youtube",
+    "freshness": 0.8809407324074074,
+    "velocity": 20423.351620429166,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=CJ5sHEPFLh8",
+    "region": "GB"
+  },
+  {
+    "title": "My First Day of FC27",
+    "source": "youtube",
+    "freshness": 0.8709440392857143,
+    "velocity": 14354.699415324694,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=J8FGLt1WnDA",
+    "region": "GB"
+  },
+  {
+    "title": "My Body Isn't Ready (Orchestral Version Live From Sound City)",
+    "source": "youtube",
+    "freshness": 0.8441649387566138,
+    "velocity": 15155.064960008853,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=mhttBMJO2Tg",
+    "region": "GB"
+  },
+  {
     "title": "The Kardashians | Season 8 | Official Trailer",
     "source": "youtube",
-    "freshness": 0.8664603714219576,
-    "velocity": 85360.96400709741,
+    "freshness": 0.8422932456349206,
+    "velocity": 78824.75597585464,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=R9caLB5MnKk",
     "region": "GB"
@@ -245,8 +245,8 @@
   {
     "title": "I Played A Terrifying Minecraft Mod…",
     "source": "youtube",
-    "freshness": 0.9066736650727514,
-    "velocity": 45376.93565850762,
+    "freshness": 0.8825065392857143,
+    "velocity": 47974.90907979306,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=C7fyYsiBIk4",
     "region": "GB"
@@ -254,8 +254,8 @@
   {
     "title": "Maluma & Shakira - AGUA (Official Video)",
     "source": "youtube",
-    "freshness": 0.9189752523743386,
-    "velocity": 56515.06708511849,
+    "freshness": 0.8948081265873016,
+    "velocity": 72430.79436839078,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=2-NkuLjtGNY",
     "region": "GB"
@@ -263,26 +263,26 @@
   {
     "title": "Lanterns Episode 6 Trailer: Guy Gardner & The New Batman!",
     "source": "youtube",
-    "freshness": 0.8936710195701059,
-    "velocity": 25700.16761187088,
+    "freshness": 0.8695038937830688,
+    "velocity": 25889.752596492108,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=jDe2NfnqHk0",
     "region": "GB"
   },
   {
-    "title": "30x DEBUT ICON PACKS! 🤯 FC 27 Ultimate Team",
+    "title": "PHOTOMALY (full game)",
     "source": "youtube",
-    "freshness": 0.9223085857076719,
-    "velocity": 10868.624509094478,
+    "freshness": 0.8694476768518519,
+    "velocity": 56001.85766706769,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Mbzz0gwTONU",
+    "source_url": "https://www.youtube.com/watch?v=_MBOCnC_c1w",
     "region": "GB"
   },
   {
     "title": "MILEY - Let's Get Married (Official Video)",
     "source": "youtube",
-    "freshness": 0.9423862973478836,
-    "velocity": 25363.30321186414,
+    "freshness": 0.9182191715608465,
+    "velocity": 51862.414106404416,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=qwaVhOZkAek",
     "region": "GB"
@@ -290,32 +290,32 @@
   {
     "title": "The Hunger Games: Sunrise on the Reaping (2026) Official Trailer 2 - Joseph Zada",
     "source": "youtube",
-    "freshness": 0.7102335195701058,
-    "velocity": 106054.44689092961,
+    "freshness": 0.6860663937830688,
+    "velocity": 106026.0773308973,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=lYXtL5TreOE",
     "region": "GB"
   },
   {
-    "title": "UNLIMITED PACKS ON FC27!",
+    "title": "30x DEBUT ICON PACKS! 🤯 FC 27 Ultimate Team",
     "source": "youtube",
-    "freshness": 0.8896101730092593,
-    "velocity": 15360.768879453433,
+    "freshness": 0.898141459920635,
+    "velocity": 11904.757220468393,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=AJf7GyUE2Ro",
+    "source_url": "https://www.youtube.com/watch?v=Mbzz0gwTONU",
     "region": "GB"
   },
   {
     "title": "Jamie Miller - Babydoll feat. Antonio Cipriano",
     "source": "youtube",
-    "freshness": 0.9423846439087301,
-    "velocity": 2174.519482049998,
+    "freshness": 0.9182175181216932,
+    "velocity": 3681.804904199327,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=8g25GeJgxgs",
     "region": "GB"
   },
   {
-    "title": "truck",
+    "title": "flash flood watch",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -324,52 +324,16 @@
     "region": "US"
   },
   {
-    "title": "on",
+    "title": "elon musk memphis airstream trailer",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
-    "category": "internet",
+    "category": "technology",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "pierce brosnan",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "helen mirren",
-    "source": "google_trends",
-    "freshness": 0.65,
-    "velocity": 10000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "sway dasafo news",
-    "source": "google_trends",
-    "freshness": 0.75,
-    "velocity": 20000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "mbappe",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "martin short",
+    "title": "riot fest 2026",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -378,7 +342,25 @@
     "region": "US"
   },
   {
-    "title": "fat bear week 2026",
+    "title": "what did stanford researchers discover about the human brain being two separate organs",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "technology",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "vs127",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "iranians rally",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -387,28 +369,46 @@
     "region": "US"
   },
   {
-    "title": "oreos",
+    "title": "karandeep anand",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
+    "freshness": 0.56,
+    "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "PHOTOMALY (full game)",
-    "source": "youtube",
-    "freshness": 0.893614314130291,
-    "velocity": 58503.27197127031,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=_MBOCnC_c1w",
+    "title": "leah pruett",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "traitors cast",
+    "source": "google_trends",
+    "freshness": 0.75,
+    "velocity": 20000.0,
+    "category": "technology",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "frankie muniz",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
     "title": "ROA, Anuel AA - Vamo a Vel (Official Video)",
     "source": "youtube",
-    "freshness": 0.9185746315906085,
-    "velocity": 64123.940464581974,
+    "freshness": 0.8944074375529101,
+    "velocity": 65880.07968891888,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ivX_Bule86Q",
     "region": "US"
@@ -416,8 +416,8 @@
   {
     "title": "Nobody likes Wolverine..",
     "source": "youtube",
-    "freshness": 0.8684787321197089,
-    "velocity": 52307.08431035409,
+    "freshness": 0.8443115380820105,
+    "velocity": 48386.69421738022,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ZcE0PcMN5kk",
     "region": "US"
@@ -425,8 +425,8 @@
   {
     "title": "Helluva Boss Season 3 Part 1 Official Trailer",
     "source": "youtube",
-    "freshness": 0.7430488379398148,
-    "velocity": 27002.699440506276,
+    "freshness": 0.7188816439021164,
+    "velocity": 25356.503468405976,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-Fq4VRxhdKI",
     "region": "US"
@@ -434,8 +434,8 @@
   {
     "title": "MORE OG Minecraft Lucky Blocks",
     "source": "youtube",
-    "freshness": 0.9007257559292328,
-    "velocity": 34088.830278380025,
+    "freshness": 0.8765585618915344,
+    "velocity": 33971.96017242467,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=j0MF8hE1u7M",
     "region": "US"
@@ -443,8 +443,8 @@
   {
     "title": "Morgan Wallen – Last Thing You Need (From Grand Theft Auto VI: The Album)",
     "source": "youtube",
-    "freshness": 0.8471774755059523,
-    "velocity": 14452.182719341692,
+    "freshness": 0.823010281468254,
+    "velocity": 14798.075077945065,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9leAwpph-xs",
     "region": "US"
@@ -452,8 +452,8 @@
   {
     "title": "Good Luck on This Meccha Chameleon Map",
     "source": "youtube",
-    "freshness": 0.7472750284160052,
-    "velocity": 69742.0340418185,
+    "freshness": 0.7231078343783068,
+    "velocity": 66007.68881895008,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=_2hPnNeJjEE",
     "region": "US"
@@ -461,8 +461,8 @@
   {
     "title": "Last Thing You Need (from GTAVI: The Album)",
     "source": "youtube",
-    "freshness": 0.8474304516964286,
-    "velocity": 6060.897103093063,
+    "freshness": 0.8232632576587302,
+    "velocity": 6679.156610644018,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=v7yYmRGQaRk",
     "region": "US"
@@ -470,8 +470,8 @@
   {
     "title": "American Horror Story: 13 | Teaser - The Grand Unveiling | FX",
     "source": "youtube",
-    "freshness": 0.8976354781514551,
-    "velocity": 16845.14524130265,
+    "freshness": 0.8734682841137567,
+    "velocity": 15455.18777544721,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=_lmXsa8E4ag",
     "region": "US"
@@ -479,8 +479,8 @@
   {
     "title": "Batman: Dark Tomorrow (GameCube) - Angry Video Game Nerd (AVGN)",
     "source": "youtube",
-    "freshness": 0.8709473167757936,
-    "velocity": 35909.47642416046,
+    "freshness": 0.8467801227380952,
+    "velocity": 33141.83633340269,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Mg7EkeQfsNQ",
     "region": "US"
@@ -489,7 +489,7 @@
     "title": "Saii Kay, Dabz Wills - Maris Talaigu (Official Music Video)",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 607.7345384693028,
+    "velocity": 613.2851533788828,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=RcU67qwHf4w",
     "region": "US"
@@ -497,8 +497,8 @@
   {
     "title": "The Terminal List Season 2 - Official Trailer | Prime Video",
     "source": "youtube",
-    "freshness": 0.8530852136011905,
-    "velocity": 73651.49766645087,
+    "freshness": 0.828918019563492,
+    "velocity": 68245.51218756454,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=sGmhziz9MoE",
     "region": "US"
@@ -506,8 +506,8 @@
   {
     "title": "Creepy Games #104 & Fortnite Practice w/ SypherPK | Joe Bartolozzi",
     "source": "youtube",
-    "freshness": 0.9439202003736773,
-    "velocity": 6863.943416229568,
+    "freshness": 0.9197530063359788,
+    "velocity": 8541.411805622933,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=IpUfBN2V2Qo",
     "region": "US"
@@ -515,8 +515,8 @@
   {
     "title": "Sin Ti",
     "source": "youtube",
-    "freshness": 0.8354314437599206,
-    "velocity": 324.0435607552197,
+    "freshness": 0.8112642497222222,
+    "velocity": 3746.4197021108143,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZJXLJLMSc00",
     "region": "US"
