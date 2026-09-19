@@ -1,24 +1,6 @@
 [
   {
-    "title": "nottingham forest",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "liam delap",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "stafford rangers",
+    "title": "raphinha",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -27,7 +9,7 @@
     "region": "GB"
   },
   {
-    "title": "converse",
+    "title": "tess daly",
     "source": "google_trends",
     "freshness": 0.551,
     "velocity": 100.0,
@@ -36,7 +18,16 @@
     "region": "GB"
   },
   {
-    "title": "radio times tv guide",
+    "title": "ajax fc",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "dolly parton",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -45,7 +36,16 @@
     "region": "GB"
   },
   {
-    "title": "torquay united",
+    "title": "john bishop",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "mo salah",
     "source": "google_trends",
     "freshness": 0.551,
     "velocity": 100.0,
@@ -54,46 +54,46 @@
     "region": "GB"
   },
   {
-    "title": "man city fixtures",
+    "title": "who is will on strictly",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "bc",
+    "title": "jimmy fallon",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "tv guide",
+    "title": "maddie ingoldsby",
     "source": "google_trends",
-    "freshness": 0.6000000000000001,
-    "velocity": 5000.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "premier league table",
+    "title": "celebrity traitors 2026",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "technology",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
     "title": "Troye Sivan - Party (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.7480502551173942,
-    "velocity": 28215.471921566284,
+    "freshness": 0.7271213584573413,
+    "velocity": 28123.13319052009,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Yvl4QSAyWR4",
     "region": "GB"
@@ -101,8 +101,8 @@
   {
     "title": "Astartes II Teaser Trailer September 2026 – Warhammer+ | Warhammer 40,000",
     "source": "youtube",
-    "freshness": 0.8637579270750662,
-    "velocity": 64184.81773883259,
+    "freshness": 0.8428290304150132,
+    "velocity": 59917.68997441488,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=5dKjhi90afk",
     "region": "GB"
@@ -110,8 +110,8 @@
   {
     "title": "MAN UTD FC 27 CAREER MODE! EPISODE 1",
     "source": "youtube",
-    "freshness": 0.8574533635830026,
-    "velocity": 8885.145597841656,
+    "freshness": 0.8365244669229497,
+    "velocity": 8220.030142923308,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=AtMIZq5ukD8",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "Movin' to the Sun (Soul Edition)",
     "source": "youtube",
-    "freshness": 0.8084321995618386,
-    "velocity": 8092.0312051503615,
+    "freshness": 0.7875033029017857,
+    "velocity": 11390.597212885461,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=fLjQ_yNd82A",
     "region": "GB"
@@ -128,8 +128,8 @@
   {
     "title": "Sigma - Official Trailer | Sundeep Kishan | Faria Abdullah | Jason Sanjay | Thaman S",
     "source": "youtube",
-    "freshness": 0.8434917233713625,
-    "velocity": 132401.29695308497,
+    "freshness": 0.8225628267113095,
+    "velocity": 125943.8069320419,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=hgnVXBtuWe8",
     "region": "GB"
@@ -137,8 +137,8 @@
   {
     "title": "The Cursed Train Game is Back...",
     "source": "youtube",
-    "freshness": 0.8683941704613095,
-    "velocity": 69216.15882769079,
+    "freshness": 0.8474652738012566,
+    "velocity": 65670.64314506957,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=hOUouTjVw80",
     "region": "GB"
@@ -146,8 +146,8 @@
   {
     "title": "ROSÉ - new trick (OFFICIAL MUSIC VIDEO)",
     "source": "youtube",
-    "freshness": 0.7480502551173942,
-    "velocity": 385401.78319142526,
+    "freshness": 0.7271213584573413,
+    "velocity": 402534.296139078,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Lufa9QAFFeY",
     "region": "GB"
@@ -155,8 +155,8 @@
   {
     "title": "EA SPORTS FC™ 27 | Official Launch Trailer",
     "source": "youtube",
-    "freshness": 0.8432916572337963,
-    "velocity": 23194.551724202473,
+    "freshness": 0.8223627605737434,
+    "velocity": 21406.453655861485,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=zEcmpr1Ssr8",
     "region": "GB"
@@ -164,8 +164,8 @@
   {
     "title": "Bari (Official Music Video) NIJJAR | Autobiography | Latest Punjabi Song 2026",
     "source": "youtube",
-    "freshness": 0.8343300170221561,
-    "velocity": 190458.46104915586,
+    "freshness": 0.8134011203621032,
+    "velocity": 190333.81899115824,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=yBXJQ7eBmWw",
     "region": "GB"
@@ -173,8 +173,8 @@
   {
     "title": "Dorothy (Tamil) | Official Trailer | Karthik Subbaraj | Keerthy Suresh | Ilaiyaraaja",
     "source": "youtube",
-    "freshness": 0.8284024376570767,
-    "velocity": 77680.40335272618,
+    "freshness": 0.8074735409970237,
+    "velocity": 71740.29394936956,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=cCbiVWgEW1w",
     "region": "GB"
@@ -182,8 +182,8 @@
   {
     "title": "A BRAND NEW START!! FC27 Road to Glory #1",
     "source": "youtube",
-    "freshness": 0.8441795540591931,
-    "velocity": 5022.72248303132,
+    "freshness": 0.8232506573991403,
+    "velocity": 4664.798113913829,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ysJUPRbd-8g",
     "region": "GB"
@@ -191,8 +191,8 @@
   {
     "title": "Moving To The Sun",
     "source": "youtube",
-    "freshness": 0.22388358845072753,
-    "velocity": 5501.284138856073,
+    "freshness": 0.2029546917906747,
+    "velocity": 6136.690333306214,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=7OrFScvc8mc",
     "region": "GB"
@@ -200,8 +200,8 @@
   {
     "title": "Lanterns | Midseason Trailer | HBO Max",
     "source": "youtube",
-    "freshness": 0.6885611678158068,
-    "velocity": 52587.37288840643,
+    "freshness": 0.667632271155754,
+    "velocity": 52202.45291147521,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-05WmSAmLK4",
     "region": "GB"
@@ -209,8 +209,8 @@
   {
     "title": "My First Day on the FC27 RTG!",
     "source": "youtube",
-    "freshness": 0.8796375567046958,
-    "velocity": 11155.641255976585,
+    "freshness": 0.8587086600446429,
+    "velocity": 10205.946841593599,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=PAHPbr1lv8s",
     "region": "GB"
@@ -218,8 +218,8 @@
   {
     "title": "James Arthur - Waste My Tears (Official Video)",
     "source": "youtube",
-    "freshness": 0.8492407313078704,
-    "velocity": 6172.2099424818625,
+    "freshness": 0.8283118346478174,
+    "velocity": 6131.7910306831145,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=IlzmHdvZGj8",
     "region": "GB"
@@ -227,8 +227,8 @@
   {
     "title": "Call of Duty: Modern Warfare 4 | Campaign Trailer",
     "source": "youtube",
-    "freshness": 0.6711438397734788,
-    "velocity": 1151124.6928377966,
+    "freshness": 0.6502149431134259,
+    "velocity": 1112306.1882529124,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=yLFRQaQT0qM",
     "region": "GB"
@@ -236,8 +236,8 @@
   {
     "title": "This Decision Could Change Man United Forever...",
     "source": "youtube",
-    "freshness": 0.8516018424189815,
-    "velocity": 28525.41511715171,
+    "freshness": 0.8306729457589286,
+    "velocity": 26733.97783109671,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=AdUFVu4_aHU",
     "region": "GB"
@@ -245,8 +245,8 @@
   {
     "title": "Jamie Miller - Babydoll feat. Antonio Cipriano",
     "source": "youtube",
-    "freshness": 0.777812159879299,
-    "velocity": 3998.0382171585484,
+    "freshness": 0.756883263219246,
+    "velocity": 4224.063261907736,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=8g25GeJgxgs",
     "region": "GB"
@@ -254,8 +254,8 @@
   {
     "title": "Coven Academy | Trailer | Disney+",
     "source": "youtube",
-    "freshness": 0.8440720805142196,
-    "velocity": 90646.8135676498,
+    "freshness": 0.8231431838541666,
+    "velocity": 90694.16323289865,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=zz9nAM9qa3c",
     "region": "GB"
@@ -263,8 +263,8 @@
   {
     "title": "Surviving CURSED PEPPA PIG in Minecraft!",
     "source": "youtube",
-    "freshness": 0.8432800831597222,
-    "velocity": 22019.111564806884,
+    "freshness": 0.8223511864996693,
+    "velocity": 20826.804693802558,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=jRD_GYaoGKc",
     "region": "GB"
@@ -272,8 +272,8 @@
   {
     "title": "Casa Tupka Anthemo | @YoYoHoneySingh  feat. Priyanshi | Full Video",
     "source": "youtube",
-    "freshness": 0.9296028344824735,
-    "velocity": 398060.87271909474,
+    "freshness": 0.9086739378224207,
+    "velocity": 484329.87716237543,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=vRjaGgDsWSo",
     "region": "GB"
@@ -281,8 +281,8 @@
   {
     "title": "MW4 Just Changed Everything!",
     "source": "youtube",
-    "freshness": 0.8799136810433201,
-    "velocity": 3550.1248791314883,
+    "freshness": 0.8589847843832672,
+    "velocity": 3398.442790454999,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=1redsWk2yKo",
     "region": "GB"
@@ -290,8 +290,8 @@
   {
     "title": "100,000 FC Points Decide My FC27 Team!",
     "source": "youtube",
-    "freshness": 0.8403088530009921,
-    "velocity": 13193.511001426983,
+    "freshness": 0.8193799563409392,
+    "velocity": 12551.604919611036,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=rDHwfaDJpWc",
     "region": "GB"
@@ -299,68 +299,23 @@
   {
     "title": "your verity",
     "source": "youtube",
-    "freshness": 0.8135396731068122,
-    "velocity": 4370.679526911776,
+    "freshness": 0.7926107764467593,
+    "velocity": 5267.269828605952,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZHnelB96JGY",
     "region": "GB"
   },
   {
-    "title": "texas state football",
+    "title": "iu football",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "jaheim singletary",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "amy yasbeck",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "isu football",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "florida vs auburn",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "psu football",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "steve belichick",
+    "title": "iowa hawkeyes football",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -369,19 +324,64 @@
     "region": "US"
   },
   {
-    "title": "roma vs inter",
+    "title": "south carolina football",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "bill belichick girlfriend",
+    "title": "rutgers football",
     "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "wagner football",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "clemson sc weather",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "ufc tonight",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "edmen shahbazyan",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "texas a&m football",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
@@ -389,8 +389,8 @@
   {
     "title": "Sin Ti",
     "source": "youtube",
-    "freshness": 0.6708589360367063,
-    "velocity": 14691.50437422069,
+    "freshness": 0.6499296888161376,
+    "velocity": 16577.36706661506,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZJXLJLMSc00",
     "region": "US"
@@ -398,8 +398,8 @@
   {
     "title": "BigXthaPlug feat. Belly Gang Kushington - LITE (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.867103975719246,
-    "velocity": 8435.07622823926,
+    "freshness": 0.8461747284986773,
+    "velocity": 8869.834901562512,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=D64bLNQZcFk",
     "region": "US"
@@ -407,8 +407,8 @@
   {
     "title": "LANTERNS MIDSEASON TRAILER BREAKDOWN + Batman Gotham Connections!",
     "source": "youtube",
-    "freshness": 0.7405348619626323,
-    "velocity": 12332.398121598699,
+    "freshness": 0.7196056147420635,
+    "velocity": 11647.072770446543,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=CJ5sHEPFLh8",
     "region": "US"
@@ -416,8 +416,8 @@
   {
     "title": "🔴LIVE | PARTY GAMES | DAWSON OAKS TRAILER PARK | COCONUT X GIMMICK X GINGY X HUTCH | #BUNGULATE",
     "source": "youtube",
-    "freshness": 0.9394650868303571,
-    "velocity": 93680.39412094824,
+    "freshness": 0.9185358396097884,
+    "velocity": 70246.71043441928,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=vGOIVEE4GAU",
     "region": "US"
@@ -425,8 +425,8 @@
   {
     "title": "Maluma & Shakira - AGUA (Official Video)",
     "source": "youtube",
-    "freshness": 0.7544022561425264,
-    "velocity": 77422.21056041114,
+    "freshness": 0.7334730089219577,
+    "velocity": 79103.37500353243,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=2-NkuLjtGNY",
     "region": "US"
@@ -434,8 +434,8 @@
   {
     "title": "Supermarket Simulator - Part 7",
     "source": "youtube",
-    "freshness": 0.8599776529679233,
-    "velocity": 41039.58014656702,
+    "freshness": 0.8390484057473545,
+    "velocity": 38581.80840185436,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Z0EbucDq5fs",
     "region": "US"
@@ -443,8 +443,8 @@
   {
     "title": "Lanterns Episode 6 Trailer: Guy Gardner & The New Batman!",
     "source": "youtube",
-    "freshness": 0.7290980233382937,
-    "velocity": 16302.725179837224,
+    "freshness": 0.7081687761177249,
+    "velocity": 15661.327204514668,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=jDe2NfnqHk0",
     "region": "US"
@@ -452,8 +452,8 @@
   {
     "title": "HEARTSTEEL - Live My Life ft. Anderson .Paak, BAEKHYUN, Connor Price, Nic D (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8487441873594577,
-    "velocity": 88999.92481196513,
+    "freshness": 0.8278149401388889,
+    "velocity": 83520.84482978247,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=gMkuV5hh7-s",
     "region": "US"
@@ -461,8 +461,8 @@
   {
     "title": "ROA, Anuel AA - Vamo a Vel (Official Video)",
     "source": "youtube",
-    "freshness": 0.7540021238673942,
-    "velocity": 56210.68177791693,
+    "freshness": 0.7330728766468254,
+    "velocity": 56501.287696122854,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ivX_Bule86Q",
     "region": "US"
@@ -470,8 +470,8 @@
   {
     "title": "Sigma (Telugu) - Official Trailer | Sundeep Kishan, Faria Abdullah | Jason Sanjay | Lyca Productions",
     "source": "youtube",
-    "freshness": 0.843463102703373,
-    "velocity": 83826.12137453999,
+    "freshness": 0.8225338554828042,
+    "velocity": 80080.46530359138,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=X0ASrHeMuVE",
     "region": "US"
@@ -479,8 +479,8 @@
   {
     "title": "GRIEF 97% 🔴 75%+ x47 🔴 STREAM 389",
     "source": "youtube",
-    "freshness": 0.9235391609044312,
-    "velocity": 60715.79918941796,
+    "freshness": 0.9026099136838625,
+    "velocity": 50157.1536547669,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=pqM3qANMPMo",
     "region": "US"
@@ -489,7 +489,7 @@
     "title": "Saii Kay, Dabz Wills - Maris Talaigu (Official Music Video)",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 610.2242567109853,
+    "velocity": 606.8378517100651,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=RcU67qwHf4w",
     "region": "US"
@@ -497,8 +497,8 @@
   {
     "title": "WoW Forever Changed My Life",
     "source": "youtube",
-    "freshness": 0.8393758011160715,
-    "velocity": 60152.606847840434,
+    "freshness": 0.8184465538955026,
+    "velocity": 55786.14388204541,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=4P8DsT_bLUw",
     "region": "US"
@@ -506,8 +506,8 @@
   {
     "title": "Fabolous - The Hoodoos Freestyle (Official Video)",
     "source": "youtube",
-    "freshness": 0.8790021238673942,
-    "velocity": 5950.566864428865,
+    "freshness": 0.8580728766468254,
+    "velocity": 5730.011490441845,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=IyDiWjWKLIM",
     "region": "US"
@@ -515,8 +515,8 @@
   {
     "title": "NEW MOVIE TRAILERS 2026 & 2027",
     "source": "youtube",
-    "freshness": 0.843504438682209,
-    "velocity": 6508.5901965111,
+    "freshness": 0.8225751914616402,
+    "velocity": 5957.017103496601,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-gtQKQTmFOg",
     "region": "US"
@@ -524,8 +524,8 @@
   {
     "title": "Playing the OLDEST Roblox Horror..",
     "source": "youtube",
-    "freshness": 0.8846949148726851,
-    "velocity": 35642.81327670641,
+    "freshness": 0.8637656676521164,
+    "velocity": 34128.17086045491,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=0H1MriisNcc",
     "region": "US"
@@ -533,8 +533,8 @@
   {
     "title": "MILEY - Let's Get Married (Official Video)",
     "source": "youtube",
-    "freshness": 0.7778133011160714,
-    "velocity": 67302.90156397466,
+    "freshness": 0.7568840538955026,
+    "velocity": 67884.20260908523,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=qwaVhOZkAek",
     "region": "US"
