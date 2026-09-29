@@ -1,24 +1,6 @@
 [
   {
-    "title": "ultra processed foods",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "michael palin",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "isaac konde liverpool",
+    "title": "jim ratcliffe",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -27,7 +9,7 @@
     "region": "GB"
   },
   {
-    "title": "milania giudice",
+    "title": "uss klakring",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -36,16 +18,7 @@
     "region": "GB"
   },
   {
-    "title": "france football",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "michael kayode",
+    "title": "charing cross police station",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -54,7 +27,7 @@
     "region": "GB"
   },
   {
-    "title": "pio esposito",
+    "title": "wladimir klitschko hayden panettiere daughter estate",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -63,16 +36,34 @@
     "region": "GB"
   },
   {
-    "title": "kayode",
+    "title": "argentina uk falkland islands oil dispute",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "police",
+    "title": "simon cowell",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "australia vs brazil",
+    "source": "google_trends",
+    "freshness": 0.65,
+    "velocity": 10000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "graeme dott",
     "source": "google_trends",
     "freshness": 0.6000000000000001,
     "velocity": 5000.0,
@@ -81,37 +72,127 @@
     "region": "GB"
   },
   {
-    "title": "france",
+    "title": "ticket master",
     "source": "google_trends",
-    "freshness": 0.6000000000000001,
-    "velocity": 5000.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
   },
   {
-    "title": "NAGGNEE - Gurinder Gill | Manu | Sach (OFFICIAL MUSIC VIDEO)",
+    "title": "samantha deakin ashfield council leader",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "Marnz Malone - Get It How You Live ft. @Clavish (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9093171320221561,
-    "velocity": 15801.076175843875,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=VJYZuXUygsI",
+    "freshness": 0.9032542849768519,
+    "velocity": 2847.6713406281788,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=VQC1XXfsPrI",
     "region": "GB"
   },
   {
     "title": "ELSINORE - Official Trailer [HD] - Only In Theaters November",
     "source": "youtube",
-    "freshness": 0.9666121055671296,
-    "velocity": 53150.85806513601,
+    "freshness": 0.8822357664583333,
+    "velocity": 108396.91626225568,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=SzopCeFAWF0",
     "region": "GB"
   },
   {
+    "title": "Happy Wheels is on STEAM?",
+    "source": "youtube",
+    "freshness": 0.891956335241402,
+    "velocity": 115894.33621583409,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=mAg3rdk6FLw",
+    "region": "GB"
+  },
+  {
+    "title": "Olivia Rodrigo - stupid song (acoustic)",
+    "source": "youtube",
+    "freshness": 0.8882228696329365,
+    "velocity": 31852.445919018766,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=nukExJiF-y0",
+    "region": "GB"
+  },
+  {
+    "title": "Lanterns Episode 8 Finale Trailer Breakdown & Easter Eggs",
+    "source": "youtube",
+    "freshness": 0.9082724728075396,
+    "velocity": 26805.9688662069,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=4bZzhSl-wXU",
+    "region": "GB"
+  },
+  {
+    "title": "I Opened The HOLOGRAPHIC Hero Pick... (OGRTG #10)",
+    "source": "youtube",
+    "freshness": 0.8917794172519842,
+    "velocity": 9786.88924277,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=of_x9K45mG8",
+    "region": "GB"
+  },
+  {
+    "title": "Placebo - Helen Keller - Lyric Video",
+    "source": "youtube",
+    "freshness": 0.8941636765112434,
+    "velocity": 10586.033866538528,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=8kQbg4Pqa4Q",
+    "region": "GB"
+  },
+  {
+    "title": "ELSINORE Official Trailer (2025) Andrew Scott, Olivia Colman",
+    "source": "youtube",
+    "freshness": 0.8836213484689154,
+    "velocity": 5008.6914931220745,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=XHQ9sWe40bk",
+    "region": "GB"
+  },
+  {
+    "title": "Pulling My Friends Off For Fun",
+    "source": "youtube",
+    "freshness": 0.9073911897387567,
+    "velocity": 104104.30890192442,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=ZqYLyAA3aRQ",
+    "region": "GB"
+  },
+  {
+    "title": "NAGGNEE - Gurinder Gill | Manu | Sach (OFFICIAL MUSIC VIDEO)",
+    "source": "youtube",
+    "freshness": 0.8249407929133598,
+    "velocity": 13009.136083267722,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=VJYZuXUygsI",
+    "region": "GB"
+  },
+  {
+    "title": "AVENGERS: DOOMSDAY Official Trailer (2026) Extended",
+    "source": "youtube",
+    "freshness": 0.7596960839186508,
+    "velocity": 68001.63638730567,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=lARiBU25bBo",
+    "region": "GB"
+  },
+  {
     "title": "I Pretended to be BABY GODZILLA on One Chunk!",
     "source": "youtube",
-    "freshness": 0.9666253330803571,
-    "velocity": 31035.266034581615,
+    "freshness": 0.8822489939715609,
+    "velocity": 29062.485495328954,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=u0tneKmNuyk",
     "region": "GB"
@@ -119,203 +200,122 @@
   {
     "title": "Ammiye (Official Music Video) NIJJAR | Dr Zeus | Autobiography | Latest Punjabi Song 2026",
     "source": "youtube",
-    "freshness": 0.9295618410168651,
-    "velocity": 203132.42163171322,
+    "freshness": 0.8451855019080687,
+    "velocity": 180034.1260066748,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=bnu_Db3wCv8",
     "region": "GB"
   },
   {
-    "title": "AVENGERS: DOOMSDAY Official Trailer (2026) Extended",
+    "title": "Tulsa King | Season 4 Official Trailer | Paramount+",
     "source": "youtube",
-    "freshness": 0.8440724230274471,
-    "velocity": 72486.5288679074,
+    "freshness": 0.9119364939715608,
+    "velocity": 40793.54526138768,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=lARiBU25bBo",
+    "source_url": "https://www.youtube.com/watch?v=Qq8yAg8urfY",
     "region": "GB"
   },
   {
-    "title": "Happy Wheels is on STEAM?",
+    "title": "MAGICAL MONDAY",
     "source": "youtube",
-    "freshness": 0.9763326743501984,
-    "velocity": 65423.228634023464,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=mAg3rdk6FLw",
-    "region": "GB"
-  },
-  {
-    "title": "ERASURE - Wings Of Love (Official Audio)",
-    "source": "youtube",
-    "freshness": 0.9219758621808862,
-    "velocity": 2071.932081588627,
+    "freshness": 0.9348978034953703,
+    "velocity": 55845.16425470091,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=rDEB9OuFhR4",
-    "region": "GB"
-  },
-  {
-    "title": "JURASSIC WORLD 5  | Matt Damon, Ryan Gosling, Amanda Seyfried, Elle Fanning | Concept Trailer",
-    "source": "youtube",
-    "freshness": 0.8326984150909391,
-    "velocity": 989.6584581755593,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=zY5hYWzZH2k",
-    "region": "GB"
-  },
-  {
-    "title": "I Opened The HOLOGRAPHIC Hero Pick... (OGRTG #10)",
-    "source": "youtube",
-    "freshness": 0.9761557563607804,
-    "velocity": 9430.49813784972,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=of_x9K45mG8",
-    "region": "GB"
-  },
-  {
-    "title": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Official MV",
-    "source": "youtube",
-    "freshness": 0.9308068806994048,
-    "velocity": 138462.4498268774,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=WI4__7z_dJw",
-    "region": "GB"
-  },
-  {
-    "title": "ELSINORE Official Trailer (2025) Andrew Scott, Olivia Colman",
-    "source": "youtube",
-    "freshness": 0.9679976875777117,
-    "velocity": 4888.969624093983,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=XHQ9sWe40bk",
-    "region": "GB"
-  },
-  {
-    "title": "The OWNER Gave Me ADMIN In Steal a Egg To Troll My Friends...",
-    "source": "youtube",
-    "freshness": 0.9606746055671296,
-    "velocity": 23090.31422013474,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=UeFkIdJmhNk",
+    "source_url": "https://www.youtube.com/watch?v=LB3Pd9QLhbE",
     "region": "GB"
   },
   {
     "title": "ALLDAY PROJECT - ‘CRASH’ M/V",
     "source": "youtube",
-    "freshness": 0.930909393926918,
-    "velocity": 422490.1596549864,
+    "freshness": 0.8465330548181217,
+    "velocity": 265472.1662223012,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=lQ-w9M447w0",
     "region": "GB"
   },
   {
-    "title": "LANTERNS Episode 8 Trailer Breakdown & DC Green Lantern Comic Easter Eggs | Who Shot Hal Jordan?",
-    "source": "youtube",
-    "freshness": 0.9429017881068121,
-    "velocity": 14182.539035766773,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=N_29qTiUSFo",
-    "region": "GB"
-  },
-  {
-    "title": "TV Royale | Hero Electro Wizard, Evo Electro Giant, C.H.A.O.S & MORE!",
-    "source": "youtube",
-    "freshness": 0.9664219600644841,
-    "velocity": 75754.05306362589,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=urYDkP9hvxE",
-    "region": "GB"
-  },
-  {
-    "title": "KATSEYE - Hootie Frutti (Live from Saturday Night Live)",
-    "source": "youtube",
-    "freshness": 0.7759143542443783,
-    "velocity": 107513.20811035152,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=uwfa-gyubSg",
-    "region": "GB"
-  },
-  {
     "title": "Slipknot - Wembley Stadium 2027 [Official Trailer]",
     "source": "youtube",
-    "freshness": 0.9757192484242725,
-    "velocity": 7515.996654793815,
+    "freshness": 0.8913429093154762,
+    "velocity": 6374.192297188376,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=nqjraZqwHco",
     "region": "GB"
   },
   {
-    "title": "Even Wolverine's biggest defender gave up..",
+    "title": "Wolverine - The Game That Thinks You're Stupid",
     "source": "youtube",
-    "freshness": 0.9666749362549603,
-    "velocity": 74497.58907457264,
+    "freshness": 0.9205261103736773,
+    "velocity": 46358.89152896242,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=v8G_yhCUY6c",
+    "source_url": "https://www.youtube.com/watch?v=YE6SVeVJmDU",
     "region": "GB"
   },
   {
-    "title": "Placebo - Helen Keller - Lyric Video",
+    "title": "ERASURE - Wings Of Love (Official Audio)",
     "source": "youtube",
-    "freshness": 0.9785400156200397,
-    "velocity": 6957.85577224881,
+    "freshness": 0.83759952307209,
+    "velocity": 1708.372299384519,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=8kQbg4Pqa4Q",
+    "source_url": "https://www.youtube.com/watch?v=rDEB9OuFhR4",
     "region": "GB"
   },
   {
-    "title": "Gods Don’t Give Gifts - First Teaser",
+    "title": "LANTERNS Episode 8 Trailer BREAKDOWN +- How Will it End?",
     "source": "youtube",
-    "freshness": 0.9711987457787699,
-    "velocity": 2437.0631796561465,
+    "freshness": 0.9184758458234127,
+    "velocity": 12624.800598934286,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Gc5IXUvb0ww",
+    "source_url": "https://www.youtube.com/watch?v=XC5KrQR66ls",
     "region": "GB"
   },
   {
-    "title": "Hermitcraft 11: Episode 28 - TANGO'S GAME!",
+    "title": "🔴LIVE | MONDAY FUNDAY | DAWSON OAKS TRAILER PARK | John X GIMMICK | PARTY GAMES | #BUNGULATE",
     "source": "youtube",
-    "freshness": 0.8743617748792989,
-    "velocity": 31235.801926647087,
+    "freshness": 0.9786411897387566,
+    "velocity": 250465.67407506827,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=E_RXOSNzztg",
+    "source_url": "https://www.youtube.com/watch?v=RIh_OzkyUtw",
     "region": "GB"
   },
   {
-    "title": "[MV] ABM - '展示中毒' (Displayholic) feat. 初音ミク",
+    "title": "BOYNEXTDOOR (보이넥스트도어) 'ANIMAL' Official MV",
     "source": "youtube",
-    "freshness": 0.9309127008052249,
-    "velocity": 31169.673681373682,
+    "freshness": 0.8464305415906085,
+    "velocity": 139359.77233736185,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=786OXxbw2aM",
+    "source_url": "https://www.youtube.com/watch?v=WI4__7z_dJw",
     "region": "GB"
   },
   {
-    "title": "LANTERNS Season Finale Official Trailer (2026) Green Lantern",
+    "title": "JURASSIC WORLD 5  | Matt Damon, Ryan Gosling, Amanda Seyfried, Elle Fanning | Concept Trailer",
     "source": "youtube",
-    "freshness": 0.9284755314930555,
-    "velocity": 4330.269690367106,
+    "freshness": 0.7483220759821428,
+    "velocity": 1035.8098637685027,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=uCEf82pwNzo",
+    "source_url": "https://www.youtube.com/watch?v=zY5hYWzZH2k",
     "region": "GB"
   },
   {
-    "title": "The Ice Bear... (Minecraft)",
+    "title": "MAN UTD FC 27 CAREER MODE! EPISODE 3",
     "source": "youtube",
-    "freshness": 0.9487582695882937,
-    "velocity": 23332.568609022837,
+    "freshness": 0.9102169172519842,
+    "velocity": 11989.014871618472,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Dv8iFnxNmlo",
+    "source_url": "https://www.youtube.com/watch?v=LG66ny_Wndo",
     "region": "GB"
   },
   {
-    "title": "Meek Mill - Philly Heathans (Leak)",
+    "title": "KATSEYE - Hootie Frutti (Live from Saturday Night Live)",
     "source": "youtube",
-    "freshness": 0.8820601875777117,
-    "velocity": 9611.490451532689,
+    "freshness": 0.691538015135582,
+    "velocity": 90651.92468154021,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=9LvlvcjxWxg",
+    "source_url": "https://www.youtube.com/watch?v=uwfa-gyubSg",
     "region": "GB"
   },
   {
-    "title": "world labs",
+    "title": "nfl power rankings",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -324,192 +324,201 @@
     "region": "US"
   },
   {
-    "title": "katie miller",
+    "title": "gordon johncock",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "dolly parton estate planning",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "ranulph fiennes",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "brett favre",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "pete hegseth midterm elections memo",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "lawyer",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "snap benefit changes october 1",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "seela sella",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "30 year mortgage rate",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "lieutenant stitchie",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "data center",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "warren county ky",
-    "source": "google_trends",
-    "freshness": 1.0,
-    "velocity": 50000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "gow laufey",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "sciencedaily",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "ios 27.0 1",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "Why Would I (Unreleased)",
-    "source": "youtube",
-    "freshness": 0.9725474285036375,
-    "velocity": 6463.311600264278,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=wbgiuOPZYsk",
     "region": "US"
   },
   {
     "title": "Yu Les – Jarahn ft. SHLD, Nene Morus & Rich Antony (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.5040685925248016,
-    "velocity": 531.6595454379499,
+    "freshness": 0.41969226320767195,
+    "velocity": 489.98017377121556,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6pm4s82cMuA",
     "region": "US"
   },
   {
-    "title": "Bonito, Bonito",
+    "title": "Why Would I (Unreleased)",
     "source": "youtube",
-    "freshness": 0.3560378385565477,
-    "velocity": 4399.456214916305,
+    "freshness": 0.8881710991865079,
+    "velocity": 8160.053038763893,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=dAz6NvgHR0I",
+    "source_url": "https://www.youtube.com/watch?v=wbgiuOPZYsk",
+    "region": "US"
+  },
+  {
+    "title": "Screwly G - \"Real Tears\" (Official Video)",
+    "source": "youtube",
+    "freshness": 0.941811972202381,
+    "velocity": 6269.0853787734095,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=26biFfSjX1o",
     "region": "US"
   },
   {
     "title": "Paralyzed by Hope: The Maria Bamford Story | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.9606575475512567,
-    "velocity": 19273.981846292714,
+    "freshness": 0.876281218234127,
+    "velocity": 24805.680492685828,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=36ZEt48kU7k",
     "region": "US"
   },
   {
-    "title": "Five Nights At Freddy’s Joins Fortnitemares 2026",
+    "title": "How Many Streamers Does It Take to Beat a Chess Pro?",
     "source": "youtube",
-    "freshness": 0.8139247433184524,
-    "velocity": 60646.129146187086,
+    "freshness": 0.9135828055357142,
+    "velocity": 40061.4718108069,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=6N428cNrDEg",
+    "source_url": "https://www.youtube.com/watch?v=LRJ-0PZhvq0",
     "region": "US"
   },
   {
-    "title": "ACE COMBAT 8: WINGS OF THEVE | Launch Trailer",
+    "title": "Even Wolverine's biggest defender gave up..",
     "source": "youtube",
-    "freshness": 0.9487891613078704,
-    "velocity": 19496.779472289243,
+    "freshness": 0.882298083313492,
+    "velocity": 50391.21727252839,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=F54vGYxj0ts",
+    "source_url": "https://www.youtube.com/watch?v=v8G_yhCUY6c",
     "region": "US"
   },
   {
-    "title": "Someone Was Stalking Me At My Apartment…",
+    "title": "There’s A Killer At The Laundromat…",
     "source": "youtube",
-    "freshness": 0.8654211057523148,
-    "velocity": 29148.46253620731,
+    "freshness": 0.9239316811970899,
+    "velocity": 31471.94383703498,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=OTYUQEio1Jo",
+    "source_url": "https://www.youtube.com/watch?v=VE2ecB_eRzg",
     "region": "US"
   },
   {
-    "title": "La Noche Mas Linda",
+    "title": "Meek Mill - Philly Heathens (Leak)",
     "source": "youtube",
-    "freshness": 0.3540636322073413,
-    "velocity": 11694.549030616414,
+    "freshness": 0.7976833346362434,
+    "velocity": 8022.430706107262,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=dFE6fSIdGT4",
+    "source_url": "https://www.youtube.com/watch?v=9LvlvcjxWxg",
     "region": "US"
   },
   {
-    "title": "Visionquest Trailer: Avengers Doomsday & Things You Missed!",
+    "title": "LANTERNS Episode 8 Trailer Breakdown & DC Green Lantern Comic Easter Eggs | Who Shot Hal Jordan?",
     "source": "youtube",
-    "freshness": 0.8687974285036375,
-    "velocity": 10636.179090878088,
+    "freshness": 0.8585249351653439,
+    "velocity": 8923.07671757022,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=dm0PvEvVj-M",
+    "source_url": "https://www.youtube.com/watch?v=N_29qTiUSFo",
     "region": "US"
   },
   {
-    "title": "We Got UNLIMITED STORAGE - Sky Factory Season 7 EP 3",
+    "title": "TV Royale | Hero Electro Wizard, Evo Electro Giant, C.H.A.O.S & MORE!",
     "source": "youtube",
-    "freshness": 0.8386949152761243,
-    "velocity": 36645.69480175205,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=SR2kFNC88Z4",
-    "region": "US"
-  },
-  {
-    "title": "Taylor Swift - Cleveland! (Official Lyric Video)",
-    "source": "youtube",
-    "freshness": 0.5917719655406746,
-    "velocity": 44517.208728981444,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=jfVVXYTZykw",
-    "region": "US"
-  },
-  {
-    "title": "GREMLINS 3 Official Teaser Trailer (2028)",
-    "source": "youtube",
-    "freshness": 0.5449085396147487,
-    "velocity": 1074.9147509720608,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=sekpJqwBwk8",
-    "region": "US"
-  },
-  {
-    "title": "Gartic Phone - Wildcat's MAGNUM OPUS!",
-    "source": "youtube",
-    "freshness": 0.8868314893501984,
-    "velocity": 31825.065271383886,
+    "freshness": 0.8820451071230159,
+    "velocity": 42335.947420724086,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=UGnepan-cfA",
+    "source_url": "https://www.youtube.com/watch?v=urYDkP9hvxE",
     "region": "US"
   },
   {
-    "title": "All The Things She Said",
+    "title": "[MV] ABM - '展示中毒' (Displayholic) feat. 初音ミク",
     "source": "youtube",
-    "freshness": 0.14805668776289693,
-    "velocity": 5920.400061420393,
+    "freshness": 0.8465358478637566,
+    "velocity": 24479.23160891926,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=-e1B3tjXix4",
+    "source_url": "https://www.youtube.com/watch?v=786OXxbw2aM",
+    "region": "US"
+  },
+  {
+    "title": "THE CYCLE Official Trailer (2026)",
+    "source": "youtube",
+    "freshness": 0.9087762579166667,
+    "velocity": 14044.158735730965,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=rLFb6R1atMQ",
+    "region": "US"
+  },
+  {
+    "title": "Bonito, Bonito",
+    "source": "youtube",
+    "freshness": 0.271661509239418,
+    "velocity": 4932.565594879876,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=dAz6NvgHR0I",
     "region": "US"
   }
 ]
