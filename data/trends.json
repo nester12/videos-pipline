@@ -1,144 +1,198 @@
 [
   {
-    "title": "ukraine russia",
+    "title": "beijing open",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "illegal dumping",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "nfl london",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "mark nawaqanitawase",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "alex norris",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "fernando alonso",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "arvid lindblad",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "accor stadium",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "newcastle australia",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "jai arrow",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "luke humphries",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "gerwyn price",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "snl uk",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "côte d'ivoire vs cameroon",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "robbie ure",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "odel kamara",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "ufc 332",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "marvin vettori",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "leicester tigers",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
     "title": "Morrisson - COS OF YOU (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.6985541844626323,
-    "velocity": 14481.971674155164,
+    "freshness": 0.6200542505059523,
+    "velocity": 13077.117574579099,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=QFmMN7TfXlA",
     "region": "GB"
   },
   {
-    "title": "VISIONQUEST TRAILER BREAKDOWN! 100 Easter Eggs & Details You Missed!",
+    "title": "RuneScape - Official 4th MMO Teaser Trailer",
     "source": "youtube",
-    "freshness": 0.8551943961028439,
-    "velocity": 18758.39992007917,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=kkhVtb_MhZs",
+    "freshness": 0.9128039198181217,
+    "velocity": 82438.7893437464,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=8Vu7c-8SCUc",
     "region": "GB"
   },
   {
     "title": "SIDEMEN AMONG US MEGAMIND ROLE: BURST EVERYONE'S HEADS TO WIN",
     "source": "youtube",
-    "freshness": 0.9823405601240079,
-    "velocity": 65253.444832125526,
+    "freshness": 0.9038406261673281,
+    "velocity": 80936.81378246422,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=VLwcqaXiNOA",
     "region": "GB"
   },
   {
+    "title": "Moving To The Sun",
+    "source": "youtube",
+    "freshness": 0.41835120817791016,
+    "velocity": 690.8521757167905,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=Xiae3t4k7EQ",
+    "region": "GB"
+  },
+  {
+    "title": "Hell Week 666 Trailer | Sam and Colby",
+    "source": "youtube",
+    "freshness": 0.9226418827810846,
+    "velocity": 3457.7126806253114,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=H36rDvDG4ZM",
+    "region": "GB"
+  },
+  {
+    "title": "RONALDO RETIRED??? + SPEED VS EKITIKE 🇫🇷⚽️",
+    "source": "youtube",
+    "freshness": 0.9155469753736772,
+    "velocity": 303065.49389197485,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=SOW3qCJJSlQ",
+    "region": "GB"
+  },
+  {
     "title": "All The Things She Said",
     "source": "youtube",
-    "freshness": 0.3134566315525793,
-    "velocity": 2310.8605010179426,
+    "freshness": 0.23495669759589954,
+    "velocity": 2683.1347706250876,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=04l5nCVrAGI",
     "region": "GB"
   },
   {
-    "title": "Marvel Television’s VisionQuest | Official Trailer",
+    "title": "RuneScape Reignited | Reveal Trailer",
     "source": "youtube",
-    "freshness": 0.681753589224537,
-    "velocity": 260946.40234913156,
+    "freshness": 0.9065836817228836,
+    "velocity": 5100.758158821287,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=dWx-6WlUXJE",
+    "region": "GB"
+  },
+  {
+    "title": "Harvest Nights! My New Cozy Horror Modded Minecraft SMP!",
+    "source": "youtube",
+    "freshness": 0.8869027954794974,
+    "velocity": 13962.704594140387,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=e-PFt1mYTlA",
+    "region": "GB"
+  },
+  {
+    "title": "Marin x Dafina Zeqiri - KIKI",
+    "source": "youtube",
+    "freshness": 0.8829990256382275,
+    "velocity": 11658.276944661317,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=sXKnmgmbkoE",
+    "source_url": "https://www.youtube.com/watch?v=y262dp3nqKY",
+    "region": "GB"
+  },
+  {
+    "title": "The Fractured Archive - Raids 4 Cinematic Trailer - Coming October 20th",
+    "source": "youtube",
+    "freshness": 0.908313179077381,
+    "velocity": 10060.904846192707,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=loH7UPjhWyw",
     "region": "GB"
   },
   {
     "title": "LAVA TREEHOUSE vs. TSUNAMIS in Minecraft!",
     "source": "youtube",
-    "freshness": 0.9615171474255952,
-    "velocity": 44521.065992575255,
+    "freshness": 0.8830172134689154,
+    "velocity": 33602.52207381078,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=poOJ-DkqZc8",
     "region": "GB"
@@ -146,221 +200,176 @@
   {
     "title": "Stand by Me",
     "source": "youtube",
-    "freshness": 0.2404060363144842,
-    "velocity": 3073.642432290115,
+    "freshness": 0.16190610235780434,
+    "velocity": 3250.3034940035996,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=cj37lh-71h8",
     "region": "GB"
   },
   {
-    "title": "Persona 4 Revival — Shadow Trailer",
+    "title": "Lanterns Episode 8 Finale Trailer | Hal Jordan Ending",
     "source": "youtube",
-    "freshness": 0.9082003484837963,
-    "velocity": 19710.62571091772,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Bo-lYhPhDW0",
-    "region": "GB"
-  },
-  {
-    "title": "How Many FC Points For 89 POTM Raphinha?",
-    "source": "youtube",
-    "freshness": 0.9377274648859127,
-    "velocity": 18222.032245487364,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=xBfCUGvk-Oc",
-    "region": "GB"
-  },
-  {
-    "title": "Moving To The Sun",
-    "source": "youtube",
-    "freshness": 0.4192105998065476,
-    "velocity": 2677.656929321993,
+    "freshness": 0.9290142372784391,
+    "velocity": 20212.8056889304,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Huj-UJ8LKhI",
+    "source_url": "https://www.youtube.com/watch?v=LdeB3zU2qIw",
     "region": "GB"
   },
   {
-    "title": "Least Eligible Bachelor – Official Trailer | Harsha Chemudu | Hyper Aadi|Jeevan Kumar|A WIN Original",
+    "title": "FC27 Squad Builder Showdown! ERLING HAALAND!!!",
     "source": "youtube",
-    "freshness": 0.9466180072139551,
-    "velocity": 26121.81469879585,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=SGsvsdMzWG0",
-    "region": "GB"
-  },
-  {
-    "title": "No Armor Hardcore - S3 Episode 3 - Heating up",
-    "source": "youtube",
-    "freshness": 0.9525670812880291,
-    "velocity": 38249.757095165536,
+    "freshness": 0.9008578219345238,
+    "velocity": 5053.168617359612,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=ELT9RDF26sU",
+    "source_url": "https://www.youtube.com/watch?v=CHHG025shpc",
     "region": "GB"
   },
   {
     "title": "BAD TIMES",
     "source": "youtube",
-    "freshness": 0.7570181394890872,
-    "velocity": 5922.448762314045,
+    "freshness": 0.6785182055324074,
+    "velocity": 5036.462344819252,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=FcKNmbr9W0A",
     "region": "GB"
   },
   {
-    "title": "Titans Official Trailer | Jayasurya | Vinayakan | Prince Joy | Nerambokku",
+    "title": "BHOGI Official Teaser | Sharwanand | Sampath Nandi | Anupama | Dimple Hayathi | Bheems Ceciroleo",
     "source": "youtube",
-    "freshness": 0.8046520680605158,
-    "velocity": 37043.00187710971,
+    "freshness": 0.9738240917757937,
+    "velocity": 649000.7673582681,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=fy-r1xjecLs",
+    "source_url": "https://www.youtube.com/watch?v=qjp5KL_Zg4A",
     "region": "GB"
   },
   {
-    "title": "Minecraft but you Can Equip Anything!",
+    "title": "How Many FC Points For 89 POTM Raphinha?",
     "source": "youtube",
-    "freshness": 0.9570363273197752,
-    "velocity": 32928.15063190453,
+    "freshness": 0.8592275309292328,
+    "velocity": 12541.47248587025,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=sZRnpGWY2tM",
-    "region": "GB"
-  },
-  {
-    "title": "Marin x Dafina Zeqiri - KIKI",
-    "source": "youtube",
-    "freshness": 0.9614989595949074,
-    "velocity": 15435.420852319503,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=y262dp3nqKY",
-    "region": "GB"
-  },
-  {
-    "title": "LEGO RED HOOD TRAILER",
-    "source": "youtube",
-    "freshness": 0.9435806394890873,
-    "velocity": 3490.9706800954864,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=NyxjTOex5IQ",
-    "region": "GB"
-  },
-  {
-    "title": "ADOPTED By GORILLA KING In Steal an Egg!",
-    "source": "youtube",
-    "freshness": 0.9377010098594577,
-    "velocity": 122301.62704009008,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=3xeSyUz_rdU",
+    "source_url": "https://www.youtube.com/watch?v=xBfCUGvk-Oc",
     "region": "GB"
   },
   {
     "title": "Florin Cercel ❌️ Edward Sanda - O sa fie bine [Video Oficial] 2026",
     "source": "youtube",
-    "freshness": 0.7829275310234789,
-    "velocity": 11933.062253023252,
+    "freshness": 0.7044275970667989,
+    "velocity": 9944.022318256895,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=uEJA-OZ75VU",
     "region": "GB"
   },
   {
-    "title": "Dexter: Resurrection | Season 2 Official Trailer | Paramount+",
+    "title": "VISIONQUEST TRAILER BREAKDOWN! 100 Easter Eggs & Details You Missed!",
     "source": "youtube",
-    "freshness": 0.6757714463673942,
-    "velocity": 107129.19898305404,
+    "freshness": 0.776694462146164,
+    "velocity": 14408.562974680539,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=nTOf1FIsBcs",
+    "source_url": "https://www.youtube.com/watch?v=kkhVtb_MhZs",
     "region": "GB"
   },
   {
-    "title": "I Stole Every Club’s Best Player",
+    "title": "How Long Can Centipede Get?",
     "source": "youtube",
-    "freshness": 0.919855441076389,
-    "velocity": 19717.49575047506,
+    "freshness": 0.9425410229927249,
+    "velocity": 37070.96148857345,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=dG9_NfuhbuE",
+    "source_url": "https://www.youtube.com/watch?v=GE9zGEOEk48",
     "region": "GB"
   },
   {
     "title": "Solar Eclipse",
     "source": "youtube",
-    "freshness": 0.6460475707060185,
-    "velocity": 13370.77713256288,
+    "freshness": 0.5675476367493386,
+    "velocity": 13552.63503143796,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=eJFi2TK5174",
     "region": "GB"
   },
   {
-    "title": "VISIONQUEST TRAILER: Avengers Doomsday, Ultron & Young Avengers",
+    "title": "Marvel Television’s VisionQuest | Official Trailer",
     "source": "youtube",
-    "freshness": 0.8588799119758598,
-    "velocity": 8292.203080055144,
+    "freshness": 0.6032536552678571,
+    "velocity": 224997.37701434668,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=NTEEDSQqPZ0",
+    "source_url": "https://www.youtube.com/watch?v=sXKnmgmbkoE",
     "region": "GB"
   },
   {
-    "title": "Rocket League In Real Life",
+    "title": "No Armor Hardcore - S3 Episode 3 - Heating up",
     "source": "youtube",
-    "freshness": 0.955544925203373,
-    "velocity": 89233.07661466538,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=teW7A5EoP_o",
+    "freshness": 0.8740671473313493,
+    "velocity": 26633.42994658253,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=ELT9RDF26sU",
     "region": "GB"
   },
   {
     "title": "Young Hearts Run Free",
     "source": "youtube",
-    "freshness": 0.36033659187003964,
-    "velocity": 437.2277167552926,
+    "freshness": 0.28183665791335977,
+    "velocity": 428.8469277230074,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=z2IkkaBcyn0",
     "region": "GB"
   },
   {
-    "title": "oregon state vs co state",
+    "title": "ron desantis",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "faizon brandon",
+    "title": "bradley ritger wisconsin state patrol",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "george macintyre",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "jacobe smith",
+    "title": "south cottage grove avenue",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "joe mixon",
+    "title": "bryson dechambeau",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "drake baldwin",
+    "title": "tomorrows-top 25 today",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "china open",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "daniil medvedev",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -369,156 +378,165 @@
     "region": "US"
   },
   {
-    "title": "nebraska football",
+    "title": "host snl tonight",
     "source": "google_trends",
-    "freshness": 0.65,
-    "velocity": 10000.0,
+    "freshness": 0.75,
+    "velocity": 20000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "prince harry, duke of sussex",
+    "title": "nrl",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "youngstown st vs southern il",
+    "title": "terry mclaurin",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "braves game today",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
+    "title": "YFG Fatso - \"Bougie Hoes Pt 2 [Official Music Video]",
+    "source": "youtube",
+    "freshness": 0.912755499442791,
+    "velocity": 9338.970414410664,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=Ge2xeRJAHv8",
+    "region": "US"
+  },
+  {
+    "title": "Cat In The Hat Is The SCARIEST Neighbor...",
+    "source": "youtube",
+    "freshness": 0.9174529200777116,
+    "velocity": 54337.822436011695,
     "category": "gaming",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "James 1:17 (Jesus Is King) - Kid Rock [Official Music Video}",
-    "source": "youtube",
-    "freshness": 0.7234015989351852,
-    "velocity": 18499.099809953033,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=JdXdQsP2_9M",
-    "region": "US"
-  },
-  {
-    "title": "Playing as CAT IN THE HAT To Troll My Friends in Minecraft...",
-    "source": "youtube",
-    "freshness": 0.9436446544907408,
-    "velocity": 39425.106103296435,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=ZfVMyg9vSFs",
-    "region": "US"
-  },
-  {
-    "title": "We Ruined Worms With Mods... Again",
-    "source": "youtube",
-    "freshness": 0.8437240195701058,
-    "velocity": 73550.05619698178,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Mv9TvX-WGj8",
-    "region": "US"
-  },
-  {
-    "title": "Ricardo Arjona y Grupo Firme - Amor Factura (Video Oficial)  ⁨@ArjonaOficial @GrupoFirmeOficial",
-    "source": "youtube",
-    "freshness": 0.7293490195701058,
-    "velocity": 59438.56961945916,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=WDgiZpKJBHQ",
-    "region": "US"
-  },
-  {
-    "title": "Fullychop - Rap n Clap (Official Music Video)",
-    "source": "youtube",
-    "freshness": 0.8246416783002646,
-    "velocity": 7749.370851036815,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Qd76DppRIjk",
-    "region": "US"
-  },
-  {
-    "title": "Romeo Santos, Prince Royce, Dalvin La Melodia - Menor (Official Video)",
-    "source": "youtube",
-    "freshness": 0.7173896941732805,
-    "velocity": 43713.251857719326,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=PVVKKwYeEQs",
-    "region": "US"
-  },
-  {
-    "title": "Ebenezer | Official Trailer 2 (2026 Movie) - Johnny Depp, Ian McKellen, Rupert Grint, Sam Claflin",
-    "source": "youtube",
-    "freshness": 0.6638397603108466,
-    "velocity": 239034.7420765148,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=l_Ozo1xUgbU",
+    "source_url": "https://www.youtube.com/watch?v=X0se0MEl1wo",
     "region": "US"
   },
   {
     "title": "Yu Les – Jarahn ft. SHLD, Nene Morus & Rich Antony (Official Music Video)",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 432.04894960233884,
+    "velocity": 420.0238217333914,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6pm4s82cMuA",
     "region": "US"
   },
   {
-    "title": "RuneScape Reignited | Reveal Trailer",
+    "title": "How Hard Is Finding Bigfoot?",
     "source": "youtube",
-    "freshness": 0.9850831465542328,
-    "velocity": 2482.012018044958,
+    "freshness": 0.8982994809242725,
+    "velocity": 42105.4764365093,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=dWx-6WlUXJE",
+    "source_url": "https://www.youtube.com/watch?v=VxPBaAT13gk",
+    "region": "US"
+  },
+  {
+    "title": "KAROL G, Judeline, rusowsky - BbY WOW | Letra",
+    "source": "youtube",
+    "freshness": 0.7699066237814154,
+    "velocity": 20430.732373670533,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=O9rLu25w95s",
     "region": "US"
   },
   {
     "title": "Fuerza Regida - Marlboro Rojo (Letra/Lyrics)",
     "source": "youtube",
-    "freshness": 0.8320193238029101,
-    "velocity": 5927.16276695794,
+    "freshness": 0.75351938833168,
+    "velocity": 8397.163903598494,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=n577JuALQZ4",
     "region": "US"
   },
   {
+    "title": "Fullychop - Rap n Clap (Official Music Video)",
+    "source": "youtube",
+    "freshness": 0.7461417428290344,
+    "velocity": 6639.813285396696,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=Qd76DppRIjk",
+    "region": "US"
+  },
+  {
+    "title": "Minecraft but you Can Equip Anything!",
+    "source": "youtube",
+    "freshness": 0.8785359227232142,
+    "velocity": 24926.289956696975,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=sZRnpGWY2tM",
+    "region": "US"
+  },
+  {
+    "title": "Romeo Santos, Prince Royce, Dalvin La Melodia - Menor (Official Video)",
+    "source": "youtube",
+    "freshness": 0.6388897587020502,
+    "velocity": 46687.76080908202,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=PVVKKwYeEQs",
+    "region": "US"
+  },
+  {
     "title": "Barbershop - Official Teaser | Prime Video",
     "source": "youtube",
-    "freshness": 0.9704187947023809,
-    "velocity": 5542.853445781772,
+    "freshness": 0.8919188592311508,
+    "velocity": 8702.842036519249,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=bDcaWSmSlF8",
     "region": "US"
   },
   {
-    "title": "The Last 1%",
+    "title": "I WORK AT A BAR WHERE WE ONLY SERVE ANIMALS AND HUMANS GET BLASTED (cause they suck) | Animaly Bar",
     "source": "youtube",
-    "freshness": 0.9615398264484127,
-    "velocity": 43719.158633438696,
+    "freshness": 0.9127654200777117,
+    "velocity": 14373.736950174018,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=X3zi-R-gzBE",
+    "source_url": "https://www.youtube.com/watch?v=sojQE5kGyOE",
     "region": "US"
   },
   {
-    "title": "Headlights (The Super Voice)",
+    "title": "Ricardo Arjona y Grupo Firme - Amor Factura (Video Oficial)  ⁨@ArjonaOficial @GrupoFirmeOficial",
     "source": "youtube",
-    "freshness": 0.15682091110449736,
-    "velocity": 7777.502392217307,
+    "freshness": 0.6508490840988757,
+    "velocity": 64987.40138121644,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=T4-fVVo0ZHg",
+    "source_url": "https://www.youtube.com/watch?v=WDgiZpKJBHQ",
+    "region": "US"
+  },
+  {
+    "title": "Persona 4 Revival — Shadow Trailer",
+    "source": "youtube",
+    "freshness": 0.8296999438872354,
+    "velocity": 13987.531392092338,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=Bo-lYhPhDW0",
+    "region": "US"
+  },
+  {
+    "title": "Playing as CAT IN THE HAT To Troll My Friends in Minecraft...",
+    "source": "youtube",
+    "freshness": 0.8651447190195105,
+    "velocity": 24119.63914677025,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=ZfVMyg9vSFs",
+    "region": "US"
+  },
+  {
+    "title": "James 1:17 (Jesus Is King) - Kid Rock [Official Music Video}",
+    "source": "youtube",
+    "freshness": 0.644901663463955,
+    "velocity": 16686.172626594915,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=JdXdQsP2_9M",
     "region": "US"
   }
 ]
