@@ -1,15 +1,15 @@
 [
   {
-    "title": "asahi",
+    "title": "michael sheen",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "ticketmaster uk",
+    "title": "romesh ranganathan",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -18,82 +18,82 @@
     "region": "GB"
   },
   {
-    "title": "novak djokovic",
+    "title": "jerry traitors",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "technology",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "rupert murdoch",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "bella thorne",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "dine and dash",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "kate beckinsale",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "bella traitors",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "technology",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "miranda hart",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "bella the traitors",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "hubert hurkacz",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "edward enninful",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "death notice",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "world space week 2026 theme",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "hugh bonneville",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "bella kay tickets",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "navi pillay",
-    "source": "google_trends",
-    "freshness": 0.65,
-    "velocity": 10000.0,
-    "category": "internet",
+    "category": "technology",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
     "title": "Troye Sivan - FF (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9559536395486111,
-    "velocity": 35617.77448251946,
+    "freshness": 0.9072639410912698,
+    "velocity": 35590.2551697643,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=fYaF00OZ69U",
     "region": "GB"
@@ -101,8 +101,8 @@
   {
     "title": "This City Is Ours Series 2 | Official Trailer - BBC",
     "source": "youtube",
-    "freshness": 0.8518382294957011,
-    "velocity": 3297.6342795468754,
+    "freshness": 0.8031485310383598,
+    "velocity": 3040.6355339172483,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=jf7pJqEm_BM",
     "region": "GB"
@@ -110,8 +110,8 @@
   {
     "title": "PLAYING HARDCORE MINECRAFT UNTIL WE BEAT IT DAY 4",
     "source": "youtube",
-    "freshness": 0.9381427929877646,
-    "velocity": 164824.02073879403,
+    "freshness": 0.8894530945304233,
+    "velocity": 94458.55717191406,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=5RnuKa0iPqw",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "manifest - TRALALA | Official Music Video",
     "source": "youtube",
-    "freshness": 0.9142902797602513,
-    "velocity": 222405.5961826731,
+    "freshness": 0.8656005813029101,
+    "velocity": 275481.32366071333,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=0rW7Fbm4S7g",
     "region": "GB"
@@ -128,8 +128,8 @@
   {
     "title": "Ranabaali Official Trailer (Telugu) | Vijay Deverakonda | Rashmika | Rahul Sankrityan | Ajay-Atul",
     "source": "youtube",
-    "freshness": 0.8698507956332672,
-    "velocity": 572479.8548064918,
+    "freshness": 0.821161097175926,
+    "velocity": 461419.56002894137,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=W8EKIHOq9h8",
     "region": "GB"
@@ -137,8 +137,8 @@
   {
     "title": "Hunting Down My Friends as a Hidden Entity",
     "source": "youtube",
-    "freshness": 0.9037115760565476,
-    "velocity": 116721.24541684336,
+    "freshness": 0.8550218775992063,
+    "velocity": 96135.0713615039,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=HEzmHs7iAvw",
     "region": "GB"
@@ -146,8 +146,8 @@
   {
     "title": "EZ MIL & Eminem - MADARA (feat. Neil Kaplan & Hideyoshi) [Official Lyric Video]",
     "source": "youtube",
-    "freshness": 0.9615290363740079,
-    "velocity": 11707.964246633857,
+    "freshness": 0.9128393379166666,
+    "velocity": 15151.753935729153,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9KVsSUFW5Bk",
     "region": "GB"
@@ -155,8 +155,8 @@
   {
     "title": "Forza Horizon 6 - Pre-Order Trailer | PS5 Games",
     "source": "youtube",
-    "freshness": 0.8905055575380291,
-    "velocity": 12139.233202545558,
+    "freshness": 0.8418158590806879,
+    "velocity": 10310.881025518354,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=QKo9Rnh8bkA",
     "region": "GB"
@@ -164,8 +164,8 @@
   {
     "title": "BOYS vs GIRLS: SECRET UNDERGROUND BASE Battle!",
     "source": "youtube",
-    "freshness": 0.8786123697073412,
-    "velocity": 23886.337886244313,
+    "freshness": 0.82992267125,
+    "velocity": 20361.326376958397,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=u9fMtHGBxQ0",
     "region": "GB"
@@ -173,8 +173,8 @@
   {
     "title": "Slayyyter - i think he's got a girl (Official Video)",
     "source": "youtube",
-    "freshness": 0.9559602533052248,
-    "velocity": 14193.888135360217,
+    "freshness": 0.9072705548478835,
+    "velocity": 12679.873336013197,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=fPA28AfG-JY",
     "region": "GB"
@@ -182,8 +182,8 @@
   {
     "title": "The Guy She Was Interested In Wasn't a Guy At All | Official Trailer | Crunchyroll",
     "source": "youtube",
-    "freshness": 0.9089331369031085,
-    "velocity": 85727.10801751872,
+    "freshness": 0.8602434384457672,
+    "velocity": 91210.25876062753,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=2KPFnP1othM",
     "region": "GB"
@@ -191,8 +191,8 @@
   {
     "title": "Know My Name ft. True Damage (Official Music Video) | League of Legends Worlds 2026 Anthem",
     "source": "youtube",
-    "freshness": 0.9376054252628968,
-    "velocity": 368474.3059139091,
+    "freshness": 0.8889157268055555,
+    "velocity": 282859.7330077711,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=mlFxxNsExJc",
     "region": "GB"
@@ -200,8 +200,8 @@
   {
     "title": "SR - COPPERS (Official video)",
     "source": "youtube",
-    "freshness": 0.8964347903422619,
-    "velocity": 853.959321694553,
+    "freshness": 0.8477450918849206,
+    "velocity": 779.7465419341711,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=GeeJ4CClAv4",
     "region": "GB"
@@ -209,8 +209,8 @@
   {
     "title": "Mafia III - PlayStation 5 & XBOX Series X|S Launch Trailer",
     "source": "youtube",
-    "freshness": 0.8905948432523149,
-    "velocity": 21825.274877622625,
+    "freshness": 0.8419051447949736,
+    "velocity": 19124.142702225297,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Rpys78hUE5E",
     "region": "GB"
@@ -218,8 +218,8 @@
   {
     "title": "🔴LIVE | ARC RAIDERS | FROZEN TRAIL | HUTCH X NICKMERCS | LARGEST UPDATE IN ARC HISTORY | #BUNGULATE",
     "source": "youtube",
-    "freshness": 0.9208742744692461,
-    "velocity": 141601.80096851586,
+    "freshness": 0.8721845760119048,
+    "velocity": 89096.62279967318,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=hX38ODj-rKo",
     "region": "GB"
@@ -227,8 +227,8 @@
   {
     "title": "pop it",
     "source": "youtube",
-    "freshness": 0.9561818141517857,
-    "velocity": 8632.532302277412,
+    "freshness": 0.9074921156944444,
+    "velocity": 10868.121266735383,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=lV1DPjdLBOg",
     "region": "GB"
@@ -236,8 +236,8 @@
   {
     "title": "Grey's Anatomy - Season 23 Official Trailer on ABC",
     "source": "youtube",
-    "freshness": 0.8905121712946429,
-    "velocity": 26758.736446086834,
+    "freshness": 0.8418224728373016,
+    "velocity": 29259.50678070061,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZfF1D73Vqnc",
     "region": "GB"
@@ -245,8 +245,8 @@
   {
     "title": "FC27 Squad Builder Showdown! HALL OF FUT PATO!!!",
     "source": "youtube",
-    "freshness": 0.8919771183845899,
-    "velocity": 5078.123849552235,
+    "freshness": 0.8432874199272486,
+    "velocity": 4298.51229600221,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=zllTYhyHGf0",
     "region": "GB"
@@ -254,8 +254,8 @@
   {
     "title": "RUSS MILLIONS FT BUNI - LV BAG (OFFICIAL MUSIC VIDEO)",
     "source": "youtube",
-    "freshness": 0.9023822109771825,
-    "velocity": 3021.4413942779115,
+    "freshness": 0.8536925125198412,
+    "velocity": 2776.5235906417997,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=AK3zXwKD3C8",
     "region": "GB"
@@ -263,8 +263,8 @@
   {
     "title": "A COURSE CALLED IRELAND Official Trailer (2026) Bill Murray",
     "source": "youtube",
-    "freshness": 0.8796275813475529,
-    "velocity": 11069.8116305808,
+    "freshness": 0.8309378828902116,
+    "velocity": 11042.750121680712,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=BNNPMNxHanE",
     "region": "GB"
@@ -272,8 +272,8 @@
   {
     "title": "I Returned To PRO FIFA After 6 Years..",
     "source": "youtube",
-    "freshness": 0.9169837321412037,
-    "velocity": 11884.216898444878,
+    "freshness": 0.8682940336838625,
+    "velocity": 11518.397450767481,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=QV0-kj28ck8",
     "region": "GB"
@@ -281,8 +281,8 @@
   {
     "title": "Plătesc eu diferența",
     "source": "youtube",
-    "freshness": 0.8488405443105158,
-    "velocity": 2610.37810392687,
+    "freshness": 0.8001508458531746,
+    "velocity": 3571.6223935644452,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=VkQIKcaRAik",
     "region": "GB"
@@ -290,8 +290,8 @@
   {
     "title": "Warhammer 40,000: Dawn of War IV – Space Marines Faction Trailer",
     "source": "youtube",
-    "freshness": 0.8845250681200397,
-    "velocity": 25466.360036766804,
+    "freshness": 0.8358353696626984,
+    "velocity": 19687.95269449758,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=hy8qn3VqYiE",
     "region": "GB"
@@ -299,8 +299,8 @@
   {
     "title": "🎪 Circus Village 🎪 | Minecraft Forever World | Ep. 10",
     "source": "youtube",
-    "freshness": 0.8820796316121032,
-    "velocity": 17907.51456389151,
+    "freshness": 0.8333899331547618,
+    "velocity": 15360.787935696404,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=Jc24vHpFdCY",
     "region": "GB"
@@ -308,86 +308,14 @@
   {
     "title": "Cedry2k - În Felul Meu (cu Connect-R) | Official Video",
     "source": "youtube",
-    "freshness": 0.8924946448396164,
-    "velocity": 5255.386041135022,
+    "freshness": 0.8438049463822752,
+    "velocity": 5299.2349408199025,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ktnv8f62P4w",
     "region": "GB"
   },
   {
-    "title": "9-1-1 - season 10",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "bankruptcy",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "sweep",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "delta flight status",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "ms now",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "nws",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "susan collins troy jackson debate",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "star trek: enterprise",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "orlando weather",
+    "title": "amy acton",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -396,19 +324,100 @@
     "region": "US"
   },
   {
+    "title": "ron desantis withdraws execution order",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "florida state vs louisville",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "costa rica earthquake",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "málaga - rcd espanyol",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "reimbursement",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "málaga vs espanyol",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "one piece season 3",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "lens - lyon",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "psv",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
     "title": "Bulin 47 X Kevin Wai - Dame Hombro (Video Oficial)",
     "source": "youtube",
-    "freshness": 0.8845294297817461,
-    "velocity": 54670.28968400794,
+    "freshness": 0.8358397690178572,
+    "velocity": 50874.438186664076,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=VUIgT-E4IS0",
     "region": "US"
   },
   {
-    "title": "Wendyyy - Pou ou ( Feat. Teddy Hasthagg )",
+    "title": "Wendyyy - Pou ou ( Feat. Teddy Hasthag )",
     "source": "youtube",
-    "freshness": 0.9201610435383598,
-    "velocity": 20999.862938623115,
+    "freshness": 0.8714713827744709,
+    "velocity": 17844.552939220128,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=NwruxwF--WQ",
     "region": "US"
@@ -416,8 +425,8 @@
   {
     "title": "DADDY YANKEE-  BOTZ (Bésame Otra VeZ) - OFFICIAL VIDEO",
     "source": "youtube",
-    "freshness": 0.9193640858664021,
-    "velocity": 58705.45287426063,
+    "freshness": 0.8706744251025132,
+    "velocity": 57142.00478061226,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZfdwnCz-kiA",
     "region": "US"
@@ -425,8 +434,8 @@
   {
     "title": "Episode 5: Angels Among Us Trailer | Victoria's Secret",
     "source": "youtube",
-    "freshness": 0.9253528424801587,
-    "velocity": 3652.5008933037975,
+    "freshness": 0.8766631817162698,
+    "velocity": 3599.7052352594783,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6bCsCVHJrq0",
     "region": "US"
@@ -434,8 +443,8 @@
   {
     "title": "MAX REACTS: Phoenix Cyclops Gameplay Trailer | MARVEL Tōkon: Fighting Souls",
     "source": "youtube",
-    "freshness": 0.8358058848082011,
-    "velocity": 12775.927690263037,
+    "freshness": 0.7871162240443121,
+    "velocity": 10351.976552696882,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=dCeZv8QscfQ",
     "region": "US"
@@ -443,8 +452,8 @@
   {
     "title": "The Wrong Way…",
     "source": "youtube",
-    "freshness": 0.9202387551785715,
-    "velocity": 38065.61345780329,
+    "freshness": 0.8715490944146825,
+    "velocity": 32735.91816400537,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=VRJlCf3R1t0",
     "region": "US"
@@ -452,8 +461,8 @@
   {
     "title": "Los Caro - No Hay Loco [Video Oficial]",
     "source": "youtube",
-    "freshness": 0.9262242049140211,
-    "velocity": 15399.859851565716,
+    "freshness": 0.8775345441501322,
+    "velocity": 10577.423965228694,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9_yFutQBfug",
     "region": "US"
@@ -461,8 +470,8 @@
   {
     "title": "The Altruists | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.8726180541203704,
-    "velocity": 12307.287187759113,
+    "freshness": 0.8239283933564815,
+    "velocity": 9991.200172486326,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
     "region": "US"
@@ -470,8 +479,8 @@
   {
     "title": "GUNDAM: ROGUE ORBIT Official Trailer (2026) Mecha Sci-Fi Cinematic | 4K UHD",
     "source": "youtube",
-    "freshness": 0.914164019728836,
-    "velocity": 5338.531624972156,
+    "freshness": 0.8654743589649471,
+    "velocity": 6070.271336929457,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-46ph2ofxBI",
     "region": "US"
@@ -479,8 +488,8 @@
   {
     "title": "Lil Baby, Bally Baby, Fatt Smaxk - Coast 2 Coast",
     "source": "youtube",
-    "freshness": 0.7417003953902117,
-    "velocity": 16103.531093551224,
+    "freshness": 0.6930107346263228,
+    "velocity": 14490.967373587098,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Zb3H_W6z9Ak",
     "region": "US"
@@ -488,8 +497,8 @@
   {
     "title": "🔴LIVE  -  ARC RAIDERS UPDATE - IS IT GOOD? | !adv !cheeky !starforge",
     "source": "youtube",
-    "freshness": 0.9774113742261905,
-    "velocity": 47691.511872970055,
+    "freshness": 0.9287217134623016,
+    "velocity": 15792.393680920119,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=uohQzLRsLgg",
     "region": "US"
@@ -497,8 +506,8 @@
   {
     "title": "Grand Theft Auto V #1 | Joe Bartolozzi",
     "source": "youtube",
-    "freshness": 0.8666689800462963,
-    "velocity": 25784.197364777126,
+    "freshness": 0.8179793192824074,
+    "velocity": 22213.069851723223,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=re4f3Foyd0g",
     "region": "US"
@@ -506,8 +515,8 @@
   {
     "title": "Still With Me (My Girl)",
     "source": "youtube",
-    "freshness": 0.778960646712963,
-    "velocity": 3235.9568506109863,
+    "freshness": 0.7302709859490741,
+    "velocity": 3107.086686689172,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=bqLaiUb4pBw",
     "region": "US"
