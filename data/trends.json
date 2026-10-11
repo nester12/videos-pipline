@@ -1,15 +1,6 @@
 [
   {
-    "title": "jaime winstone",
-    "source": "google_trends",
-    "freshness": 0.6000000000000001,
-    "velocity": 5000.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "lisandro martínez",
+    "title": "aberdeen fc",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -18,7 +9,52 @@
     "region": "GB"
   },
   {
-    "title": "spurs game",
+    "title": "louise goodman",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "djibouti",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "stanley tucci",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "motherwell vs celtic",
+    "source": "google_trends",
+    "freshness": 0.75,
+    "velocity": 20000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "hull city",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "celtic game",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -27,7 +63,16 @@
     "region": "GB"
   },
   {
-    "title": "fire – new york city",
+    "title": "blue",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "philadelphia eagles",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -36,244 +81,199 @@
     "region": "GB"
   },
   {
-    "title": "usa vs spain",
+    "title": "stock market today",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "melanie strictly",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
+    "freshness": 0.75,
+    "velocity": 20000.0,
     "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "marmoush",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "james maddison",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "rankingi śląsk wrocław – lech poznań",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "jagiellonia białystok – górnik zabrze",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
   },
   {
     "title": "295 (MUSIC VIDEO) SIDHU MOOSE WALA",
     "source": "youtube",
-    "freshness": 0.911195985681217,
-    "velocity": 634039.6691417771,
+    "freshness": 0.8147879294378306,
+    "velocity": 377810.92044783663,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=C9OmyNRyz4E",
     "region": "GB"
   },
   {
-    "title": "The Exorcist: Martyrs | Official Trailer",
+    "title": "Tube Movie: The Trailer | SNL UK",
     "source": "youtube",
-    "freshness": 0.8798682740410053,
-    "velocity": 122239.67464057387,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=iIEYfH-jg1Y",
+    "freshness": 0.9427856146230159,
+    "velocity": 4362.143878815125,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=OkL9oKkcG9Y",
     "region": "GB"
   },
   {
     "title": "$10,000 Every Day You Survive In Minecraft",
     "source": "youtube",
-    "freshness": 0.9838637638409391,
-    "velocity": 518880.22256183426,
+    "freshness": 0.8874565802314814,
+    "velocity": 850482.1767093847,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=h8VE9_aHd94",
-    "region": "US"
+    "region": "GB"
   },
   {
-    "title": "Tzanca Uraganu - Condeiul cu cerneala neagra [videoclip oficial] 2026",
+    "title": "BRABUS (Official Music Video) : Parmish Verma - Harman Brar Ft. Kiran Bajwa | VICTORY LAP",
     "source": "youtube",
-    "freshness": 0.8094582211309524,
-    "velocity": 15884.998924362571,
+    "freshness": 0.9633610114484127,
+    "velocity": 46994.56511767541,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Cz7Pd9n3quE",
+    "source_url": "https://www.youtube.com/watch?v=pLGRaZpNO5Y",
     "region": "GB"
   },
   {
-    "title": "Sonic the Hedgehog: Memories And Beyond Trailer",
+    "title": "Blade Runner 2099 - NYCC Trailer | Prime Video",
     "source": "youtube",
-    "freshness": 0.906410932771164,
-    "velocity": 24307.631636782007,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=gg33XSAtdZM",
+    "freshness": 0.9336470564219577,
+    "velocity": 168250.6007577034,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=AwK5KxoJsvk",
     "region": "GB"
   },
   {
-    "title": "SUPERHERO vs HUNTERS Speedrun! (Minecraft)",
+    "title": "🔴LIVE | ARC RAIDERS | FROZEN TRAIL | CLOAKZY X DRAC | SLUR SATURDAY | SUPER WEAPON 2DAY | #BUNGULATE",
     "source": "youtube",
-    "freshness": 0.9779287899140212,
-    "velocity": 36275.43999735117,
+    "freshness": 0.9826847548346561,
+    "velocity": 399663.6341814314,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=1Gu0f-2RF54",
+    "source_url": "https://www.youtube.com/watch?v=mMRlnXbuVzA",
     "region": "GB"
   },
   {
     "title": "The Aura Farmer - Horror Skunx (official song)",
     "source": "youtube",
-    "freshness": 0.8663150333002645,
-    "velocity": 39800.52712140648,
+    "freshness": 0.7699069770568783,
+    "velocity": 34495.28759488737,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=CgayKlnjmMg",
     "region": "GB"
   },
   {
+    "title": "The Exorcist: Martyrs | Official Trailer",
+    "source": "youtube",
+    "freshness": 0.7834602177976191,
+    "velocity": 96159.41733170052,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=iIEYfH-jg1Y",
+    "region": "GB"
+  },
+  {
+    "title": "ROBLOX HE ATE THEM!!",
+    "source": "youtube",
+    "freshness": 0.9259436834060847,
+    "velocity": 77812.56440771141,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=_ud34NhfpMI",
+    "region": "GB"
+  },
+  {
+    "title": "Tzanca Uraganu - Condeiul cu cerneala neagra [videoclip oficial] 2026",
+    "source": "youtube",
+    "freshness": 0.7130501648875662,
+    "velocity": 14967.212941702735,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=Cz7Pd9n3quE",
+    "region": "GB"
+  },
+  {
     "title": "Squadron 42 - Official Wishlist Trailer",
     "source": "youtube",
-    "freshness": 0.9779403639880953,
-    "velocity": 26346.331185012725,
+    "freshness": 0.881532307744709,
+    "velocity": 22986.174506977684,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=pTHEkEZhMgM",
     "region": "GB"
   },
   {
-    "title": "100,000 FC Points Decide My Team! (Future Stars)",
+    "title": "1 Year in Alaska in ULTRA REALISTIC Minecraft",
     "source": "youtube",
-    "freshness": 0.954155641765873,
-    "velocity": 12112.540955002443,
+    "freshness": 0.9023639876388889,
+    "velocity": 66933.97762391262,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=lHmbGd28n0A",
+    "source_url": "https://www.youtube.com/watch?v=jccqEa0Qd40",
+    "region": "GB"
+  },
+  {
+    "title": "Homewrecker (Reimagined Live From Sound City)",
+    "source": "youtube",
+    "freshness": 0.9410362759986772,
+    "velocity": 12878.782085811217,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=MEXFXhT9Ci8",
+    "region": "GB"
+  },
+  {
+    "title": "Official Season 3 Part 2 Trailer | One-Punch Man | VIZ",
+    "source": "youtube",
+    "freshness": 0.9013686172685185,
+    "velocity": 67081.60229780863,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=iOFHoZWeEw4",
+    "region": "GB"
+  },
+  {
+    "title": "JYNXZI CUP w/ STOMPN & MINGO",
+    "source": "youtube",
+    "freshness": 0.9420233791732804,
+    "velocity": 69492.91332028556,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=rWlcQpa6Rbs",
     "region": "GB"
   },
   {
     "title": "French Montana, Max B, Skepta, D-Block Europe - Ever Since U Left Me (UK Remix) [Official Video]",
     "source": "youtube",
-    "freshness": 0.8410207211309524,
-    "velocity": 4357.14914232318,
+    "freshness": 0.7446126648875662,
+    "velocity": 3606.1703595825634,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=jvsXV3m26e8",
     "region": "GB"
   },
   {
-    "title": "Bloodaxe - Teaser Trailer | Prime Video",
+    "title": "Sonic the Hedgehog: Memories And Beyond Trailer",
     "source": "youtube",
-    "freshness": 0.8544334195436508,
-    "velocity": 30998.129189548144,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
-    "region": "GB"
-  },
-  {
-    "title": "Vanguards: 2nd Anniversary",
-    "source": "youtube",
-    "freshness": 0.9809016735119047,
-    "velocity": 34821.36313458155,
+    "freshness": 0.8100028765277778,
+    "velocity": 16630.67158154489,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=CeIWPZd59Zg",
+    "source_url": "https://www.youtube.com/watch?v=gg33XSAtdZM",
     "region": "GB"
   },
   {
-    "title": "Am gresit si eu, ai gresit si tu (Anthos Cover)",
+    "title": "FC27 Squad Builder Showdown! FUTURE STARS LEWIS-SKELLY!!!",
     "source": "youtube",
-    "freshness": 0.05,
-    "velocity": 1410.8545853346116,
-    "category": "technology",
-    "source_url": "https://www.youtube.com/watch?v=6FUiOSy_ZLw",
-    "region": "GB"
-  },
-  {
-    "title": "Hello Neighbor: Welcome To Raven Brooks Season 3 Trailer",
-    "source": "youtube",
-    "freshness": 0.9838778639880953,
-    "velocity": 6199.698407120187,
+    "freshness": 0.9109784056283069,
+    "velocity": 4766.6337176753805,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=rs6PTRMoFnE",
-    "region": "GB"
-  },
-  {
-    "title": "NOOB vs PRO: ROLLER COASTERS in Mario Odyssey!",
-    "source": "youtube",
-    "freshness": 0.9746252184854497,
-    "velocity": 39307.164623813005,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=-638-CvJhNk",
+    "source_url": "https://www.youtube.com/watch?v=AHZnNW0_ANk",
     "region": "GB"
   },
   {
     "title": "Asake - Oba (Official Video)",
     "source": "youtube",
-    "freshness": 0.9422095438822752,
-    "velocity": 18758.555460820862,
+    "freshness": 0.8458014876388888,
+    "velocity": 13750.209858033852,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=prqNqQUWXBE",
     "region": "GB"
   },
   {
-    "title": "Avengers Doomsday Trailer Spoof - TOON SANDWICH",
+    "title": "Avengers Doomsday Trailer NYCC Footage & Easter Eggs",
     "source": "youtube",
-    "freshness": 0.9601162899140212,
-    "velocity": 17334.174503470673,
+    "freshness": 0.931833233670635,
+    "velocity": 18930.115529755996,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=7wul_ifI1c4",
-    "region": "GB"
-  },
-  {
-    "title": "HOUSE HEAD vs. Security House Battle! - Minecraft",
-    "source": "youtube",
-    "freshness": 0.9734562370039682,
-    "velocity": 21817.51877854037,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=cFp6bYJq0Ks",
-    "region": "GB"
-  },
-  {
-    "title": "Gunna - pop it [Official Video]",
-    "source": "youtube",
-    "freshness": 0.8350650333002645,
-    "velocity": 35071.65146610446,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=48rRv5ISfrg",
-    "region": "GB"
-  },
-  {
-    "title": "The Walking Dead: Daryl Dixon Final Season | Official Teaser Trailer | February 2027 | AMC & AMC+",
-    "source": "youtube",
-    "freshness": 0.8767019380621693,
-    "velocity": 14375.394920862922,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=CJh6qIvxOoc",
+    "source_url": "https://www.youtube.com/watch?v=T7Lo73zSjCA",
     "region": "GB"
   },
   {
     "title": "The Game Of Niche Ball Knowledge",
     "source": "youtube",
-    "freshness": 0.9796946629298942,
-    "velocity": 37851.88275582921,
+    "freshness": 0.8832866066865079,
+    "velocity": 67422.89413836352,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=y17156N1o-M",
     "region": "GB"
@@ -281,8 +281,8 @@
   {
     "title": "Grimes - ACCELERANDO (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8469747555224868,
-    "velocity": 14081.437893125682,
+    "freshness": 0.7505666992791006,
+    "velocity": 11298.754842037724,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=AVu5p2DMIf8",
     "region": "GB"
@@ -290,32 +290,41 @@
   {
     "title": "MOBLAND Season 2 Episode 5 Trailer Explained",
     "source": "youtube",
-    "freshness": 0.9749459856812169,
-    "velocity": 2172.9242866147006,
+    "freshness": 0.8785379294378307,
+    "velocity": 2517.8838096280097,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=2YGXOznhmx0",
     "region": "GB"
   },
   {
-    "title": "Dream's \"UNCUT\" Manhunts Are a Lie",
+    "title": "I Built a Police Station That's Responsible for 99.9% of All Crime - Police Chief Simulator",
     "source": "youtube",
-    "freshness": 0.9184016735119047,
-    "velocity": 29261.439867371228,
+    "freshness": 0.881411606686508,
+    "velocity": 63712.57099839479,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=WsWNWzSwVUA",
+    "source_url": "https://www.youtube.com/watch?v=xKf0fjMwJic",
     "region": "GB"
   },
   {
-    "title": "EZ MIL & Eminem - MADARA (feat. Neil Kaplan & Hideyoshi) [Official Lyric Video]",
+    "title": "Gunna - pop it [Official Video]",
     "source": "youtube",
-    "freshness": 0.7751625862103175,
-    "velocity": 20244.364136158496,
+    "freshness": 0.7386569770568783,
+    "velocity": 31572.239545133372,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=9KVsSUFW5Bk",
+    "source_url": "https://www.youtube.com/watch?v=48rRv5ISfrg",
     "region": "GB"
   },
   {
-    "title": "mls",
+    "title": "todays weather",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "météo",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -324,7 +333,16 @@
     "region": "US"
   },
   {
-    "title": "hamza abdelkarim",
+    "title": "brandon nakashima",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "jordan spieth",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -333,7 +351,7 @@
     "region": "US"
   },
   {
-    "title": "aaron philo",
+    "title": "dallas mavericks",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -342,34 +360,16 @@
     "region": "US"
   },
   {
-    "title": "monaco vs toulouse",
+    "title": "rockstar games gta vi",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
-    "category": "internet",
+    "category": "gaming",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "luke shaw",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "psg vs le mans",
-    "source": "google_trends",
-    "freshness": 0.6000000000000001,
-    "velocity": 5000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "karrueche tran",
+    "title": "ll",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -378,28 +378,19 @@
     "region": "US"
   },
   {
-    "title": "norfolk state football",
+    "title": "como vs roma",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.56,
+    "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "espn ncaaf",
+    "title": "weather forecast today",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "napoli vs frosinone",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
+    "freshness": 0.75,
+    "velocity": 20000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
@@ -407,127 +398,91 @@
   {
     "title": "Anuel AA - Vuelve (Video Oficial)",
     "source": "youtube",
-    "freshness": 0.8593068855340609,
-    "velocity": 87486.93616267484,
+    "freshness": 0.7628993228439154,
+    "velocity": 78709.13031156299,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=3juuih0WdH8",
     "region": "US"
   },
   {
-    "title": "This Might Be The Scariest Minecraft Horror Mod…",
-    "source": "youtube",
-    "freshness": 0.8767754701901456,
-    "velocity": 48798.5515603703,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=GF4RGA8daaE",
-    "region": "US"
-  },
-  {
-    "title": "5.0",
-    "source": "youtube",
-    "freshness": 0.6624699146345899,
-    "velocity": 5427.540870468051,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=gpjocObn2BQ",
-    "region": "US"
-  },
-  {
-    "title": "🔴LIVE | ARC RAIDERS | w/ HUTCHMF | DAY 2 | SUPER WEAPONS | #BUNGULATE",
-    "source": "youtube",
-    "freshness": 0.9303419384441137,
-    "velocity": 110182.95342920562,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=LPOVADFfhmI",
-    "region": "US"
-  },
-  {
-    "title": "Marvel Studios Zodiac Teaser Trailer 2028",
-    "source": "youtube",
-    "freshness": 0.8837662109308863,
-    "velocity": 17196.304815273343,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=KWUOVPROIto",
-    "region": "US"
-  },
-  {
-    "title": "Bulin 47 X Kevin Wai - Dame Hombro (Video Oficial)",
-    "source": "youtube",
-    "freshness": 0.6981627056398809,
-    "velocity": 51752.7522481982,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=VUIgT-E4IS0",
-    "region": "US"
-  },
-  {
-    "title": "Absolute Justice | Official Teaser Trailer | DC",
-    "source": "youtube",
-    "freshness": 0.8425327453224206,
-    "velocity": 60649.38190623365,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=5T6U5Fqq7w4",
-    "region": "US"
-  },
-  {
-    "title": "This Game is Oar'some",
-    "source": "youtube",
-    "freshness": 0.860173287650463,
-    "velocity": 60077.72118031246,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=GkmRKFtNddA",
-    "region": "US"
-  },
-  {
     "title": "Saii Kay - Iau Tar Les (ft. Heff Lourie, Maix Kay & Donz Kay)",
     "source": "youtube",
-    "freshness": 0.4838786447933201,
-    "velocity": 289.9604141449115,
+    "freshness": 0.3874710821031746,
+    "velocity": 268.90858684655643,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=C58utn68Qho",
     "region": "US"
   },
   {
-    "title": "How Does DOOM Stop Stormbreaker in Avengers: Doomsday?",
+    "title": "5.0",
     "source": "youtube",
-    "freshness": 0.8710215019361772,
-    "velocity": 5059.213525512361,
+    "freshness": 0.5660623519444445,
+    "velocity": 6824.384001081212,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=piYJdGVrWNU",
+    "source_url": "https://www.youtube.com/watch?v=gpjocObn2BQ",
     "region": "US"
   },
   {
-    "title": "I Built a Police Station That's Responsible for 99.9% of All Crime - Police Chief Simulator",
+    "title": "Los Dos De Tamaulipas - 5.0 (Video Oficial)",
     "source": "youtube",
-    "freshness": 0.9778187902959656,
-    "velocity": 52978.39999169497,
+    "freshness": 0.7922809366005291,
+    "velocity": 7242.296737805949,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=k2FIMmLaz7w",
+    "region": "US"
+  },
+  {
+    "title": "They’re Watching Me…",
+    "source": "youtube",
+    "freshness": 0.9231787540608466,
+    "velocity": 41989.25215586283,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=xKf0fjMwJic",
+    "source_url": "https://www.youtube.com/watch?v=x3KYBOQzeQ8",
     "region": "US"
   },
   {
-    "title": "La Gigi Ft Yailin La Mas Viral - La Azarosa Remix (Video Oficial)",
+    "title": "Amy Grant & Natalie Grant - Dolly Parton Tribute GMA Dove Awards 2026",
     "source": "youtube",
-    "freshness": 0.8648260654282407,
-    "velocity": 10498.598781324466,
+    "freshness": 0.8815038201984127,
+    "velocity": 8566.631404808355,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=hdhVjFaxi2o",
+    "region": "US"
+  },
+  {
+    "title": "KAROL G - Alguien que te amaba (Letra/Lyrics)",
+    "source": "youtube",
+    "freshness": 0.5868708836904761,
+    "velocity": 3686.225067760487,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=PVffwBh7v4s",
+    "region": "US"
+  },
+  {
+    "title": "70 Counterpoints To An Old Earth - DEBUNKED (TRAILER)",
+    "source": "youtube",
+    "freshness": 0.954675116494709,
+    "velocity": 8404.402658511051,
     "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=WDrwRHNddMM",
+    "source_url": "https://www.youtube.com/watch?v=IGd2ymYLwvU",
     "region": "US"
   },
   {
-    "title": "Something Is Still Here…",
+    "title": "🔴 LIVE 🏈 Alabama Crimson Tide vs Georgia Bulldogs / NCAAF Week 6 / CFB 27 Sim + Scoreboard!",
     "source": "youtube",
-    "freshness": 0.9719672691319444,
-    "velocity": 68372.03164137207,
+    "freshness": 0.9579373519444444,
+    "velocity": 45320.86219756423,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=w8RjTkM8-rU",
+    "source_url": "https://www.youtube.com/watch?v=WDt07WxjIGE",
     "region": "US"
   },
   {
-    "title": "hunnid PROBLEMS.",
+    "title": "Ayra Starr - Heaven Baby ft. ZAYN",
     "source": "youtube",
-    "freshness": 0.770064160666336,
-    "velocity": 4508.814712149619,
+    "freshness": 0.17343173025132275,
+    "velocity": 49242.41079093204,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=MWULhyrh998",
+    "source_url": "https://www.youtube.com/watch?v=2ZTcvsdMR1c",
     "region": "US"
   }
 ]
