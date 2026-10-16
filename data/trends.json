@@ -1,69 +1,6 @@
 [
   {
-    "title": "the troubles",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "fa youth cup",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "nico mantl",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "anthony foley",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "lurgan",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "indw vs zimw",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "bill gates",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "motorway closure m5",
+    "title": "philip foster brookside",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -72,7 +9,7 @@
     "region": "GB"
   },
   {
-    "title": "poundland board new directors appointment",
+    "title": "zacharia",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -81,10 +18,73 @@
     "region": "GB"
   },
   {
-    "title": "lions rugby",
+    "title": "burnley fc",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "mw4",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "katie price",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "stacey solomon orange bathroom renovation",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "zelensky",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "albania anti government student movement",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "lewis cope",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "dinamo bucurești - botoşani",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
@@ -92,8 +92,8 @@
   {
     "title": "Olivia Rodrigo - expectations (feat. Chappell Roan) (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9163800921395503,
-    "velocity": 300969.5688860122,
+    "freshness": 0.8917697836111111,
+    "velocity": 287298.6846648864,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=gsZauX8gwxo",
     "region": "GB"
@@ -101,8 +101,8 @@
   {
     "title": "Grand Theft Auto VI Launch Trailer",
     "source": "youtube",
-    "freshness": 0.8509303566898148,
-    "velocity": 1023380.2881407056,
+    "freshness": 0.8263200481613757,
+    "velocity": 946935.889956471,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
     "region": "GB"
@@ -110,8 +110,8 @@
   {
     "title": "Save Hay Day from the Red Revenant!",
     "source": "youtube",
-    "freshness": 0.9645298937268518,
-    "velocity": 224099.5071207559,
+    "freshness": 0.9399195851984127,
+    "velocity": 205711.20100501968,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ikznGAyMjJk",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "KAALI HOODIE (MUSIC VIDEO) SIDHU MOOSE WALA FT BOHEMIA | THE KIDD",
     "source": "youtube",
-    "freshness": 0.9639991397585979,
-    "velocity": 311602.01175663836,
+    "freshness": 0.9393888312301587,
+    "velocity": 727269.9969076171,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-zvixJnZuUU",
     "region": "GB"
@@ -128,8 +128,8 @@
   {
     "title": "GTA 6 Launch Trailer: Everything New YOU MISSED",
     "source": "youtube",
-    "freshness": 0.8774134916104497,
-    "velocity": 48563.85819070518,
+    "freshness": 0.8528031830820106,
+    "velocity": 44597.23767144282,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=FV93IVwJP_4",
     "region": "GB"
@@ -137,26 +137,26 @@
   {
     "title": "1000 Players Simulate End Prison in Minecraft",
     "source": "youtube",
-    "freshness": 0.8989892191236772,
-    "velocity": 161300.26255454504,
+    "freshness": 0.8743789105952381,
+    "velocity": 159818.62106788295,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=9-j9GWjyWpY",
     "region": "GB"
   },
   {
-    "title": "Justice - Flower In A Hurricane (ft Tame Impala, SZA, King Gizzard & the Lizard Wizard) [from GTAVI]",
+    "title": "Zach Bryan - Lies (feat. Lana Del Rey) (Official Audio)",
     "source": "youtube",
-    "freshness": 0.8547663355257936,
-    "velocity": 62268.37502485806,
+    "freshness": 0.9160670719708994,
+    "velocity": 9651.839413683616,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=5dPwBWvmcbQ",
+    "source_url": "https://www.youtube.com/watch?v=nhR-Ka-aKUs",
     "region": "GB"
   },
   {
     "title": "RAMAYANA: RISE OF A LEGEND - NEW TRAILER IN HINDI | RANBIR KAPOOR | YASH | SAI PALLAVI | SUNNY DEOL",
     "source": "youtube",
-    "freshness": 0.8843033725628306,
-    "velocity": 174636.52649537844,
+    "freshness": 0.8596930640343916,
+    "velocity": 185722.79587773708,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=T0Uduwg2W2w",
     "region": "GB"
@@ -164,80 +164,134 @@
   {
     "title": "LET'S HAVE FUN 🤩 + Speed Vs. Cole Palmer ⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿🥶",
     "source": "youtube",
-    "freshness": 0.8942884916104498,
-    "velocity": 128233.38020743873,
+    "freshness": 0.8696781830820106,
+    "velocity": 107809.53531864159,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=L6S9Vb3RLy4",
     "region": "GB"
   },
   {
-    "title": "Zach Bryan - Lies (feat. Lana Del Rey) (Official Audio)",
+    "title": "Fontaines D.C. - Japan (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9406773804993386,
-    "velocity": 6543.115681202083,
+    "freshness": 0.9453560931349206,
+    "velocity": 19151.91966177864,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=nhR-Ka-aKUs",
+    "source_url": "https://www.youtube.com/watch?v=GPNbnromGgk",
     "region": "GB"
   },
   {
     "title": "The Beekeeper 2 | Official Teaser Trailer",
     "source": "youtube",
-    "freshness": 0.8612808857903439,
-    "velocity": 278067.8181831007,
+    "freshness": 0.8366705772619047,
+    "velocity": 263452.55404733814,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=5HK3wimDxBI",
     "region": "GB"
   },
   {
-    "title": "iShowSpeed vs Cole Palmer EA FC 1v1!",
+    "title": "I Secretly Joined My Hater SMP",
     "source": "youtube",
-    "freshness": 0.8991231476951058,
-    "velocity": 38430.46208362869,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=iSKdHn2A4UA",
+    "freshness": 0.9465945190608466,
+    "velocity": 49115.9236408349,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=RqCh847-DZo",
     "region": "GB"
   },
   {
-    "title": "Zara Larsson - Blue Moon (Official Music Video)",
+    "title": "Justice - Flower In A Hurricane (ft Tame Impala, SZA, King Gizzard & the Lizard Wizard) [from GTAVI]",
     "source": "youtube",
-    "freshness": 0.7973324730919312,
-    "velocity": 70265.79667375553,
+    "freshness": 0.8301560269973545,
+    "velocity": 68044.34926205834,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=LB72Mbd88mU",
+    "source_url": "https://www.youtube.com/watch?v=5dPwBWvmcbQ",
     "region": "GB"
   },
   {
     "title": "GTA 6: 33 New Details From the Launch Trailer",
     "source": "youtube",
-    "freshness": 0.903762697959656,
-    "velocity": 15292.555532129569,
+    "freshness": 0.879152389431217,
+    "velocity": 14230.387553707764,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=6jHq4CMBbDk",
     "region": "GB"
   },
   {
-    "title": "Our Worst Fishing Trip So Far...",
+    "title": "iShowSpeed vs Cole Palmer EA FC 1v1!",
     "source": "youtube",
-    "freshness": 0.8879277111871693,
-    "velocity": 79693.93895196878,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=OYK-Ft1n5RM",
+    "freshness": 0.8745128391666667,
+    "velocity": 38618.11318999188,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=iSKdHn2A4UA",
     "region": "GB"
   },
   {
     "title": "Housewife",
     "source": "youtube",
-    "freshness": 0.9168794307638889,
-    "velocity": 21806.60452172313,
+    "freshness": 0.8922691222354497,
+    "velocity": 22872.305717343635,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=FXk4oLgkKL0",
     "region": "GB"
   },
   {
+    "title": "Kai Cenat Reacts To GTA 6 - Official Launch Trailer",
+    "source": "youtube",
+    "freshness": 0.8872393603306878,
+    "velocity": 12916.160533327418,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=B6biwxo0dMQ",
+    "region": "GB"
+  },
+  {
+    "title": "Our Worst Fishing Trip So Far...",
+    "source": "youtube",
+    "freshness": 0.8633174026587301,
+    "velocity": 72573.20420135127,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=OYK-Ft1n5RM",
+    "region": "GB"
+  },
+  {
+    "title": "Zara Larsson - Blue Moon (Official Music Video)",
+    "source": "youtube",
+    "freshness": 0.7727221645634921,
+    "velocity": 69497.90463727774,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=LB72Mbd88mU",
+    "region": "GB"
+  },
+  {
+    "title": "THE BEEKEEPER 2 Official Trailer (2027) Jason Statham",
+    "source": "youtube",
+    "freshness": 0.8380991486904762,
+    "velocity": 3838.1074102870007,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=Gup9TgrIDto",
+    "region": "GB"
+  },
+  {
+    "title": "My PARENTS play he ate them..",
+    "source": "youtube",
+    "freshness": 0.9191953788492063,
+    "velocity": 32521.78745299276,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=xueUQxiEt4Q",
+    "region": "GB"
+  },
+  {
+    "title": "U2 - The Greatest Show On Earth",
+    "source": "youtube",
+    "freshness": 0.844152389431217,
+    "velocity": 29579.642895019482,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=TUuVOW7XogA",
+    "region": "GB"
+  },
+  {
     "title": "THIS IS INSANE! NEW GTA 6 LAUNCH TRAILER REACTION & ANALYSIS!",
     "source": "youtube",
-    "freshness": 0.8735014545734128,
-    "velocity": 8941.520093372987,
+    "freshness": 0.8488911460449735,
+    "velocity": 8021.141345901647,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=LmJ9AqP_y0Y",
     "region": "GB"
@@ -245,113 +299,32 @@
   {
     "title": "PLAYING FORTNITE RANKED UNTIL IM UNREAL DAY 1",
     "source": "youtube",
-    "freshness": 0.9526648143617725,
-    "velocity": 118806.97042113858,
+    "freshness": 0.9280545058333334,
+    "velocity": 80295.16048103684,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=uJtaBkIAvGs",
     "region": "GB"
   },
   {
-    "title": "U2 - The Greatest Show On Earth",
-    "source": "youtube",
-    "freshness": 0.8687626979596561,
-    "velocity": 30600.692931936603,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=TUuVOW7XogA",
-    "region": "GB"
-  },
-  {
-    "title": "Kai Cenat Reacts To GTA 6 - Official Launch Trailer",
-    "source": "youtube",
-    "freshness": 0.911849668859127,
-    "velocity": 14179.84841526886,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=B6biwxo0dMQ",
-    "region": "GB"
-  },
-  {
-    "title": "EASY 15-0 w/ MY 6,000,000 COIN PRO TEAM!!",
-    "source": "youtube",
-    "freshness": 0.8800093910813492,
-    "velocity": 6184.412557440439,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=tLa5B_0bdOI",
-    "region": "GB"
-  },
-  {
     "title": "James Marriott - Lovestruck (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9109204360548941,
-    "velocity": 3545.385884085037,
+    "freshness": 0.886310127526455,
+    "velocity": 3219.022329191173,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=QwIH87VTc-E",
     "region": "GB"
   },
   {
-    "title": "THE BEEKEEPER 2 Official Trailer (2027) Jason Statham",
-    "source": "youtube",
-    "freshness": 0.8627094572189153,
-    "velocity": 3567.382335459274,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Gup9TgrIDto",
-    "region": "GB"
-  },
-  {
-    "title": "Would You Rather: SUPERHERO Edition! (Minecraft)",
-    "source": "youtube",
-    "freshness": 0.862798742933201,
-    "velocity": 22347.86202003928,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=_bAVpSXmbcs",
-    "region": "GB"
-  },
-  {
-    "title": "Fontaines D.C. - Japan (Official Music Video)",
-    "source": "youtube",
-    "freshness": 0.9699664016633598,
-    "velocity": 13563.381193660623,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=GPNbnromGgk",
-    "region": "GB"
-  },
-  {
-    "title": "crwv",
+    "title": "katie zacharia",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 1.0,
+    "velocity": 50000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "aapl",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "severe thunderstorm warning",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "darius slayton",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "bradley whitford",
+    "title": "jeremiyah love",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -360,7 +333,16 @@
     "region": "US"
   },
   {
-    "title": "glenn hughes heart operation",
+    "title": "stock market",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "police officer",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -369,7 +351,16 @@
     "region": "US"
   },
   {
-    "title": "domhnall gleeson",
+    "title": "severe thunderstorm watch",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "harry and meghan news",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -378,7 +369,16 @@
     "region": "US"
   },
   {
-    "title": "gallatin explosion",
+    "title": "cardinals depth chart",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "marcus freeman",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -387,82 +387,100 @@
     "region": "US"
   },
   {
-    "title": "martial law",
+    "title": "qqq",
     "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
+    "freshness": 0.56,
+    "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "The Chosen: Season 6 Official Trailer",
-    "source": "youtube",
-    "freshness": 0.8568557582407408,
-    "velocity": 54780.28348527626,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=VVqrE7azRqw",
-    "region": "US"
-  },
-  {
-    "title": "🔴LIVE | ARC RAIDERS | w/ CLOAKZY X DRAC | SUPER WEAPON FRIGATE RUN | THICC MEN THURSDAY | #BUNGULATE",
-    "source": "youtube",
-    "freshness": 0.9584662079761905,
-    "velocity": 119976.31773460149,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=HPs56IKcE4Q",
-    "region": "US"
-  },
-  {
-    "title": "I Shouldn’t Have Opened This Chest…",
-    "source": "youtube",
-    "freshness": 0.9044599249074075,
-    "velocity": 30461.849419019607,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=jHNnIAHYBNQ",
+    "title": "mariana van zeller",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
     "title": "Lodi When",
     "source": "youtube",
-    "freshness": 0.9403726233201058,
-    "velocity": 2975.9221091351806,
+    "freshness": 0.9157622059242725,
+    "velocity": 4833.751029181461,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=j1gcM_oGCnk",
     "region": "US"
   },
   {
-    "title": "ROAM0120.exe",
+    "title": "The Chosen: Season 6 Official Trailer",
     "source": "youtube",
-    "freshness": 0.8865349910449736,
-    "velocity": 63876.10107910109,
+    "freshness": 0.8322453408449074,
+    "velocity": 53001.508540992945,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=VVqrE7azRqw",
+    "region": "US"
+  },
+  {
+    "title": "I Shouldn’t Have Opened This Chest…",
+    "source": "youtube",
+    "freshness": 0.8798495075115741,
+    "velocity": 27840.382881559482,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=rMvqiIWGZ5g",
+    "source_url": "https://www.youtube.com/watch?v=jHNnIAHYBNQ",
+    "region": "US"
+  },
+  {
+    "title": "🔴LIVE | ARC RAIDERS | w/ CLOAKZY X DRAC | SUPER WEAPON FRIGATE RUN | THICC MEN THURSDAY | #BUNGULATE",
+    "source": "youtube",
+    "freshness": 0.9338557905803572,
+    "velocity": 77326.53282621996,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=HPs56IKcE4Q",
     "region": "US"
   },
   {
     "title": "Meek Mill - Wanna Be Free (feat. G Herbo) [Visualizer]",
     "source": "youtube",
-    "freshness": 0.9401874381349207,
-    "velocity": 11613.9602221466,
+    "freshness": 0.9155770207390873,
+    "velocity": 12375.396678598123,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=o5ZoZ7xDua4",
     "region": "US"
   },
   {
-    "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
+    "title": "ROAM0120.exe",
     "source": "youtube",
-    "freshness": 0.9044830730555555,
-    "velocity": 33222.4211241036,
+    "freshness": 0.8619245736491402,
+    "velocity": 59784.05101830006,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=rMvqiIWGZ5g",
+    "region": "US"
+  },
+  {
+    "title": "RAMAYANA: RISE OF A LEGEND - NEW TRAILER",
+    "source": "youtube",
+    "freshness": 0.8322932905803572,
+    "velocity": 319885.08501328056,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ckPbVDXw9Gc",
+    "source_url": "https://www.youtube.com/watch?v=AYkPRN874m8",
+    "region": "US"
+  },
+  {
+    "title": "En realidad",
+    "source": "youtube",
+    "freshness": 0.9143551292046957,
+    "velocity": 5778.568609060202,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=goGLLHNSPLU",
     "region": "US"
   },
   {
     "title": "GTA 6: Launch Trailer Reaction | Joe Bartolozzi",
     "source": "youtube",
-    "freshness": 0.9017532450132275,
-    "velocity": 11877.9519817459,
+    "freshness": 0.8771428276173941,
+    "velocity": 11018.989599939474,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=p6qmURLyaWs",
     "region": "US"
@@ -470,8 +488,8 @@
   {
     "title": "Hiding From A Monster Who Mimics Humans [Pale Mimic]",
     "source": "youtube",
-    "freshness": 0.8857711021560847,
-    "velocity": 29171.950572945698,
+    "freshness": 0.8611606847602513,
+    "velocity": 26836.30726192761,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=VbT5lcJDty8",
     "region": "US"
@@ -479,28 +497,28 @@
   {
     "title": "YFN Lucci - Everything I Said I Am [Official Trailer]",
     "source": "youtube",
-    "freshness": 0.9094268561243386,
-    "velocity": 6445.592965714597,
+    "freshness": 0.8848164387285052,
+    "velocity": 6205.7259834395745,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=g7BYwZ3QFKo",
     "region": "US"
   },
   {
-    "title": "Cyberpunk: Edgerunners 2 | Official Trailer",
+    "title": "FlightReacts To Grand Theft Auto VI Launch Trailer + EVERYTHING YOU MISSED BREAKDOWN REVIEW!",
     "source": "youtube",
-    "freshness": 0.7443309566534391,
-    "velocity": 64634.712993764275,
+    "freshness": 0.871874970474537,
+    "velocity": 8482.7390440538,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=RgvsbigEylQ",
+    "source_url": "https://www.youtube.com/watch?v=ygtGV_qeSA0",
     "region": "US"
   },
   {
-    "title": "Wanuga Tarugana(ft.Jah-Ben & Java Gee)",
+    "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
     "source": "youtube",
-    "freshness": 0.6446236153835978,
-    "velocity": 196.97425892707787,
+    "freshness": 0.8798726556597222,
+    "velocity": 31667.485644277713,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=WBN1AoBoFQ8",
+    "source_url": "https://www.youtube.com/watch?v=ckPbVDXw9Gc",
     "region": "US"
   }
 ]
