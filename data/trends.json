@@ -1,6 +1,24 @@
 [
   {
-    "title": "david attenborough",
+    "title": "this city is ours",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "ajax vs atalanta",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "sonic temple 2027 lineup",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -9,16 +27,7 @@
     "region": "GB"
   },
   {
-    "title": "alexandra eala",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "this is money",
+    "title": "tennis",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -27,7 +36,16 @@
     "region": "GB"
   },
   {
-    "title": "jesse tyler ferguson",
+    "title": "iain balshaw",
+    "source": "google_trends",
+    "freshness": 0.551,
+    "velocity": 100.0,
+    "category": "technology",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "fireworks",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -36,7 +54,7 @@
     "region": "GB"
   },
   {
-    "title": "shamonda virus",
+    "title": "angel of my dreams",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -45,46 +63,28 @@
     "region": "GB"
   },
   {
-    "title": "teesside live",
+    "title": "celtic vs celta",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.65,
+    "velocity": 10000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "omura whale",
+    "title": "bournemouth vs milan",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "budget",
+    "title": "beşiktaş vs palace",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "espncricinfo",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "attack on titan",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
@@ -92,8 +92,8 @@
   {
     "title": "LNGSHOT - 'Masterpiece' Official Music Video",
     "source": "youtube",
-    "freshness": 0.854206978531746,
-    "velocity": 88812.26414635195,
+    "freshness": 0.7997317965013228,
+    "velocity": 81405.68474317451,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Cu6JU-kNmOU",
     "region": "GB"
@@ -101,8 +101,8 @@
   {
     "title": "The Rings of Power - Season 3 Official Trailer | Prime Video",
     "source": "youtube",
-    "freshness": 0.8988746372619048,
-    "velocity": 39039.35610934362,
+    "freshness": 0.8443994552314815,
+    "velocity": 37474.27662170115,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=maP_Kyy3DCA",
     "region": "GB"
@@ -110,8 +110,8 @@
   {
     "title": "DO NOT Gamble at this Casino",
     "source": "youtube",
-    "freshness": 0.9150188171560847,
-    "velocity": 107657.58655563486,
+    "freshness": 0.8605436351256613,
+    "velocity": 90166.32455946546,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=l5Q3alU1g_c",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "Olivia Rodrigo - expectations (feat. Chappell Roan) (wheel of misfortune)",
     "source": "youtube",
-    "freshness": 0.9265895843518519,
-    "velocity": 40469.636779911096,
+    "freshness": 0.8721144023214286,
+    "velocity": 32044.078964826615,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=4N5ZVgU_WlE",
     "region": "GB"
@@ -128,8 +128,8 @@
   {
     "title": "Cyberpunk 2077 - Official Edgerunners 2 Update Overview Trailer",
     "source": "youtube",
-    "freshness": 0.8949725208597884,
-    "velocity": 132490.7798698174,
+    "freshness": 0.8404973388293651,
+    "velocity": 104305.76829843242,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=7wPOA6a85S4",
     "region": "GB"
@@ -137,8 +137,8 @@
   {
     "title": "The Halloween Update (Trailer)",
     "source": "youtube",
-    "freshness": 0.9256438171560847,
-    "velocity": 51113.93241823623,
+    "freshness": 0.8711686351256613,
+    "velocity": 40921.8043285049,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=JHDGV1esB1g",
     "region": "GB"
@@ -146,8 +146,8 @@
   {
     "title": "WATCH ME",
     "source": "youtube",
-    "freshness": 0.9506289362037037,
-    "velocity": 20050.54358867041,
+    "freshness": 0.8961537541732805,
+    "velocity": 25410.793189324042,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=VOCEZQSO3t4",
     "region": "GB"
@@ -155,8 +155,8 @@
   {
     "title": "Poppy Playtime Chapter 6 Trailer",
     "source": "youtube",
-    "freshness": 0.9211348885846561,
-    "velocity": 22092.72524727898,
+    "freshness": 0.8666597065542327,
+    "velocity": 15537.581782271696,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=DnUzbk6z9Pc",
     "region": "GB"
@@ -164,8 +164,8 @@
   {
     "title": "🔴LIVE | COD DMZ | Cloakzy X Kona | WACKADOODLE WEDENSDAY | #Bungulate",
     "source": "youtube",
-    "freshness": 0.984466568478836,
-    "velocity": 384557.2718095335,
+    "freshness": 0.9299913864484127,
+    "velocity": 91269.38148024479,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=y-RUS0QFeLE",
     "region": "GB"
@@ -173,8 +173,8 @@
   {
     "title": "Ramayana: Ravana Tandav (Song) | Namit M, Nitesh T | Ranbir, Yash | AR Rahman, Vishal D, Kumar V",
     "source": "youtube",
-    "freshness": 0.750430523505291,
-    "velocity": 332395.7500671844,
+    "freshness": 0.6959553414748678,
+    "velocity": 330281.6223852108,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=p1potl1sbjA",
     "region": "GB"
@@ -182,8 +182,8 @@
   {
     "title": "THE LORD OF THE RINGS: The Rings of Power Season 3 Official Trailer (2026)",
     "source": "youtube",
-    "freshness": 0.9003858806481482,
-    "velocity": 3972.0535765622208,
+    "freshness": 0.8459106986177248,
+    "velocity": 3646.0768108593343,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=GenCRscU3PU",
     "region": "GB"
@@ -191,8 +191,8 @@
   {
     "title": "CAN I GO 15-0 ON THE RTG AGAIN!? Fellis Fellas!",
     "source": "youtube",
-    "freshness": 0.9250601531349206,
-    "velocity": 5365.732112865014,
+    "freshness": 0.8705849711044973,
+    "velocity": 4878.545778225943,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=B1MveM6A2CM",
     "region": "GB"
@@ -200,8 +200,8 @@
   {
     "title": "A$AP ROCKY - SWAT TEAM (Official Video)",
     "source": "youtube",
-    "freshness": 0.8840251002248677,
-    "velocity": 20481.13534612373,
+    "freshness": 0.8295499181944445,
+    "velocity": 21118.73715787885,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=CG8_jqHjidc",
     "region": "GB"
@@ -209,8 +209,8 @@
   {
     "title": "THIS TRASH IS BEYOND SAVING – The Rings of Power Season 3 Trailer REACTION",
     "source": "youtube",
-    "freshness": 0.9306719256216931,
-    "velocity": 6437.47317446434,
+    "freshness": 0.8761967435912699,
+    "velocity": 5512.394429265245,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ylFiizmfyYw",
     "region": "GB"
@@ -218,8 +218,8 @@
   {
     "title": "Minecraft Speedrunner VS 6 Hunters FINALE",
     "source": "youtube",
-    "freshness": 0.7738547959920635,
-    "velocity": 155073.59071958505,
+    "freshness": 0.7193796139616402,
+    "velocity": 143616.74247278887,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=g22Z__ShvVY",
     "region": "GB"
@@ -228,7 +228,7 @@
     "title": "Ya Devi Sarvabhuteshu | Navratri Durga Mantra | Mediative Peaceful Chanting | Feel the divine vibes",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 5552.5815764299905,
+    "velocity": 5924.43685690574,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=sgCojGeOpQI",
     "region": "GB"
@@ -236,8 +236,8 @@
   {
     "title": "Warhammer 40,000: Dawn of War IV – Official Game Overview Trailer",
     "source": "youtube",
-    "freshness": 0.8958802589550264,
-    "velocity": 13775.977313049945,
+    "freshness": 0.8414050769246032,
+    "velocity": 12639.981569957887,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=YVmXDMM48zg",
     "region": "GB"
@@ -245,8 +245,8 @@
   {
     "title": "GAMERS WON..",
     "source": "youtube",
-    "freshness": 0.961164650489418,
-    "velocity": 98198.91757830436,
+    "freshness": 0.9066894684589947,
+    "velocity": 88456.81451643197,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=gEDf-g9zwbQ",
     "region": "GB"
@@ -254,8 +254,8 @@
   {
     "title": "PlaqueBoyMax & Jacquees - Familiar (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9256405102777778,
-    "velocity": 13381.902327310525,
+    "freshness": 0.8711653282473545,
+    "velocity": 10908.68356745596,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=vnCiLqjv44I",
     "region": "GB"
@@ -263,8 +263,8 @@
   {
     "title": "Phantom Blade Zero - Official Launch Trailer",
     "source": "youtube",
-    "freshness": 0.9554239097486772,
-    "velocity": 37297.2476234867,
+    "freshness": 0.900948727718254,
+    "velocity": 58154.46563007308,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=qgJBFa952mY",
     "region": "GB"
@@ -272,8 +272,8 @@
   {
     "title": "I Opened The New HERO Pack! (OGRTG #33)",
     "source": "youtube",
-    "freshness": 0.8989655764153439,
-    "velocity": 5566.348945135831,
+    "freshness": 0.8444903943849207,
+    "velocity": 4507.760129847733,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=RpS79lIDwCw",
     "region": "GB"
@@ -281,8 +281,8 @@
   {
     "title": "Metallica: Welcome Home (Sanitarium) (Live at Sphere, October 3, 2026)",
     "source": "youtube",
-    "freshness": 0.8959133277380953,
-    "velocity": 18270.144775534118,
+    "freshness": 0.841438145707672,
+    "velocity": 16390.404039747682,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=CZPLthVlKxg",
     "region": "GB"
@@ -290,8 +290,8 @@
   {
     "title": "Teeway - 7PM (Official Trailer)",
     "source": "youtube",
-    "freshness": 0.9165251002248678,
-    "velocity": 338.4963918144172,
+    "freshness": 0.8620499181944444,
+    "velocity": 336.21547572786227,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=5-cPGzVcHIs",
     "region": "GB"
@@ -299,8 +299,8 @@
   {
     "title": "I Didn’t Think Someone Would Be In Here…",
     "source": "youtube",
-    "freshness": 0.9316424944047619,
-    "velocity": 32030.481370817248,
+    "freshness": 0.8771673123743386,
+    "velocity": 25378.98590250978,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=sfMN1WaB7AU",
     "region": "GB"
@@ -308,23 +308,32 @@
   {
     "title": "Medi - Dobro ne ti zhelaya  | Меди - Добро не ти желая",
     "source": "youtube",
-    "freshness": 0.8896963965211641,
-    "velocity": 10577.030006398443,
+    "freshness": 0.8352212144907407,
+    "velocity": 10445.497721396368,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=H6z_E_O2w4g",
     "region": "GB"
   },
   {
-    "title": "cartaginés - olimpia",
+    "title": "kate middleton",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "michigan senate debate",
+    "title": "lillestrøm vs real sociedad",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "olympiacos vs sparta praha",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -333,64 +342,46 @@
     "region": "US"
   },
   {
-    "title": "cricinfo",
+    "title": "zach charbonnet",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "bhuvneshwar kumar",
+    "title": "nvidia rtx",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "kamala harris",
+    "title": "viral coyote pear tree video",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.56,
+    "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "oil price",
+    "title": "brighton",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "夏林茂",
+    "title": "emmy rossum",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "bakersfield weather",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "arnold schwarzenegger",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
@@ -398,8 +389,8 @@
   {
     "title": "FattMack - Conversation [Official Music Video]",
     "source": "youtube",
-    "freshness": 0.9107590666832011,
-    "velocity": 6115.066992599001,
+    "freshness": 0.856283955636574,
+    "velocity": 5185.489891118585,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Af5QTrnWrI4",
     "region": "US"
@@ -407,8 +398,8 @@
   {
     "title": "❌Ángel Caído (R.I.P. Santa Fe Klan)❌ 🐀",
     "source": "youtube",
-    "freshness": 0.6786178629794974,
-    "velocity": 33893.98900646648,
+    "freshness": 0.6241427519328704,
+    "velocity": 31373.740109280832,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=gApykAFAgbg",
     "region": "US"
@@ -416,8 +407,8 @@
   {
     "title": "Honest Trailers | Spider-Man: Brand New Day",
     "source": "youtube",
-    "freshness": 0.7589915402281746,
-    "velocity": 22596.766561297944,
+    "freshness": 0.7045164291815476,
+    "velocity": 20141.21730368691,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=eQf6nDraYQg",
     "region": "US"
@@ -426,7 +417,7 @@
     "title": "Wanuga Tarugana(ft.Jah-Ben & Java Gee)",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 343.13359992684013,
+    "velocity": 346.92960713809543,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=WBN1AoBoFQ8",
     "region": "US"
@@ -434,8 +425,8 @@
   {
     "title": "BUNKER | Starring Javier Bardem & Penélope Cruz | Official US Trailer (2027)",
     "source": "youtube",
-    "freshness": 0.9205358523974868,
-    "velocity": 18089.02020340944,
+    "freshness": 0.8660607413508598,
+    "velocity": 23928.890524461855,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=fdkwGvMB5zQ",
     "region": "US"
@@ -443,8 +434,8 @@
   {
     "title": "W Sound 10 “HAPPY MONDAY” - Hades66, Westcol, Ovy On The Drums",
     "source": "youtube",
-    "freshness": 0.9434988153604498,
-    "velocity": 42478.77643252357,
+    "freshness": 0.8890237043138227,
+    "velocity": 31229.856683308735,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=LYn4w3m3Pjo",
     "region": "US"
@@ -452,8 +443,8 @@
   {
     "title": "Taken: Natalee Holloway | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.8899125058366402,
-    "velocity": 11122.538397825692,
+    "freshness": 0.8354373947900132,
+    "velocity": 9989.106159541854,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=nST9h0NpOYc",
     "region": "US"
@@ -461,8 +452,8 @@
   {
     "title": "Becoming the MONSTER in HE ATE THEM..",
     "source": "youtube",
-    "freshness": 0.9231631672123016,
-    "velocity": 53777.45458524201,
+    "freshness": 0.8686880561656746,
+    "velocity": 46497.37515110695,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=DzwZLM-7yPA",
     "region": "US"
@@ -470,8 +461,8 @@
   {
     "title": "Plan B - Es Un Secreto 🤫 (Letra) | (Lyrics)",
     "source": "youtube",
-    "freshness": 0.7869511963128306,
-    "velocity": 17414.07393441775,
+    "freshness": 0.7324760852662038,
+    "velocity": 17297.875005679387,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=XrxQJT2vGX0",
     "region": "US"
@@ -479,8 +470,8 @@
   {
     "title": "BUNKER Official Trailer (2027) Javier Bardem",
     "source": "youtube",
-    "freshness": 0.9222240137731481,
-    "velocity": 5773.219716342672,
+    "freshness": 0.8677489027265212,
+    "velocity": 4348.375119816151,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=aF4rMz72HwE",
     "region": "US"
@@ -488,8 +479,8 @@
   {
     "title": "Rings of Power Season 3 Trailer BREAKDOWN",
     "source": "youtube",
-    "freshness": 0.9405523867890212,
-    "velocity": 4846.804384868729,
+    "freshness": 0.8860772757423941,
+    "velocity": 4673.4373475989705,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=TE59h1bqFYg",
     "region": "US"
@@ -497,8 +488,8 @@
   {
     "title": "PLAYING ELDEN RING DLC UNTIL I BEAT IT DAY 2",
     "source": "youtube",
-    "freshness": 0.9640262624503968,
-    "velocity": 165580.44909385085,
+    "freshness": 0.9095511514037699,
+    "velocity": 67773.77068860798,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=IfMOa6Zsyjw",
     "region": "US"
