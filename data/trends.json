@@ -1,6 +1,42 @@
 [
   {
-    "title": "blackburn rovers vs wrexham",
+    "title": "opta stats",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "andy robertson",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "usdc",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "alexander volkov",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "now",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -9,25 +45,7 @@
     "region": "GB"
   },
   {
-    "title": "wolves vs watford",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "preston vs west brom",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "stoke city vs bristol city",
+    "title": "losene keita",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -36,7 +54,7 @@
     "region": "GB"
   },
   {
-    "title": "cardiff city vs birmingham",
+    "title": "aaron pico",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -45,46 +63,28 @@
     "region": "GB"
   },
   {
-    "title": "qpr vs swansea",
+    "title": "barcelona vs real madrid",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "lincoln city vs burnley",
+    "title": "hibernian match weather warning update",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 1.0,
+    "velocity": 500000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "sam fender concert pricing response",
+    "title": "my chemical romance",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "prisoner",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "coventry vs fulham",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
@@ -92,8 +92,8 @@
   {
     "title": "LISA - Tarantino (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.801172327078373,
-    "velocity": 1444649.2871523094,
+    "freshness": 0.7768128342691799,
+    "velocity": 1325739.6074156566,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=-5ZXrO_lYSA",
     "region": "GB"
@@ -101,26 +101,26 @@
   {
     "title": "EXCLUSIVE PREVIEW ⚾ MLB Crosses Over Into Avengers: Doomsday 🤯",
     "source": "youtube",
-    "freshness": 0.9254580413640873,
-    "velocity": 125053.41100582758,
+    "freshness": 0.9010985485548941,
+    "velocity": 113340.57746634139,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=oLJFJSNFklU",
     "region": "GB"
   },
   {
-    "title": "10,000 Players Simulate COLD WAR in Minecraft",
+    "title": "Adopted by VERITY in Minecraft…",
     "source": "youtube",
-    "freshness": 0.7777182926868387,
-    "velocity": 155368.42838423105,
+    "freshness": 0.9851825432638889,
+    "velocity": 43663.50814309483,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=y5IdSoHdkgg",
+    "source_url": "https://www.youtube.com/watch?v=lRJY2BW9QFM",
     "region": "GB"
   },
   {
     "title": "ATEEZ(에이티즈) - 'Drip' Official MV",
     "source": "youtube",
-    "freshness": 0.8011640598826059,
-    "velocity": 209180.40928001635,
+    "freshness": 0.7768045670734127,
+    "velocity": 207708.74318199567,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=iqQWCYMlMw0",
     "region": "GB"
@@ -128,35 +128,62 @@
   {
     "title": "AVENGERS 5: DOOMSDAY Official “Steve Rogers Meets New Avengers” Teaser Trailer (2026)",
     "source": "youtube",
-    "freshness": 0.926876692157738,
-    "velocity": 133223.1886871093,
+    "freshness": 0.902517199348545,
+    "velocity": 124549.01606872003,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6H-_VHitfAA",
     "region": "GB"
   },
   {
-    "title": "TSW vs. LYON | WORLDS 2026 | Swiss Stage Day 1",
+    "title": "ROBLOX SKINWALKER HIGHSCHOOL",
     "source": "youtube",
-    "freshness": 0.4476075122635582,
-    "velocity": 29765.455995048243,
+    "freshness": 0.9613845935284392,
+    "velocity": 24321.18951639919,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=uG9SCwcHA7k",
+    "source_url": "https://www.youtube.com/watch?v=3eV8BefPOZY",
     "region": "GB"
   },
   {
     "title": "10-Month-Old Baby JOINS my violin street performance",
     "source": "youtube",
-    "freshness": 0.7186210704646163,
-    "velocity": 2212.932645936865,
+    "freshness": 0.6942615776554233,
+    "velocity": 2376.545234008202,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=oS3rZGLBKRk",
     "region": "GB"
   },
   {
+    "title": "Calling All Villains - Official Trailer",
+    "source": "youtube",
+    "freshness": 0.9851478210416666,
+    "velocity": 54532.64290046362,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=3lEUqM5ondI",
+    "region": "GB"
+  },
+  {
+    "title": "10,000 Players Simulate COLD WAR in Minecraft",
+    "source": "youtube",
+    "freshness": 0.7533587998776455,
+    "velocity": 149051.63367388202,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=y5IdSoHdkgg",
+    "region": "GB"
+  },
+  {
+    "title": "【Ado】患者A",
+    "source": "youtube",
+    "freshness": 0.9613416041104498,
+    "velocity": 101337.25479656184,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=JO66tA5Yngs",
+    "region": "GB"
+  },
+  {
     "title": "AVENGERS: DOOMSDAY Official “Steve Rogers Reunites With Avengers” Teaser Trailer (2026)",
     "source": "youtube",
-    "freshness": 0.9267940202000662,
-    "velocity": 28214.826893429727,
+    "freshness": 0.902434527390873,
+    "velocity": 22766.763083277554,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Kyjq27ORERk",
     "region": "GB"
@@ -164,185 +191,122 @@
   {
     "title": "I'M AN IPAD KID NOW.",
     "source": "youtube",
-    "freshness": 0.9246131339566799,
-    "velocity": 58585.58081981282,
+    "freshness": 0.9002536411474867,
+    "velocity": 57186.17863206716,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=0aXjVcqFUiI",
     "region": "GB"
   },
   {
-    "title": "BABYMONSTER - 'DESERVE' M/V",
-    "source": "youtube",
-    "freshness": 0.8011756339566799,
-    "velocity": 533011.3155329856,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=oC6brLXQe4I",
-    "region": "GB"
-  },
-  {
-    "title": "From POOR to RICH School in Minecraft!",
-    "source": "youtube",
-    "freshness": 0.8666402503587963,
-    "velocity": 24249.124278934527,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Z6Utg5a7Gew",
-    "region": "GB"
-  },
-  {
-    "title": "Teeway - 7PM [Music Video] | GRM Daily",
-    "source": "youtube",
-    "freshness": 0.7416485175545635,
-    "velocity": 1898.622373361067,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=hVYztl6LCMM",
-    "region": "GB"
-  },
-  {
-    "title": "AVENGERS DOOMSDAY TRAILER Breakdown and Easter Eggs",
-    "source": "youtube",
-    "freshness": 0.9379861498296957,
-    "velocity": 24834.505987032117,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=WWa7n1FBKeE",
-    "region": "GB"
-  },
-  {
-    "title": "🔴LIVE | PARTY GAMES | SCAM WITH YOUR FRIENDS | w/ HUTCHMF X  Nickmercs | #BUNGULATE",
-    "source": "youtube",
-    "freshness": 0.9619610175545635,
-    "velocity": 182356.0058345905,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=9rVWksW8M-I",
-    "region": "GB"
-  },
-  {
     "title": "M.G.L. x Alessandra - \"MAI TII MINTE?\" (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8726207397767858,
-    "velocity": 4240.52362180638,
+    "freshness": 0.8482612469675925,
+    "velocity": 4560.509023249704,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=HB-QrT971Qk",
     "region": "GB"
   },
   {
-    "title": "Grand Theft Auto VI Launch Trailer",
+    "title": "WATCHPARTY | 2026 PMGO S2 Main Event | Grand Finals Day 1 |",
     "source": "youtube",
-    "freshness": 0.9027017582953042,
-    "velocity": 91887.21326382205,
+    "freshness": 0.9500734162797619,
+    "velocity": 147695.31719548733,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=BSIytHG3-Xo",
+    "source_url": "https://www.youtube.com/watch?v=n8v3Etv-v6Y",
     "region": "GB"
   },
   {
-    "title": "JYNXZI vs PROMISED CONSORT RADAHN",
+    "title": "NI SOHNIYE - HARKIRAT SANGHA (Ft. ROACH KILLA) | STARBOY X | THE GOLDEN RECORD (EP)",
     "source": "youtube",
-    "freshness": 0.937245409088955,
-    "velocity": 98341.50558210032,
+    "freshness": 0.6339606517294973,
+    "velocity": 22417.232804300496,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=OT-gVk8hfUI",
-    "region": "GB"
-  },
-  {
-    "title": "Rammstein - Live in Mexico City - Deutschland (Official Video)",
-    "source": "youtube",
-    "freshness": 0.8666551313111772,
-    "velocity": 45057.57505069296,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=Iy5nOfzOejI",
-    "region": "GB"
-  },
-  {
-    "title": "Aadarsha Kutumbam - Official Trailer | Venkatesh, Srinidhi Shetty | Trivikram | Thaman S",
-    "source": "youtube",
-    "freshness": 0.8685913085598544,
-    "velocity": 181626.25010244476,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=u0yUYgZ0s30",
-    "region": "GB"
-  },
-  {
-    "title": "1,000,000 COINS SPENDING SPREE! (OGRTG #35)",
-    "source": "youtube",
-    "freshness": 0.8726488482423942,
-    "velocity": 6010.892222443758,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=PbsQZfBj_xQ",
-    "region": "GB"
-  },
-  {
-    "title": "DDF/ / Tom Cardy Official Music video",
-    "source": "youtube",
-    "freshness": 0.8904993773429233,
-    "velocity": 16137.492493758671,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=7rEjGg4z0wc",
+    "source_url": "https://www.youtube.com/watch?v=k0mFeEnP5AA",
     "region": "GB"
   },
   {
     "title": "AVENGERS 5: DOOMSDAY Official “Steve Rogers Reunites With Avengers” Teaser Trailer (2026)",
     "source": "youtube",
-    "freshness": 0.9330919699355159,
-    "velocity": 17201.472910761902,
+    "freshness": 0.9087324771263228,
+    "velocity": 20152.555384564734,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=CcCiaZodoAo",
     "region": "GB"
   },
   {
-    "title": "BALLON D'OR IMPERIALISM",
+    "title": "What If We Never Met...",
     "source": "youtube",
-    "freshness": 0.966499708030754,
-    "velocity": 15017.459733668358,
+    "freshness": 0.9792367760681217,
+    "velocity": 42478.66566929906,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=IMP5OzoeLy4",
+    "source_url": "https://www.youtube.com/watch?v=ZavXvvSNNFs",
     "region": "GB"
   },
   {
-    "title": "John Mayer - Tom and Jerry (Live Vocal Performance)",
+    "title": "Aykut Aksöz - Yüreğime mi Sorsam? (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.8835235175545635,
-    "velocity": 21293.23157958129,
+    "freshness": 0.05,
+    "velocity": 14961.400934874408,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=_PWSiM3uUZA",
+    "source_url": "https://www.youtube.com/watch?v=GEP8WwFblF8",
     "region": "GB"
   },
   {
-    "title": "cancer",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "AVENGERS DOOMSDAY TRAILER Breakdown and Easter Eggs",
+    "source": "youtube",
+    "freshness": 0.9136266570205026,
+    "velocity": 24516.21699475342,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=WWa7n1FBKeE",
+    "region": "GB"
   },
   {
-    "title": "matt leinart",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "Digging to ESCAPE from Prison in Minecraft…",
+    "source": "youtube",
+    "freshness": 0.9673303607242063,
+    "velocity": 31876.6546741588,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=fFqot8OcKBg",
+    "region": "GB"
   },
   {
-    "title": "salt lake city weather",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "Chalre Chalre Waal Original Song - Tu Sanwal Phul Kasturi Song ❤️ Instagram Trending song 2026",
+    "source": "youtube",
+    "freshness": 0.5236894877083333,
+    "velocity": 12955.946619229251,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=BPpyiOMVrx8",
+    "region": "GB"
   },
   {
-    "title": "david jolly",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "Grand Theft Auto VI Launch Trailer",
+    "source": "youtube",
+    "freshness": 0.878342265486111,
+    "velocity": 84760.03870133766,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=BSIytHG3-Xo",
+    "region": "GB"
   },
   {
-    "title": "student",
+    "title": "I Made a SCANNER To Find the SCARY VILLAGER",
+    "source": "youtube",
+    "freshness": 0.9807314850628307,
+    "velocity": 18812.14738339322,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=3rGSm8TJ8x0",
+    "region": "GB"
+  },
+  {
+    "title": "BABYMONSTER - 'DESERVE' M/V",
+    "source": "youtube",
+    "freshness": 0.7768161411474868,
+    "velocity": 526703.0761291826,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=oC6brLXQe4I",
+    "region": "GB"
+  },
+  {
+    "title": "malachi toney",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -351,46 +315,109 @@
     "region": "US"
   },
   {
-    "title": "cagliari vs bologna",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "rb leipzig vs sv elversberg",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "nc state fair",
+    "title": "jeff gordon",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
-    "category": "technology",
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "dortmund",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "steve sarkisian",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "north dakota vs south dakota",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "scratchcard",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "john james",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "trey'dez green",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "indiana hoosiers football vs michigan wolverines football match player stats",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "east tn st vs vmi",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
     "title": "Yung Miami - Dear JT (Official Visualizer)",
     "source": "youtube",
-    "freshness": 0.8726269401587301,
-    "velocity": 21233.091305917762,
+    "freshness": 0.8482674169097222,
+    "velocity": 19828.90170926812,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=tAg4Fa1JtPo",
     "region": "US"
   },
   {
+    "title": "🔴LIVE | PARTY GAMES | SCAM WITH YOUR FRIENDS | w/ HUTCHMF X  Nickmercs | #BUNGULATE",
+    "source": "youtube",
+    "freshness": 0.9376010809308862,
+    "velocity": 115401.8769616269,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=9rVWksW8M-I",
+    "region": "US"
+  },
+  {
     "title": "Finesse2Tymes - Playing With Fire [Official Music Video]",
     "source": "youtube",
-    "freshness": 0.8887694666137567,
-    "velocity": 9029.348823013906,
+    "freshness": 0.8644099433647487,
+    "velocity": 8318.623408218096,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=3fLYEYo3iOY",
     "region": "US"
@@ -398,8 +425,8 @@
   {
     "title": "I Shouldn’t Have Come Here…",
     "source": "youtube",
-    "freshness": 0.908367680899471,
-    "velocity": 28585.77604597402,
+    "freshness": 0.8840081576504629,
+    "velocity": 26391.582988297556,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=kzVY0EW5fWk",
     "region": "US"
@@ -407,17 +434,53 @@
   {
     "title": "YFN Lucci - custom MADE. (feat. Tink) [Official Music Video]",
     "source": "youtube",
-    "freshness": 0.8785528660846561,
-    "velocity": 5754.659515053452,
+    "freshness": 0.8541933428356482,
+    "velocity": 5499.618247725684,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=afckk3ajjP0",
     "region": "US"
   },
   {
+    "title": "Aadarsha Kutumbam - Official Trailer | Venkatesh, Srinidhi Shetty | Trivikram | Thaman S",
+    "source": "youtube",
+    "freshness": 0.8442313719361773,
+    "velocity": 168426.35126706795,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=u0yUYgZ0s30",
+    "region": "US"
+  },
+  {
+    "title": "TSW vs. LYON | WORLDS 2026 | Swiss Stage Day 1",
+    "source": "youtube",
+    "freshness": 0.423247575639881,
+    "velocity": 28701.59462975798,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=uG9SCwcHA7k",
+    "region": "US"
+  },
+  {
+    "title": "Jarahn - Maski Lo Luv (Audio) feat. BMT",
+    "source": "youtube",
+    "freshness": 0.7328557105605159,
+    "velocity": 560.781307075104,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=ZRTYqleaQMY",
+    "region": "US"
+  },
+  {
+    "title": "This Zombies Map Took Us 4 HOURS To Beat! (Uncut Footage)",
+    "source": "youtube",
+    "freshness": 0.8810270068568121,
+    "velocity": 7687.5189796762,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=5xCwwVGYGmM",
+    "region": "US"
+  },
+  {
     "title": "Voy Tendido",
     "source": "youtube",
-    "freshness": 0.6944440697883598,
-    "velocity": 2447.4905055099102,
+    "freshness": 0.6700845465393519,
+    "velocity": 2560.829248812124,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=DX7HowkT8oQ",
     "region": "US"
@@ -425,64 +488,37 @@
   {
     "title": "Werewolf | Official Trailer",
     "source": "youtube",
-    "freshness": 0.8785512126455026,
-    "velocity": 15133.6079459444,
+    "freshness": 0.8541916893964947,
+    "velocity": 13282.605618967553,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=T30sNNR8b3M",
     "region": "US"
   },
   {
-    "title": "This Zombies Map Took Us 4 HOURS To Beat! (Uncut Footage)",
+    "title": "Rebuilding a Ruined NFL Franchise…",
     "source": "youtube",
-    "freshness": 0.9053865301058202,
-    "velocity": 8456.588092076317,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=5xCwwVGYGmM",
-    "region": "US"
-  },
-  {
-    "title": "Jarahn - Maski Lo Luv (Audio) feat. BMT",
-    "source": "youtube",
-    "freshness": 0.7572152338095238,
-    "velocity": 584.9047063749542,
+    "freshness": 0.9012154989203043,
+    "velocity": 11310.454644562347,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ZRTYqleaQMY",
-    "region": "US"
-  },
-  {
-    "title": "TV Royale | EVO Mirror & Giant, Mini Puzzles & MORE!",
-    "source": "youtube",
-    "freshness": 0.8661983687301587,
-    "velocity": 38303.949688363406,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=1-U3bZEzGgU",
+    "source_url": "https://www.youtube.com/watch?v=L6Jyz_FaV28",
     "region": "US"
   },
   {
     "title": "Kevin Gates - Greatness",
     "source": "youtube",
-    "freshness": 0.8756213184656084,
-    "velocity": 5132.702820517421,
+    "freshness": 0.8512617952166005,
+    "velocity": 4911.553930273392,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=zc96Y54nA1M",
     "region": "US"
   },
   {
-    "title": "I Worked With BioWare on the Next Mass Effect - Here's What They Were Making",
+    "title": "TV Royale | EVO Mirror & Giant, Mini Puzzles & MORE!",
     "source": "youtube",
-    "freshness": 0.8667010142328042,
-    "velocity": 12767.083529701542,
+    "freshness": 0.8418388454811507,
+    "velocity": 34242.04837930966,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=ZOWrTNazZxM",
-    "region": "US"
-  },
-  {
-    "title": "Rebuilding a Ruined NFL Franchise…",
-    "source": "youtube",
-    "freshness": 0.9255750221693122,
-    "velocity": 12393.512657273171,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=L6Jyz_FaV28",
+    "source_url": "https://www.youtube.com/watch?v=1-U3bZEzGgU",
     "region": "US"
   }
 ]
