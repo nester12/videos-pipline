@@ -1,6 +1,15 @@
 [
   {
-    "title": "house",
+    "title": "flashscore",
+    "source": "google_trends",
+    "freshness": 0.6000000000000001,
+    "velocity": 5000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "sacha baron cohen",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -9,7 +18,7 @@
     "region": "GB"
   },
   {
-    "title": "joe alwyn",
+    "title": "trey nyoni",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -18,43 +27,16 @@
     "region": "GB"
   },
   {
-    "title": "cod mw4 multiplayer",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "dirk kuyt",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "spanish train",
-    "source": "google_trends",
-    "freshness": 0.75,
-    "velocity": 20000.0,
-    "category": "technology",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "game",
+    "title": "budget cash isas",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
-    "category": "gaming",
+    "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "marnus labuschagne",
+    "title": "google earnings",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -63,7 +45,7 @@
     "region": "GB"
   },
   {
-    "title": "simon harmer",
+    "title": "weather polar vortex",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -72,7 +54,25 @@
     "region": "GB"
   },
   {
-    "title": "harry",
+    "title": "lechia – jagiellonia białystok",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "katie holmes",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "jordan henderson",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -81,19 +81,19 @@
     "region": "GB"
   },
   {
-    "title": "alexandra eala",
+    "title": "celtic game",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
-    "category": "internet",
+    "category": "gaming",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
     "title": "Harry Styles - Coming Up Roses (Official Video)",
     "source": "youtube",
-    "freshness": 0.7414730415128968,
-    "velocity": 77680.18753854425,
+    "freshness": 0.6881817172073412,
+    "velocity": 78251.63889729796,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=M4qX5wzx-wY",
     "region": "GB"
@@ -101,8 +101,8 @@
   {
     "title": "Dune: Part Three | Final Trailer",
     "source": "youtube",
-    "freshness": 0.8843748272271825,
-    "velocity": 481241.0312266684,
+    "freshness": 0.831083502921627,
+    "velocity": 446687.98810744315,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=uJqaGLmZpGo",
     "region": "GB"
@@ -110,8 +110,8 @@
   {
     "title": "BIRTH to DEATH of an OP SPIDER in Minecraft..",
     "source": "youtube",
-    "freshness": 0.8784026050049603,
-    "velocity": 27746.52172476551,
+    "freshness": 0.8251112806994048,
+    "velocity": 23423.46616970199,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=5caaA0iQtjw",
     "region": "GB"
@@ -119,8 +119,8 @@
   {
     "title": "ILLIT (아일릿) '체포하겠어 (You’re Under Arrest)’ Official MV",
     "source": "youtube",
-    "freshness": 0.6996096155869709,
-    "velocity": 181241.41582564972,
+    "freshness": 0.6463182912814154,
+    "velocity": 166167.17861830018,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=V2V9-9VhYJo",
     "region": "GB"
@@ -128,8 +128,8 @@
   {
     "title": "Fortnite Treasure Hunters | Live Action Trailer",
     "source": "youtube",
-    "freshness": 0.8665094171742724,
-    "velocity": 43970.240978728056,
+    "freshness": 0.8132180928687169,
+    "velocity": 35544.09605076315,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=WKTOfvqL-bc",
     "region": "GB"
@@ -137,8 +137,8 @@
   {
     "title": "I Made Every Ballon d'Or Winner 1 Rated",
     "source": "youtube",
-    "freshness": 0.8786737690261244,
-    "velocity": 22520.156542850476,
+    "freshness": 0.8253824447205688,
+    "velocity": 25689.884128352427,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=-pZdREQIEpU",
     "region": "GB"
@@ -146,8 +146,8 @@
   {
     "title": "Kesha - Backstabber (Official Video)",
     "source": "youtube",
-    "freshness": 0.7474320362218916,
-    "velocity": 30975.585181752096,
+    "freshness": 0.694140711916336,
+    "velocity": 31213.330040023084,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=d02bibFGMp0",
     "region": "GB"
@@ -155,8 +155,8 @@
   {
     "title": "Honest Trailers | Training Day",
     "source": "youtube",
-    "freshness": 0.8903288616187169,
-    "velocity": 21163.270795373737,
+    "freshness": 0.8370375373131613,
+    "velocity": 16654.580348279345,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=bI45ptyfBVE",
     "region": "GB"
@@ -164,8 +164,8 @@
   {
     "title": "🔴 BALLON D'OR 2026 LIVE / IS THE WINNER MBAPPE, YAMAL, KANE? / BALLON D’OR LIVE",
     "source": "youtube",
-    "freshness": 0.7919409647933201,
-    "velocity": 222084.34599345512,
+    "freshness": 0.7386496404877645,
+    "velocity": 176845.66670460152,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=oG7usbipEgk",
     "region": "GB"
@@ -173,8 +173,8 @@
   {
     "title": "Yeat - Lil Krazy (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9021922875446429,
-    "velocity": 25965.97502683456,
+    "freshness": 0.8489009632390874,
+    "velocity": 22920.673360391494,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=qAAifLfNnKQ",
     "region": "GB"
@@ -182,8 +182,8 @@
   {
     "title": "WAY OF THE WARRIOR KID Official Trailer (2026) Chris Pratt",
     "source": "youtube",
-    "freshness": 0.8665028034176587,
-    "velocity": 6950.788016835826,
+    "freshness": 0.8132114791121032,
+    "velocity": 6142.833129313902,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=n3P5eZOAfec",
     "region": "GB"
@@ -191,8 +191,8 @@
   {
     "title": "finding EVERY ANOMALY in a POOL...",
     "source": "youtube",
-    "freshness": 0.8784257531531084,
-    "velocity": 18414.624031670806,
+    "freshness": 0.825134428847553,
+    "velocity": 15251.715831899925,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=BGvmrDwSSVo",
     "region": "GB"
@@ -200,8 +200,8 @@
   {
     "title": "CHVRCHES - Overthinker (Lyric Video) (Official Lyric Video)",
     "source": "youtube",
-    "freshness": 0.8992442055340608,
-    "velocity": 5174.522199954901,
+    "freshness": 0.8459528812285053,
+    "velocity": 4862.380551218189,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=1MOlCPAF5qk",
     "region": "GB"
@@ -209,8 +209,8 @@
   {
     "title": "Allen | Official Trailer | Netflix",
     "source": "youtube",
-    "freshness": 0.9021757531531085,
-    "velocity": 31044.925225181338,
+    "freshness": 0.8488844288475529,
+    "velocity": 26843.693003070857,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=P8G5Y25W3eA",
     "region": "GB"
@@ -218,8 +218,8 @@
   {
     "title": "SIDEMEN PLAY SCUFFED MONOPOLY",
     "source": "youtube",
-    "freshness": 0.911387062676918,
-    "velocity": 44158.74061389952,
+    "freshness": 0.8580957383713624,
+    "velocity": 37708.648040087995,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=GdytjztaEsQ",
     "region": "GB"
@@ -227,8 +227,8 @@
   {
     "title": "Saxon - Medusa (Official Video)",
     "source": "youtube",
-    "freshness": 0.8662117981266535,
-    "velocity": 7314.288274214612,
+    "freshness": 0.8129204738210979,
+    "velocity": 7210.741711881,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=alyzaHBHdpU",
     "region": "GB"
@@ -236,8 +236,8 @@
   {
     "title": "DIG | Official Trailer | Peacock Original",
     "source": "youtube",
-    "freshness": 0.8902627240525793,
-    "velocity": 11302.481866078473,
+    "freshness": 0.8369713997470238,
+    "velocity": 11044.987239844364,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ir2zni8_tP4",
     "region": "GB"
@@ -245,8 +245,8 @@
   {
     "title": "SOLO FNCS FINALS DAY 2 | EUROPE",
     "source": "youtube",
-    "freshness": 0.9418731737880291,
-    "velocity": 31769.713562432677,
+    "freshness": 0.8885818494824735,
+    "velocity": 16842.761049234003,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=tF2sWDLIHBU",
     "region": "GB"
@@ -254,8 +254,8 @@
   {
     "title": "Pop",
     "source": "youtube",
-    "freshness": 0.6998146420419974,
-    "velocity": 34407.292702249295,
+    "freshness": 0.6465233177364418,
+    "velocity": 32535.13255992036,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=M2Tb2kjzzxo",
     "region": "GB"
@@ -263,8 +263,8 @@
   {
     "title": "Dune 3 FINAL Trailer Breakdown (THIS IS CRAZY!) | Quinns Ideas",
     "source": "youtube",
-    "freshness": 0.8987911632060185,
-    "velocity": 6213.813705052433,
+    "freshness": 0.845499838900463,
+    "velocity": 5025.961780464652,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=4jhbUTuZnBs",
     "region": "GB"
@@ -272,8 +272,8 @@
   {
     "title": "1 Second = PEPSI RISES in GTA 5...",
     "source": "youtube",
-    "freshness": 0.866496189661045,
-    "velocity": 17140.183161027468,
+    "freshness": 0.8132048653554894,
+    "velocity": 14104.929166764949,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=UJwk5KaieOw",
     "region": "GB"
@@ -281,8 +281,8 @@
   {
     "title": "Glimpse of DSP Inbaraj (Respectaa) - From Scene | Suriya | Nazriya Nazim |Sushin Shyam|JithuMadhavan",
     "source": "youtube",
-    "freshness": 0.7146757531531085,
-    "velocity": 140597.7892753715,
+    "freshness": 0.6613844288475529,
+    "velocity": 124922.42582779666,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=zt35WyMBaWo",
     "region": "GB"
@@ -290,8 +290,8 @@
   {
     "title": "WAY OF THE WARRIOR KID Official Trailer (2026) Chris Pratt, Apple TV",
     "source": "youtube",
-    "freshness": 0.8681082928356482,
-    "velocity": 2592.7205029442443,
+    "freshness": 0.8148169685300926,
+    "velocity": 2193.325508512747,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ePpljNQvkew",
     "region": "GB"
@@ -299,8 +299,8 @@
   {
     "title": "I Manage the Poorest Club in FC 27...",
     "source": "youtube",
-    "freshness": 0.8733463880737433,
-    "velocity": 23325.759303151866,
+    "freshness": 0.8200550637681878,
+    "velocity": 22877.93112354923,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=bcoGCcD3aQM",
     "region": "GB"
@@ -308,23 +308,32 @@
   {
     "title": "MARIN X ISH - NORTH SIDE (Prod By.Ronny)",
     "source": "youtube",
-    "freshness": 0.890287525639881,
-    "velocity": 3610.4654238122266,
+    "freshness": 0.8369962013343254,
+    "velocity": 3664.463242335547,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=OiI0H_YAn7s",
     "region": "GB"
   },
   {
-    "title": "gev stock",
+    "title": "manchester city",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "indw vs zimw",
+    "title": "amzn stock",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "hayden panettiere",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -333,16 +342,7 @@
     "region": "US"
   },
   {
-    "title": "tom holland",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "king tides",
+    "title": "winter storm warning",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -351,55 +351,55 @@
     "region": "US"
   },
   {
-    "title": "when is time change 2026 fall",
+    "title": "now stock",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "vrt stock",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "spaceplane",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "annie andrews",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "saints practice squad receiver changes",
+    "title": "mahomes",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
-    "category": "technology",
+    "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "samsung galaxy buds on",
+    "title": "escaped inmate tennessee",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "msft stock",
+    "source": "google_trends",
+    "freshness": 0.65,
+    "velocity": 10000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "cod mw4 multiplayer",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "alex de minaur",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
@@ -407,8 +407,8 @@
   {
     "title": "🔴LIVE | 1V1V1 AGE OF EMPIRES | GIMMICK X HABIBI | MANY MEN MONDAY | #BUNGULATE",
     "source": "youtube",
-    "freshness": 0.8397114630059523,
-    "velocity": 42075.79645819157,
+    "freshness": 0.786420450353836,
+    "velocity": 32012.718053245997,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=a3VGm40UOrY",
     "region": "US"
@@ -416,8 +416,8 @@
   {
     "title": "Absolutely Nothing Good",
     "source": "youtube",
-    "freshness": 0.7771899682969576,
-    "velocity": 23735.01214959703,
+    "freshness": 0.7238989556448413,
+    "velocity": 20527.336507748176,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=TASjR0qY2KM",
     "region": "US"
@@ -425,8 +425,8 @@
   {
     "title": "Kevin Gates - Jumbotron Freestyle",
     "source": "youtube",
-    "freshness": 0.8358523360218254,
-    "velocity": 3970.691669370475,
+    "freshness": 0.7825613233697091,
+    "velocity": 3439.3659953502897,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=Cr8Tdulo0Lc",
     "region": "US"
@@ -434,8 +434,8 @@
   {
     "title": "WARPATH | World of Warcraft: Forever AMV Launch Trailer",
     "source": "youtube",
-    "freshness": 0.8903133148578042,
-    "velocity": 38904.15551906643,
+    "freshness": 0.8370223022056879,
+    "velocity": 31082.838893717137,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=NPbTAXZL_2A",
     "region": "US"
@@ -443,8 +443,8 @@
   {
     "title": "Jarahn - Maski Lo Luv (Audio) feat. BMT",
     "source": "youtube",
-    "freshness": 0.19751569581018502,
-    "velocity": 456.2394530191321,
+    "freshness": 0.1442246831580688,
+    "velocity": 445.72502698267397,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZRTYqleaQMY",
     "region": "US"
@@ -452,8 +452,8 @@
   {
     "title": "Avengers: Doomsday Teaser -  In Theaters December 18",
     "source": "youtube",
-    "freshness": 0.7345791878736773,
-    "velocity": 20015.969054364472,
+    "freshness": 0.6812881752215609,
+    "velocity": 17019.47998816917,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=LYRmPlm6oV0",
     "region": "US"
@@ -461,8 +461,8 @@
   {
     "title": "Your SUS Clips...",
     "source": "youtube",
-    "freshness": 0.7489260794080688,
-    "velocity": 30258.28193656934,
+    "freshness": 0.6956350667559523,
+    "velocity": 26649.302233297673,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=u0iATr7A5KM",
     "region": "US"
@@ -470,8 +470,8 @@
   {
     "title": "Our Biggest Heist Yet... [GTA V Ep 4/5]",
     "source": "youtube",
-    "freshness": 0.879529584699074,
-    "velocity": 14884.606792676841,
+    "freshness": 0.8262385720469576,
+    "velocity": 12092.387251549904,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=JR-OEpdHbwU",
     "region": "US"
@@ -479,8 +479,8 @@
   {
     "title": "Avengers: Doomsday | In Theaters December 18",
     "source": "youtube",
-    "freshness": 0.5033655635350529,
-    "velocity": 193069.24025615965,
+    "freshness": 0.45007455088293646,
+    "velocity": 178824.23909984608,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=UfNu7pcR0e8",
     "region": "US"
@@ -488,8 +488,8 @@
   {
     "title": "Dharius - Pelón Pelonete - Video Oficial",
     "source": "youtube",
-    "freshness": 0.7222875212070106,
-    "velocity": 20784.57881996917,
+    "freshness": 0.6689965085548942,
+    "velocity": 18709.16101824456,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9FRdlFvfcxk",
     "region": "US"
@@ -497,8 +497,8 @@
   {
     "title": "X-MEN 2028",
     "source": "youtube",
-    "freshness": 0.781095391577381,
-    "velocity": 7607.276380074545,
+    "freshness": 0.7278043789252646,
+    "velocity": 6396.638189428658,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=rQnvm5c2r3o",
     "region": "US"
@@ -506,8 +506,8 @@
   {
     "title": "Call of Duty 24 : Modern Warfare 4",
     "source": "youtube",
-    "freshness": 0.9052008809953703,
-    "velocity": 59613.39808201837,
+    "freshness": 0.851909868343254,
+    "velocity": 46762.54488464402,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=-Y6Cp6e-VbI",
     "region": "US"
@@ -515,8 +515,8 @@
   {
     "title": "Johnny Slime - Heartless {Official Music Video}",
     "source": "youtube",
-    "freshness": 0.7652868598313493,
-    "velocity": 2882.9771463216875,
+    "freshness": 0.7119958471792328,
+    "velocity": 2701.432607494361,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=2gxWDAlcpNQ",
     "region": "US"
