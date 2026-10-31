@@ -1,60 +1,42 @@
 [
   {
-    "title": "barcelona vs alavés",
+    "title": "motd",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "ospreys vs cardiff rugby",
+    "title": "nick klein",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "zendaya",
+    "title": "philomena cunk",
     "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
+    "freshness": 0.551,
+    "velocity": 100.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "milan - inter",
+    "title": "fc barcelona vs deportivo alavés standings",
     "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
+    "freshness": 0.65,
+    "velocity": 10000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "the hunger games",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "gaming",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "milan vs inter",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "aston villa vs fulham",
+    "title": "lewis hamilton",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -63,16 +45,7 @@
     "region": "GB"
   },
   {
-    "title": "rockstar games gta vi",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "gaming",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "when is bonfire night",
+    "title": "mickey gall",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -81,10 +54,37 @@
     "region": "GB"
   },
   {
-    "title": "mike myers",
+    "title": "lamine yamal",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "sleeper",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "tom nolan",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "gta 6",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
@@ -92,8 +92,8 @@
   {
     "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist for Best Halloween Ever 👻",
     "source": "youtube",
-    "freshness": 0.9330767911607143,
-    "velocity": 19564.26767540135,
+    "freshness": 0.9135703234110449,
+    "velocity": 23794.18610235336,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6DSsrtfdvZM",
     "region": "GB"
@@ -101,26 +101,26 @@
   {
     "title": "Scene - Official Trailer | Suriya | Nazriya Nazim | Naslen | Sushin Shyam | Jithu Madhavan",
     "source": "youtube",
-    "freshness": 0.9679875054464285,
-    "velocity": 792732.8843551792,
+    "freshness": 0.9484810376967593,
+    "velocity": 665304.9653217753,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=LM4ByXufv2w",
     "region": "GB"
   },
   {
-    "title": "Brawl Talk: Ranked Refresh, 3 New Brawlers and traditional Brawlidays!",
+    "title": "10,000 VS 10,000 Player Minecraft War",
     "source": "youtube",
-    "freshness": 0.9798922673511905,
-    "velocity": 655945.5315680889,
+    "freshness": 0.9622889080671296,
+    "velocity": 183178.54883477796,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=PfSHrPMW4UU",
+    "source_url": "https://www.youtube.com/watch?v=ZT-k42SC7L0",
     "region": "GB"
   },
   {
     "title": "Best Halloween Spooky Music 🎃 Relaxing Halloween Music 2026 👻 Magical Halloween Ambience",
     "source": "youtube",
-    "freshness": 0.9441763281977513,
-    "velocity": 4302.023749987153,
+    "freshness": 0.924669860448082,
+    "velocity": 6776.598926984802,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=tRnMJ_q0kI8",
     "region": "GB"
@@ -128,35 +128,62 @@
   {
     "title": "FINAL FANTASY XIV: Evercold | Full Trailer | Launches February 23, 2027",
     "source": "youtube",
-    "freshness": 0.9110149525363757,
-    "velocity": 22894.76406133827,
+    "freshness": 0.8915084847867063,
+    "velocity": 21243.871074835475,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=8mN8N5O5ru0",
     "region": "GB"
   },
   {
-    "title": "10,000 VS 10,000 Player Minecraft War",
+    "title": "Brawl Talk: Ranked Refresh, 3 New Brawlers and traditional Brawlidays!",
     "source": "youtube",
-    "freshness": 0.981795375816799,
-    "velocity": 178877.56301658583,
+    "freshness": 0.9603857996015212,
+    "velocity": 539124.7035858168,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=ZT-k42SC7L0",
+    "source_url": "https://www.youtube.com/watch?v=PfSHrPMW4UU",
     "region": "GB"
   },
   {
     "title": "Música de Halloween 2026 🎃 Las Mejores Canciones de Halloween 👻 Playlist de Halloween",
     "source": "youtube",
-    "freshness": 0.9380800980390211,
-    "velocity": 10366.695385100615,
+    "freshness": 0.9185736302893519,
+    "velocity": 16583.123823730923,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=NzAZ0Psh1PY",
     "region": "GB"
   },
   {
+    "title": "The Cher Witch Project - Halloween Trailer | SNL UK",
+    "source": "youtube",
+    "freshness": 0.9663662890195106,
+    "velocity": 15904.182175346828,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=yS8bZlE-sA8",
+    "region": "GB"
+  },
+  {
+    "title": "I Became An ELEMENTAL DOG to Prank My Friends!",
+    "source": "youtube",
+    "freshness": 0.9544747546279762,
+    "velocity": 40719.94997801601,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=EdfeJWP6VTA",
+    "region": "GB"
+  },
+  {
+    "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist 👻 Ghostbusters Thriller Monster Mash",
+    "source": "youtube",
+    "freshness": 0.9221615932523148,
+    "velocity": 3633.902011561338,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=tMq10ONbQDo",
+    "region": "GB"
+  },
+  {
     "title": "MOBLAND Season 2 Episode 8 Trailer Explained",
     "source": "youtube",
-    "freshness": 0.9665390927480159,
-    "velocity": 4312.2460960203225,
+    "freshness": 0.9470326249983465,
+    "velocity": 4464.675526203833,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=fyeLSNpHwzU",
     "region": "GB"
@@ -164,35 +191,35 @@
   {
     "title": "Rhino Decorations in Hay Day!",
     "source": "youtube",
-    "freshness": 0.930801658885582,
-    "velocity": 111831.40367847974,
+    "freshness": 0.9112951911359127,
+    "velocity": 95332.51341434351,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=74Yt2Q1z5D4",
     "region": "GB"
   },
   {
-    "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist 👻 Ghostbusters Thriller Monster Mash",
+    "title": "Mazza_L20 - TRACKHAWKS (OFFICIAL MUSIC VIDEO)",
     "source": "youtube",
-    "freshness": 0.8063109181448413,
-    "velocity": 12636.692075109326,
+    "freshness": 0.9728874530406746,
+    "velocity": 2307.8403023256747,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=kMI59IEdUw0",
+    "source_url": "https://www.youtube.com/watch?v=qQ4sal1iPTs",
     "region": "GB"
   },
   {
-    "title": "The Cher Witch Project - Halloween Trailer | SNL UK",
+    "title": "🔴Live: #Scene Audio & Trailer Launch | Suriya | Nazriya | Naslen | Sushin Shyam | Jithu Madhavan",
     "source": "youtube",
-    "freshness": 0.9858727567691798,
-    "velocity": 8557.427317391714,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=yS8bZlE-sA8",
+    "freshness": 0.9713530615062831,
+    "velocity": 105735.55707058693,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=ATdz3TnhIOo",
     "region": "GB"
   },
   {
     "title": "Final Life: Episode 1 - HE'S BACK!",
     "source": "youtube",
-    "freshness": 0.848979568938492,
-    "velocity": 63152.130064292745,
+    "freshness": 0.8294731011888228,
+    "velocity": 59706.367368708125,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ePqTmlZIEVk",
     "region": "GB"
@@ -201,166 +228,94 @@
     "title": "Halloween Songs Playlist 🎃 Top Halloween Music 2026 👻 Halloween Music Mix Halloween Party Playlist",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 720.8226367952396,
+    "velocity": 816.2500926387788,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=BE_vsYfOFik",
     "region": "GB"
   },
   {
-    "title": "🔴Live: #Scene Audio & Trailer Launch | Suriya | Nazriya | Naslen | Sushin Shyam | Jithu Madhavan",
-    "source": "youtube",
-    "freshness": 0.9908595292559523,
-    "velocity": 287793.21654779447,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ATdz3TnhIOo",
-    "region": "GB"
-  },
-  {
-    "title": "I Became An ELEMENTAL DOG to Prank My Friends!",
-    "source": "youtube",
-    "freshness": 0.9739812223776455,
-    "velocity": 44879.217536688906,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=EdfeJWP6VTA",
-    "region": "GB"
-  },
-  {
-    "title": "SHADY AF (official Video) Jass Goraya | Prem Dhillon | The Takeover | Cheetah",
-    "source": "youtube",
-    "freshness": 0.9539994102083333,
-    "velocity": 66087.01498034688,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=CJLe32jgpgk",
-    "region": "GB"
-  },
-  {
     "title": "Eetha | Official Trailer | Shraddha Kapoor | Randeep H | Dinesh V | Laxman U | In Cinemas 4th Dec",
     "source": "youtube",
-    "freshness": 0.7904428625892858,
-    "velocity": 527268.4028237152,
+    "freshness": 0.7709363948396164,
+    "velocity": 495061.367724772,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=nCa4BGy3MJ8",
     "region": "GB"
   },
   {
-    "title": "JJ Pretended to Be a BABY CAT on an OP One Chunk!",
+    "title": "ROBLOX THE HOLLOW (FINAL BATTLE)",
     "source": "youtube",
-    "freshness": 0.9138952435416666,
-    "velocity": 53387.48816845147,
+    "freshness": 0.9744400324057539,
+    "velocity": 171610.90018778003,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=2x0YfyrnZ_0",
+    "source_url": "https://www.youtube.com/watch?v=8K92X36yXqo",
     "region": "GB"
   },
   {
-    "title": "Daddy Yankee and Diljit Dosanjh - POKITO  (Official Music Video)",
+    "title": "SHADY AF (official Video) Jass Goraya | Prem Dhillon | The Takeover | Cheetah",
     "source": "youtube",
-    "freshness": 0.7656131668220899,
-    "velocity": 247243.66948675216,
+    "freshness": 0.934492942458664,
+    "velocity": 64664.60644435327,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=XO1h5G6xytU",
+    "source_url": "https://www.youtube.com/watch?v=CJLe32jgpgk",
     "region": "GB"
   },
   {
     "title": "GTA Logic Trailer",
     "source": "youtube",
-    "freshness": 0.8608529154993386,
-    "velocity": 13922.275515660122,
+    "freshness": 0.8413464477496693,
+    "velocity": 13046.95923420217,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=3QnDhe_jmFM",
     "region": "GB"
   },
   {
-    "title": "Final Life 1 - Mountain Starter Base",
-    "source": "youtube",
-    "freshness": 0.848982875816799,
-    "velocity": 24533.1292003225,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=0L3UJXg__JM",
-    "region": "GB"
-  },
-  {
-    "title": "Florin Cercel - Doctore [Official Video] 2026",
-    "source": "youtube",
-    "freshness": 0.8132256006845238,
-    "velocity": 16638.83457648913,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=efMH1vkJ9xM",
-    "region": "GB"
-  },
-  {
-    "title": "The Hunchback, Soul of Paris | Official Trailer | Netflix",
-    "source": "youtube",
-    "freshness": 0.8370301641765874,
-    "velocity": 36356.019467489285,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=eBfPTW1YaAQ",
-    "region": "GB"
-  },
-  {
     "title": "I Can Shapeshift Into MONSTERS to PRANK Villagers In Minecraft",
     "source": "youtube",
-    "freshness": 0.9695218969808201,
-    "velocity": 29710.049598924077,
+    "freshness": 0.9500154292311508,
+    "velocity": 27808.700384943895,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=cJj0iit4dYI",
     "region": "GB"
   },
   {
-    "title": "Best Relaxing Halloween Music 2026 👻 Haunted House Halloween Ambience 🎃 Spooky Music Playlist",
+    "title": "Dani Mocanu - Doua gratii paralele | Official Video",
     "source": "youtube",
-    "freshness": 0.9263224922189154,
-    "velocity": 2473.7794511651105,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=AwBBnayqCb0",
+    "freshness": 0.9663398339930556,
+    "velocity": 14855.23754700439,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=en0Zd19ZdwM",
     "region": "GB"
   },
   {
-    "title": "iowa football schedule",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "The Hunchback, Soul of Paris | Official Trailer | Netflix",
+    "source": "youtube",
+    "freshness": 0.8175236964269179,
+    "velocity": 35351.980959764536,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=eBfPTW1YaAQ",
+    "region": "GB"
   },
   {
-    "title": "méxico",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "JJ Pretended to Be a BABY CAT on an OP One Chunk!",
+    "source": "youtube",
+    "freshness": 0.8943887757919974,
+    "velocity": 46612.39090431492,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=2x0YfyrnZ_0",
+    "region": "GB"
   },
   {
-    "title": "fifita",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
+    "title": "Florin Cercel - Doctore [Official Video] 2026",
+    "source": "youtube",
+    "freshness": 0.7937191329348545,
+    "velocity": 16709.3030626102,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=efMH1vkJ9xM",
+    "region": "GB"
   },
   {
-    "title": "zombie",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "virginia vs wake forest",
-    "source": "google_trends",
-    "freshness": 0.56,
-    "velocity": 1000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "rafael espinoza",
+    "title": "naruto",
     "source": "google_trends",
     "freshness": 0.555,
     "velocity": 500.0,
@@ -369,16 +324,34 @@
     "region": "US"
   },
   {
-    "title": "utep vs nd state",
+    "title": "dakorien moore",
     "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
+    "freshness": 0.555,
+    "velocity": 500.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
   },
   {
-    "title": "co state vs utah state",
+    "title": "gio lopez",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "theodor berggren",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "oklahoma st vs iowa state",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -387,10 +360,37 @@
     "region": "US"
   },
   {
+    "title": "f1 qualifying",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "hawks vs pelicans",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "golden tempo",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
     "title": "Foogiano - The Misunderstood Truth [Official Music Video]",
     "source": "youtube",
-    "freshness": 0.908568927108135,
-    "velocity": 10199.525630979922,
+    "freshness": 0.8890624911326058,
+    "velocity": 10744.787873547994,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=DCqHjkDmwjc",
     "region": "US"
@@ -398,91 +398,91 @@
   {
     "title": "\"Turn Around, It's a Trap!\" — Homeless Girl Saved 28 Bikers, What They Did Next Left Her in Tears",
     "source": "youtube",
-    "freshness": 0.81120120224041,
-    "velocity": 3126.564753968001,
+    "freshness": 0.791694766264881,
+    "velocity": 2958.770501830515,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=qJEnBNVS3zU",
     "region": "US"
   },
   {
-    "title": "Visionquest Episode 7 Trailer WTF Breakdown",
+    "title": "Cheater Faked His Death",
     "source": "youtube",
-    "freshness": 0.8694998133515212,
-    "velocity": 11264.214869031204,
+    "freshness": 0.9752827292278439,
+    "velocity": 128451.24831868055,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=6zv09LGy2YM",
+    "source_url": "https://www.youtube.com/watch?v=ifBMAl-WIvY",
     "region": "US"
   },
   {
     "title": "Papoose \"Handshakes with Snakes\" Prod by. Ron Browz",
     "source": "youtube",
-    "freshness": 0.8724445884837962,
-    "velocity": 9789.489650885998,
+    "freshness": 0.8529381525082672,
+    "velocity": 9386.964119241666,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=7wMei3zJWDM",
     "region": "US"
   },
   {
-    "title": "🔴LIVE | AGE OF EMPIRES 2 | KONA X COCONUT X WINNIE | 1v7 VS #1 PLAYER IN THE WORLD | #BUNGULATE",
+    "title": "Daddy Yankee and Diljit Dosanjh - POKITO  (Official Music Video)",
     "source": "youtube",
-    "freshness": 0.9288566255208334,
-    "velocity": 100436.43497476116,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=AvlQIurK_Hs",
+    "freshness": 0.7461061419262566,
+    "velocity": 250017.0431386708,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=XO1h5G6xytU",
     "region": "US"
   },
   {
-    "title": "...Baby One More Time",
+    "title": "Visionquest Episode 7 Trailer WTF Breakdown",
     "source": "youtube",
-    "freshness": 0.6713500117642195,
-    "velocity": 21908.548015688473,
+    "freshness": 0.849993377375992,
+    "velocity": 10400.731275306183,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=HwAmG_iZ3cY",
+    "source_url": "https://www.youtube.com/watch?v=6zv09LGy2YM",
     "region": "US"
   },
   {
     "title": "Overload",
     "source": "youtube",
-    "freshness": 0.6586896281663359,
-    "velocity": 573.106354214372,
+    "freshness": 0.6391831921908069,
+    "velocity": 550.4376142093972,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=yR_jvunFIJI",
     "region": "US"
   },
   {
-    "title": "DEATH STRANDING ISOLATIONS | Teaser Trailer",
-    "source": "youtube",
-    "freshness": 0.7507183980076059,
-    "velocity": 42198.92917323126,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=ruIT6Xez6tw",
-    "region": "US"
-  },
-  {
-    "title": "Hunting Down My Friends For Halloween",
-    "source": "youtube",
-    "freshness": 0.8562210435102513,
-    "velocity": 62377.331412104584,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=7ALP3mr_tSs",
-    "region": "US"
-  },
-  {
     "title": "I LIKE IT",
     "source": "youtube",
-    "freshness": 0.6588086757853836,
-    "velocity": 2313.1310267397134,
+    "freshness": 0.6393022398098545,
+    "velocity": 2494.586232507605,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=rDFdo_-QEBM",
     "region": "US"
   },
   {
+    "title": "🔴LIVE | AGE OF EMPIRES 2 | KONA X COCONUT X WINNIE | 1v7 VS #1 PLAYER IN THE WORLD | #BUNGULATE",
+    "source": "youtube",
+    "freshness": 0.9093501895453042,
+    "velocity": 79822.87591262958,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=AvlQIurK_Hs",
+    "region": "US"
+  },
+  {
     "title": "Quimico Ultra Mega - El Hijo de Jason RIP 🪦 Kiry Curru",
     "source": "youtube",
-    "freshness": 0.8668162816054894,
-    "velocity": 26852.944512378224,
+    "freshness": 0.8473098456299604,
+    "velocity": 26282.489512891687,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=OGifQMa041s",
+    "region": "US"
+  },
+  {
+    "title": "...Baby One More Time",
+    "source": "youtube",
+    "freshness": 0.6518435757886905,
+    "velocity": 21187.383878479617,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=HwAmG_iZ3cY",
     "region": "US"
   }
 ]
