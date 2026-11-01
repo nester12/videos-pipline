@@ -1,6 +1,6 @@
 [
   {
-    "title": "london vs man city",
+    "title": "athletic vs real sociedad",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -9,7 +9,7 @@
     "region": "GB"
   },
   {
-    "title": "john cleese",
+    "title": "joe fagnano",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -18,7 +18,7 @@
     "region": "GB"
   },
   {
-    "title": "amedspor",
+    "title": "richard ayoade",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -27,34 +27,25 @@
     "region": "GB"
   },
   {
-    "title": "nyt strands hints",
+    "title": "kourtney kardashian",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "arsenal vs aston villa",
+    "title": "martha stewart",
     "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=GB",
     "region": "GB"
   },
   {
-    "title": "levante badalona vs barcelona",
-    "source": "google_trends",
-    "freshness": 0.555,
-    "velocity": 500.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "gta6",
+    "title": "epl table",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -63,25 +54,7 @@
     "region": "GB"
   },
   {
-    "title": "idris elba",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "como vs venezia",
-    "source": "google_trends",
-    "freshness": 0.5700000000000001,
-    "velocity": 2000.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=GB",
-    "region": "GB"
-  },
-  {
-    "title": "prince harry kate middleton relationship",
+    "title": "nocturne series",
     "source": "google_trends",
     "freshness": 0.56,
     "velocity": 1000.0,
@@ -90,28 +63,109 @@
     "region": "GB"
   },
   {
+    "title": "marseille fc",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "fenwicks window",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
+    "title": "its",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=GB",
+    "region": "GB"
+  },
+  {
     "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist for Best Halloween Ever 👻",
     "source": "youtube",
-    "freshness": 0.834705325598545,
-    "velocity": 18529.354212525137,
+    "freshness": 0.787700706600529,
+    "velocity": 14533.082262466845,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=6DSsrtfdvZM",
     "region": "GB"
   },
   {
+    "title": "Fortnite Treasure Hunters | One Piece Hybrid Trailer",
+    "source": "youtube",
+    "freshness": 0.9310290796164021,
+    "velocity": 61269.4379066815,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=rnjWNafJy8Q",
+    "region": "GB"
+  },
+  {
+    "title": "10,000 Player Minecraft War: Nether VS Overworld",
+    "source": "youtube",
+    "freshness": 0.9812307991931217,
+    "velocity": 215949.9690497191,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=bHxLy6Qza3M",
+    "region": "GB"
+  },
+  {
+    "title": "Sundara Ravanan - Lyric Video | Athimanoharam | Mohanlal | Tharun Moorthy | Ashiq Usman |Jakes bejoy",
+    "source": "youtube",
+    "freshness": 0.9087241854365079,
+    "velocity": 133391.87866116554,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=QFkL82O38Xk",
+    "region": "GB"
+  },
+  {
     "title": "Scene - Official Trailer | Suriya | Nazriya Nazim | Naslen | Sushin Shyam | Jithu Madhavan",
     "source": "youtube",
-    "freshness": 0.8696160398842593,
-    "velocity": 415764.14876765007,
+    "freshness": 0.8226114208862434,
+    "velocity": 368406.643081978,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=LM4ByXufv2w",
     "region": "GB"
   },
   {
+    "title": "Kidnapped By VENOM GIRLS in Minecraft..",
+    "source": "youtube",
+    "freshness": 0.9714705478703703,
+    "velocity": 51442.03570996328,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=jyUVI4qjGpw",
+    "region": "GB"
+  },
+  {
+    "title": "Haziran - Am stat (Special Guest - Luis Gabriel)",
+    "source": "youtube",
+    "freshness": 0.9535671087169312,
+    "velocity": 5709.981546585907,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=s7DSjKzZIms",
+    "region": "GB"
+  },
+  {
+    "title": "A Dickens of a Christmas at Castle Howard | Theatrical Trailer",
+    "source": "youtube",
+    "freshness": 0.9305876113624338,
+    "velocity": 516.4955590764346,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=AKY_reZ9vmI",
+    "region": "GB"
+  },
+  {
     "title": "10,000 VS 10,000 Player Minecraft War",
     "source": "youtube",
-    "freshness": 0.8834239102546296,
-    "velocity": 144251.12542021056,
+    "freshness": 0.8364192912566137,
+    "velocity": 129927.34477143199,
     "category": "gaming",
     "source_url": "https://www.youtube.com/watch?v=ZT-k42SC7L0",
     "region": "GB"
@@ -119,266 +173,149 @@
   {
     "title": "Mazza_L20 - TRACKHAWKS (OFFICIAL MUSIC VIDEO)",
     "source": "youtube",
-    "freshness": 0.8940224552281746,
-    "velocity": 1414.6640155743316,
+    "freshness": 0.8470178362301587,
+    "velocity": 1533.7533407810304,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=qQ4sal1iPTs",
     "region": "GB"
   },
   {
-    "title": "Fortnite Treasure Hunters | One Piece Hybrid Trailer",
+    "title": "Euro Truck Simulator 2: Coaches Video Trailer",
     "source": "youtube",
-    "freshness": 0.978033698614418,
-    "velocity": 49635.01137079254,
+    "freshness": 0.9772757727380952,
+    "velocity": 24697.785705521583,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=rnjWNafJy8Q",
+    "source_url": "https://www.youtube.com/watch?v=JOClo5aYqHU",
     "region": "GB"
   },
   {
     "title": "We Pitched Offensive Video Games To Strangers",
     "source": "youtube",
-    "freshness": 0.9180518864451058,
-    "velocity": 83996.67483508475,
+    "freshness": 0.8710472674470899,
+    "velocity": 88498.60471223004,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=XLabFiVil58",
     "region": "GB"
   },
   {
-    "title": "Sundara Ravanan - Lyric Video | Athimanoharam | Mohanlal | Tharun Moorthy | Ashiq Usman |Jakes bejoy",
+    "title": "Top 100 Christmas Songs of All Time 🎄 Best Christmas Music Playlist",
     "source": "youtube",
-    "freshness": 0.9557288044345238,
-    "velocity": 139860.36824165253,
+    "freshness": 0.8136977304100529,
+    "velocity": 925.1797931258053,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=QFkL82O38Xk",
-    "region": "GB"
-  },
-  {
-    "title": "A Dickens of a Christmas at Castle Howard | Theatrical Trailer",
-    "source": "youtube",
-    "freshness": 0.9775922303604497,
-    "velocity": 999.6001335302499,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=AKY_reZ9vmI",
-    "region": "GB"
-  },
-  {
-    "title": "Brawl Talk: Ranked Refresh, 3 New Brawlers and Traditional Brawlidays!",
-    "source": "youtube",
-    "freshness": 0.8815208017890211,
-    "velocity": 278286.7454713684,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=PfSHrPMW4UU",
-    "region": "GB"
-  },
-  {
-    "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist 👻 Ghostbusters Thriller Monster Mash",
-    "source": "youtube",
-    "freshness": 0.8432965954398148,
-    "velocity": 19243.397811582232,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=tMq10ONbQDo",
+    "source_url": "https://www.youtube.com/watch?v=woaqP99p7Yw",
     "region": "GB"
   },
   {
     "title": "The Cher Witch Project - Halloween Trailer | SNL UK",
     "source": "youtube",
-    "freshness": 0.8875012912070106,
-    "velocity": 12449.507967293664,
+    "freshness": 0.8404966722089947,
+    "velocity": 11673.812268052927,
     "category": "internet",
     "source_url": "https://www.youtube.com/watch?v=yS8bZlE-sA8",
     "region": "GB"
   },
   {
-    "title": "NEW *ONE PIECE* BATTLE PASS in Fortnite!",
+    "title": "Using an EMOTION DETECTOR to Find my Friend's SECRETS!",
     "source": "youtube",
-    "freshness": 0.9689513573445767,
-    "velocity": 20964.032763959432,
+    "freshness": 0.9595277568650794,
+    "velocity": 36320.89504744417,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=H8MK8uCfu6A",
+    "source_url": "https://www.youtube.com/watch?v=6nAZcYPhZJM",
     "region": "GB"
   },
   {
-    "title": "Best Halloween Spooky Music 🎃 Relaxing Halloween Music 2026 👻 Magical Halloween Ambience",
+    "title": "Gracie Abrams - Hit the Wall (Live from Saturday Night Live)",
     "source": "youtube",
-    "freshness": 0.8458048626355821,
-    "velocity": 6479.8844097481515,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=tRnMJ_q0kI8",
+    "freshness": 0.9259679023677249,
+    "velocity": 12044.164496509347,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=mMoNxOrMPxs",
     "region": "GB"
   },
   {
-    "title": "FINAL FANTASY XIV: Evercold | Full Trailer | Launches February 23, 2027",
+    "title": "AVENGERS DOOMSDAY Countdown | Final Trailer Date | Patrick Stewart Thoughts | NR Podcast",
     "source": "youtube",
-    "freshness": 0.8126434869742063,
-    "velocity": 15888.762270187353,
+    "freshness": 0.9774229288227513,
+    "velocity": 12112.74199156616,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=gJ7Enjyd1oQ",
+    "region": "GB"
+  },
+  {
+    "title": "🔴 LIVE! - NEW *ONE PIECE* SEASON COUNTDOWN in FORTNITE!",
+    "source": "youtube",
+    "freshness": 0.9746137357010582,
+    "velocity": 269551.2316796075,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=8mN8N5O5ru0",
-    "region": "GB"
-  },
-  {
-    "title": "I Became An ELEMENTAL DOG to Prank My Friends!",
-    "source": "youtube",
-    "freshness": 0.8756097568154761,
-    "velocity": 25818.994079919383,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=EdfeJWP6VTA",
-    "region": "GB"
-  },
-  {
-    "title": "Música de Halloween 2026 🎃 Las Mejores Canciones de Halloween 👻 Playlist de Halloween",
-    "source": "youtube",
-    "freshness": 0.8397086324768519,
-    "velocity": 20685.95341808361,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=NzAZ0Psh1PY",
-    "region": "GB"
-  },
-  {
-    "title": "MOBLAND Season 2 Episode 8 Trailer Explained",
-    "source": "youtube",
-    "freshness": 0.8681676271858465,
-    "velocity": 3094.342573842593,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=fyeLSNpHwzU",
-    "region": "GB"
-  },
-  {
-    "title": "🔴LIVE | AGE OF EMPIRES 4 | ME + THE #1 PLAYER IN THE GAME V 6 | #BUNGULATE",
-    "source": "youtube",
-    "freshness": 0.9796458017890212,
-    "velocity": 361969.3176674106,
-    "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=H_7jfyXeQ-I",
+    "source_url": "https://www.youtube.com/watch?v=Umcgfv_vlp4",
     "region": "GB"
   },
   {
     "title": "Dani Mocanu - Doua gratii paralele | Official Video",
     "source": "youtube",
-    "freshness": 0.8874748361805556,
-    "velocity": 8746.66789798678,
+    "freshness": 0.8404702171825397,
+    "velocity": 9354.425847348379,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=en0Zd19ZdwM",
     "region": "GB"
   },
   {
-    "title": "‘Wicker’ official trailer",
+    "title": "MOBLAND Season 2 Episode 8 Trailer Explained",
     "source": "youtube",
-    "freshness": 0.5873557885615079,
-    "velocity": 163.40607612915028,
+    "freshness": 0.8211630081878307,
+    "velocity": 2741.3897974576867,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ifdWwg-2zmM",
+    "source_url": "https://www.youtube.com/watch?v=fyeLSNpHwzU",
     "region": "GB"
   },
   {
-    "title": "WORLDS 2026 | Swiss Stage Day 8",
+    "title": "Every Time I Crash, My Plane EVOLVES in GTA 5...",
     "source": "youtube",
-    "freshness": 0.9519143203075396,
-    "velocity": 273824.09776371333,
+    "freshness": 0.965486751574074,
+    "velocity": 34050.41628326378,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=J7wF_Cl4Fz4",
+    "source_url": "https://www.youtube.com/watch?v=xh3rOTOBc_k",
     "region": "GB"
   },
   {
-    "title": "SHADY AF (official Video) Jass Goraya | Prem Dhillon | The Takeover | Cheetah",
+    "title": "Top Halloween Songs of All Time 🎃 Best Halloween Music Playlist 👻 Ghostbusters Thriller Monster Mash",
     "source": "youtube",
-    "freshness": 0.8556279446461641,
-    "velocity": 46190.05773025027,
+    "freshness": 0.7962919764417989,
+    "velocity": 15011.243351502275,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=CJLe32jgpgk",
+    "source_url": "https://www.youtube.com/watch?v=tMq10ONbQDo",
     "region": "GB"
   },
   {
-    "title": "🔴Live: #Scene Audio & Trailer Launch | Suriya | Nazriya | Naslen | Sushin Shyam | Jithu Madhavan",
+    "title": "FINAL FANTASY XIV: Evercold | Full Trailer | Launches February 23, 2027",
     "source": "youtube",
-    "freshness": 0.8924880636937831,
-    "velocity": 31127.053208056186,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ATdz3TnhIOo",
+    "freshness": 0.7656388679761905,
+    "velocity": 13873.074838532579,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=8mN8N5O5ru0",
     "region": "GB"
   },
   {
-    "title": "Cheater Faked His Death",
+    "title": "PLAYING ROBLOX INSIDE OF ROBLOX..",
     "source": "youtube",
-    "freshness": 0.896418288561508,
-    "velocity": 81047.75794494915,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=ifBMAl-WIvY",
+    "freshness": 0.9841358917857143,
+    "velocity": 54790.12225778393,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=VFm9DRwr33A",
     "region": "GB"
   },
   {
-    "title": "【ORIGINAL 3D MV】 HEADSHOT || HAKOS BAELZ (Prod. TeddyLoid x MATZ)",
+    "title": "Mujhse Kyun Bair Kiya (From \"Dar-E-Nijaat\")",
     "source": "youtube",
-    "freshness": 0.9544358150165344,
-    "velocity": 42166.315719704064,
+    "freshness": 0.6942797409920635,
+    "velocity": 4177.254830005478,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=gcw3FDCFWi8",
+    "source_url": "https://www.youtube.com/watch?v=bWvyCZIS5Xk",
     "region": "GB"
   },
   {
-    "title": "week 8 fantasy rankings",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "early voting results",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "eenadu",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "sirius xm",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "november 1st",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "como - venezia",
-    "source": "google_trends",
-    "freshness": 0.552,
-    "velocity": 200.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "ice age",
-    "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
-    "category": "internet",
-    "source_url": "https://trends.google.com/trending/rss?geo=US",
-    "region": "US"
-  },
-  {
-    "title": "levante badalona - barcelona",
+    "title": "jack endries",
     "source": "google_trends",
     "freshness": 0.5700000000000001,
     "velocity": 2000.0,
@@ -387,7 +324,52 @@
     "region": "US"
   },
   {
-    "title": "ciara mageean",
+    "title": "celtics vs magic",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "new mexico football",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "new york yankees",
+    "source": "google_trends",
+    "freshness": 0.56,
+    "velocity": 1000.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "beyonce",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "endries bengals",
+    "source": "google_trends",
+    "freshness": 0.555,
+    "velocity": 500.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "palm beach",
     "source": "google_trends",
     "freshness": 0.552,
     "velocity": 200.0,
@@ -396,10 +378,28 @@
     "region": "US"
   },
   {
-    "title": "new york city marathon",
+    "title": "marseille vs toulouse",
     "source": "google_trends",
-    "freshness": 0.551,
-    "velocity": 100.0,
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "patrick queen",
+    "source": "google_trends",
+    "freshness": 0.552,
+    "velocity": 200.0,
+    "category": "internet",
+    "source_url": "https://trends.google.com/trending/rss?geo=US",
+    "region": "US"
+  },
+  {
+    "title": "george pickens",
+    "source": "google_trends",
+    "freshness": 0.5700000000000001,
+    "velocity": 2000.0,
     "category": "internet",
     "source_url": "https://trends.google.com/trending/rss?geo=US",
     "region": "US"
@@ -407,8 +407,8 @@
   {
     "title": "Halloween Playlist 2026 💀 All-Time Favorite Halloween Hits Songs 🎃 | The Nightmare Before Christmas",
     "source": "youtube",
-    "freshness": 0.8696073711028439,
-    "velocity": 17701.756540617716,
+    "freshness": 0.8226025389814815,
+    "velocity": 13238.365236282756,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=nnaxiCAot5k",
     "region": "US"
@@ -416,100 +416,118 @@
   {
     "title": "Foogiano - The Misunderstood Truth [Official Music Video]",
     "source": "youtube",
-    "freshness": 0.8101976488806217,
-    "velocity": 9909.023472517629,
+    "freshness": 0.7631928167592592,
+    "velocity": 9294.154801081932,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=DCqHjkDmwjc",
+    "region": "US"
+  },
+  {
+    "title": "2 Hour Christmas Songs Of All Time🎄 Best Christmas Music Playlist 2027 🎅",
+    "source": "youtube",
+    "freshness": 0.9323842850132276,
+    "velocity": 1472.1676268030262,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=9n0PwHlv6CA",
+    "region": "US"
+  },
+  {
+    "title": "Brawl Talk: Ranked Refresh, 3 New Brawlers and Traditional Brawlidays!",
+    "source": "youtube",
+    "freshness": 0.8345155680820106,
+    "velocity": 223897.69783114895,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=PfSHrPMW4UU",
+    "region": "US"
+  },
+  {
+    "title": "Overload",
+    "source": "youtube",
+    "freshness": 0.5133135178174603,
+    "velocity": 495.76014690760604,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=yR_jvunFIJI",
     "region": "US"
   },
   {
     "title": "Drank In My Cup",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 228.33517454989638,
+    "velocity": 262.4288826862687,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=9QcKynP2Ub0",
     "region": "US"
   },
   {
-    "title": "Overload",
+    "title": "LEGENDS FESTIVAL 2026 Teaser Trailer | DRAGON BALL LEGENDS",
     "source": "youtube",
-    "freshness": 0.5603183499388227,
-    "velocity": 523.2140550227881,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=yR_jvunFIJI",
-    "region": "US"
-  },
-  {
-    "title": "Mann Versus Zombies - Gameplay Trailer",
-    "source": "youtube",
-    "freshness": 0.9316460615790344,
-    "velocity": 20549.030170093607,
-    "category": "internet",
-    "source_url": "https://www.youtube.com/watch?v=2V3wsgg71u8",
-    "region": "US"
-  },
-  {
-    "title": "\"Turn Around, It's a Trap!\" — Homeless Girl Saved 28 Bikers, What They Did Next Left Her in Tears",
-    "source": "youtube",
-    "freshness": 0.7128299240128968,
-    "velocity": 2557.199554835129,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=qJEnBNVS3zU",
-    "region": "US"
-  },
-  {
-    "title": "Bears-Seahawks Monday Night Football hype trailer | Bears Buzz | Chicago Bears",
-    "source": "youtube",
-    "freshness": 0.9036219213673942,
-    "velocity": 1992.4013037840916,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=2_xOU70peos",
-    "region": "US"
-  },
-  {
-    "title": "Rocket League but with Bugs",
-    "source": "youtube",
-    "freshness": 0.9006887203091931,
-    "velocity": 52076.338893673535,
+    "freshness": 0.941704721521164,
+    "velocity": 12056.232458458653,
     "category": "gaming",
-    "source_url": "https://www.youtube.com/watch?v=Iz59N1TKcEE",
+    "source_url": "https://www.youtube.com/watch?v=Yy04jqNO_Ow",
+    "region": "US"
+  },
+  {
+    "title": "🔴LIVE | AGE OF EMPIRES 4 | ME + THE #1 PLAYER IN THE GAME V 6 | #BUNGULATE",
+    "source": "youtube",
+    "freshness": 0.9326405680820106,
+    "velocity": 115090.0265750817,
+    "category": "gaming",
+    "source_url": "https://www.youtube.com/watch?v=H_7jfyXeQ-I",
     "region": "US"
   },
   {
     "title": "Jarahn - Maski Lo Luv (Audio) feat. BMT",
     "source": "youtube",
     "freshness": 0.05,
-    "velocity": 383.9996140097477,
+    "velocity": 375.4900366388712,
     "category": "entertainment",
     "source_url": "https://www.youtube.com/watch?v=ZRTYqleaQMY",
     "region": "US"
   },
   {
-    "title": "The Hunchback, Soul of Paris | Official Trailer | Netflix",
+    "title": "Mann Versus Zombies - Gameplay Trailer",
     "source": "youtube",
-    "freshness": 0.7386582970287698,
-    "velocity": 28747.50770210861,
-    "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=eBfPTW1YaAQ",
+    "freshness": 0.884641229457672,
+    "velocity": 29334.673808093557,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=2V3wsgg71u8",
     "region": "US"
   },
   {
-    "title": "Why This Gas Station Is So Terrifying",
+    "title": "Cheater Faked His Death",
     "source": "youtube",
-    "freshness": 0.934415572161045,
-    "velocity": 42899.62894784092,
+    "freshness": 0.8494130548544974,
+    "velocity": 67640.95804090654,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=UcTlPUR5s4w",
+    "source_url": "https://www.youtube.com/watch?v=ifBMAl-WIvY",
     "region": "US"
   },
   {
-    "title": "Papoose \"Handshakes with Snakes\" Prod by. Ron Browz",
+    "title": "Saii Kay - Sarah (Visualizer)",
     "source": "youtube",
-    "freshness": 0.7740733102562831,
-    "velocity": 7617.989467333429,
+    "freshness": 0.6420684781349206,
+    "velocity": 286.56718479824866,
     "category": "entertainment",
-    "source_url": "https://www.youtube.com/watch?v=7wMei3zJWDM",
+    "source_url": "https://www.youtube.com/watch?v=hVVN9bMC-_0",
+    "region": "US"
+  },
+  {
+    "title": "[Trailer] The Girl Who's Running the Show - Pomni Takeover | The Amazing Digital Circus",
+    "source": "youtube",
+    "freshness": 0.82856814744709,
+    "velocity": 21002.20218678557,
+    "category": "entertainment",
+    "source_url": "https://www.youtube.com/watch?v=5DifK1eJCV0",
+    "region": "US"
+  },
+  {
+    "title": "Best Halloween Spooky Music 🎃 Relaxing Halloween Music 2026 👻 Magical Halloween Ambience",
+    "source": "youtube",
+    "freshness": 0.7987996289285715,
+    "velocity": 5175.070925224798,
+    "category": "internet",
+    "source_url": "https://www.youtube.com/watch?v=tRnMJ_q0kI8",
     "region": "US"
   }
 ]
