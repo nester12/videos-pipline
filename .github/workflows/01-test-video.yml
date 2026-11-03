@@ -1,0 +1,53 @@
+name: 1 - Test Video (safe preview)
+run-name: Preview video ${{ github.run_number }}
+on:
+  workflow_dispatch:
+    inputs:
+      upload_cloudinary:
+        description: Upload preview to Cloudinary (optional)
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: motivation-preview
+  cancel-in-progress: false
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free local tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak
+          python -m pip install --disable-pip-version-check requests numpy cloudinary
+      - name: Generate preview with original speech
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          UPLOAD: ${{ inputs.upload_cloudinary }}
+        run: |
+          if [ "$UPLOAD" = "true" ]; then
+            python -m motivation test-video --upload
+          else
+            python -m motivation test-video
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: motivational-test-preview
+          path: |
+            output/test-video/final.mp4
+            output/test-video/result.json
+            output/test-video/captions.srt
+          if-no-files-found: warn
+          retention-days: 1

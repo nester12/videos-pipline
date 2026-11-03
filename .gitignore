@@ -1,8 +1,12 @@
+.env
+.venv/
 __pycache__/
 .pytest_cache/
-*.pyc
-work/
 output/
 *.wav
+*.mp3
 *.mp4
-.env
+*.srt
+*.ass
+*.log
+*.key

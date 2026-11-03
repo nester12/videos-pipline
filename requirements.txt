@@ -1,3 +1,5 @@
 requests>=2.31,<3
-PyYAML>=6,<7
-pytest>=8,<9
+numpy>=1.24,<3
+faster-whisper>=1.1,<2
+cloudinary>=1.41,<2
+pytest>=8,<10

@@ -1,0 +1,80 @@
+name: 3 - Full Video and Posting
+run-name: Full motivational video ${{ github.run_number }}
+on:
+  workflow_dispatch:
+    inputs:
+      audio_source:
+        description: Original speech guarantees a clean first run; auto attempts Archive first
+        required: true
+        type: choice
+        options:
+          - original
+          - auto
+          - archive
+        default: original
+      topic:
+        description: Speech search phrase for licensed Archive material
+        type: string
+        default: speech
+      posting_mode:
+        description: Off = just video, Draft = review in Buffer, Queue = publish through Buffer
+        required: true
+        type: choice
+        options:
+          - 'off'
+          - draft
+          - queue
+        default: 'off'
+      channel_id:
+        description: Buffer channel ID (required only for Draft/Queue)
+        type: string
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: motivation-full-production
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free production tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak
+          python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Generate, upload, and optionally create Buffer post
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          SOURCE: ${{ inputs.audio_source }}
+          TOPIC: ${{ inputs.topic }}
+          POSTING: ${{ inputs.posting_mode }}
+          CHANNEL: ${{ inputs.channel_id }}
+        run: |
+          if [ "$POSTING" != "off" ] && [ -z "$CHANNEL" ]; then
+            echo 'Buffer posting requires a channel ID'; exit 1
+          fi
+          python -m motivation full-video --source "$SOURCE" --query "$TOPIC" --upload --post "$POSTING" --channel-id "$CHANNEL"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: motivational-full-production
+          path: |
+            output/full-video/final.mp4
+            output/full-video/result.json
+            output/full-video/captions.srt
+          if-no-files-found: warn
+          retention-days: 1
