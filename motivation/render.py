@@ -24,7 +24,7 @@ def write_srt(cues: list[dict], target: Path) -> Path:
 
 
 def render_video(speech: Path, backdrop: Path, srt: Path, music: Path,
-                 destination: Path, *, preview=False) -> Path:
+                 destination: Path, *, preview=False, speaker_start: float | None = None) -> Path:
     """Loop supplied video to speech length; caption overlay; deterministic duration."""
     destination.parent.mkdir(parents=True, exist_ok=True)
     length = duration(speech)
@@ -34,11 +34,26 @@ def render_video(speech: Path, backdrop: Path, srt: Path, music: Path,
     # Render in SRT directory so subtitles=filename works.
     captions = srt.resolve()
     subtitle_arg = "subtitles=" + captions.name + ":force_style='FontName=DejaVu Sans,FontSize=11,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=3,Alignment=2,MarginV=54,Bold=1'"
-    filters = ("scale=540:960:force_original_aspect_ratio=increase,crop=540:960,"
-               "fps=24,format=yuv420p,hue=s=0,eq=contrast=1.16:brightness=-0.035," + subtitle_arg)
-    filter_graph = f"[0:v]{filters}[v];[1:a]aresample=44100,volume=1.35[voice];[2:a]aresample=44100,volume=0.35[bg];[voice][bg]amix=inputs=2:duration=first:dropout_transition=0,alimiter=limit=0.90[a]"
-    command = [tool("ffmpeg"), "-hide_banner", "-loglevel", "error", "-y", "-stream_loop", "-1", "-i", str(backdrop.resolve()),
-               "-i", str(speech.resolve()), "-i", str(music.resolve()), "-filter_complex", filter_graph,
+    if speaker_start is not None:
+        filters = ("scale=540:650:force_original_aspect_ratio=decrease,"
+                   "pad=540:960:(ow-iw)/2:(oh-ih)/2:black,"
+                   "fps=24,format=yuv420p,hue=s=0,eq=contrast=1.16:brightness=-0.035," + subtitle_arg)
+    else:
+        filters = ("scale=540:960:force_original_aspect_ratio=increase,crop=540:960,"
+                   "fps=24,format=yuv420p,hue=s=0,eq=contrast=1.16:brightness=-0.035," + subtitle_arg)
+    fade_out = max(0.0, length - 1.5)
+    filter_graph = (f"[0:v]{filters}[v];"
+        f"[1:a]aresample=44100,highpass=f=90,loudnorm=I=-17:TP=-2:LRA=11,"
+        f"asplit=2[voice_for_duck][voice_mix];"
+        f"[2:a]aresample=44100,volume=0.40,afade=t=in:st=0:d=1.1,"
+        f"afade=t=out:st={fade_out:.3f}:d=1.5[bed];"
+        f"[bed][voice_for_duck]sidechaincompress=threshold=0.025:ratio=10:attack=25:release=450[ducked];"
+        f"[voice_mix][ducked]amix=inputs=2:duration=first:normalize=0,"
+        f"alimiter=limit=0.92[a]")
+    visual_input = (["-stream_loop", "-1", "-i", str(backdrop.resolve())]
+                    if speaker_start is None else ["-ss", f"{speaker_start:.3f}", "-i", str(backdrop.resolve())])
+    command = [tool("ffmpeg"), "-hide_banner", "-loglevel", "error", "-y", *visual_input,
+               "-i", str(speech.resolve()), "-stream_loop", "-1", "-i", str(music.resolve()), "-filter_complex", filter_graph,
                "-map", "[v]", "-map", "[a]", "-t", f"{length:.3f}", "-c:v", "libx264", "-preset", "veryfast",
                "-crf", "27" if preview else "23", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
                str(destination.resolve())]
