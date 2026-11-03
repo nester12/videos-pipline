@@ -41,47 +41,6 @@ def gemini_endpoint() -> str:
     return "https://generativelanguage.googleapis.com/v1beta/models/" + gemini_model() + ":generateContent"
 
 
-MOTIVATIONAL_SCRIPT = [
-    "The person you become is decided by what you do when nobody is watching.",
-    "Start before you feel ready. Take the first step even when it feels uncomfortable.",
-    "Discipline is showing up on the ordinary days, when motivation has disappeared.",
-    "When you fall behind, do not quit. Learn something, adjust your direction, and begin again.",
-    "Progress is not always loud. Sometimes it is one difficult choice made consistently.",
-    "You are building the strength to finish what you started. Keep going.",
-]
-
-
-def original_narration(directory: Path, script: list[str] | None = None) -> dict:
-    """Create original narration with licensed local neural TTS and caption timings."""
-    from .voice import synthesize_sentences
-    directory.mkdir(parents=True, exist_ok=True)
-    script = script or MOTIVATIONAL_SCRIPT
-    synthesis = synthesize_sentences(script, directory)
-    paths = synthesis["paths"]
-    cues = []
-    elapsed = 0.0
-    for phrase, path in zip(script, paths):
-        d = duration(path)
-        words = phrase.split()
-        chunks = [words[j:j+4] for j in range(0, len(words), 4)]
-        weights = [sum(len(w) for w in chunk) for chunk in chunks]
-        total_weight = max(1, sum(weights))
-        prior = 0
-        for chunk, weight in zip(chunks, weights):
-            cues.append({"start": round(elapsed + d * prior / total_weight, 2),
-                         "end": round(elapsed + d * (prior + weight) / total_weight, 2),
-                         "text": " ".join(chunk)})
-            prior += weight
-        elapsed += d
-    lst = directory / "narration_files.txt"
-    lst.write_text("\n".join("file '" + p.name + "'" for p in paths), encoding="utf-8")
-    merged = directory / "narration.wav"
-    subprocess.run([tool("ffmpeg"), "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
-                    "-ac", "1", "-ar", "22050", str(merged)], check=True)
-    return {"path": merged, "cues": cues, "duration": elapsed, "script": " ".join(script),
-            "origin": "original licensed offline narration", "voice": synthesis["engine"]}
-
-
 def transcribe(audio: Path, model_size="tiny") -> list[dict]:
     try:
         from faster_whisper import WhisperModel
@@ -165,27 +124,3 @@ def slice_audio(audio: Path, result: Path, start: float, end: float) -> None:
 def shift_cues(cues: list[dict], start: float, end: float) -> list[dict]:
     return [{"start": max(0, c["start"] - start), "end": min(end, c["end"]) - start,
              "text": c["text"]} for c in cues if c["end"] > start and c["start"] < end and c["text"]]
-
-
-def gemini_original_script(topic: str = "discipline") -> list[str] | None:
-    """Original fallback writing, not copied quotations. Returns None on free API errors."""
-    key = os.getenv("GEMINI_API_KEY")
-    if not key:
-        return None
-    prompt = ("Write an entirely ORIGINAL motivational voiceover for short-form video on the theme "
-              + repr(topic[:65]) + ". Start with a distinctive emotional hook. "
-              "Write 6 to 9 short punchy sentences totaling about 100-150 words. "
-              "Make a complete arc, with a satisfying final sentence. Avoid quoting existing speeches or famous people. "
-              "Return only JSON object {\"sentences\": [\"...\"]}.")
-    try:
-        r = requests.post(gemini_endpoint(),
-             params={"key": key}, json={"contents": [{"parts": [{"text": prompt}]}],
-                                     "generationConfig": {"responseMimeType": "application/json", "temperature": .8}}, timeout=45)
-        r.raise_for_status()
-        generated = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-        items = generated.get("sentences", [])
-        if isinstance(items, list) and 4 <= len(items) <= 12 and sum(len(s.split()) for s in items) >= 55:
-            return [str(s)[:240] for s in items]
-    except (ValueError, TypeError, KeyError, IndexError, requests.RequestException):
-        pass
-    return None

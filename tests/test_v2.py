@@ -35,20 +35,3 @@ def test_external_service_checks_skip_when_keys_missing(monkeypatch):
     status = service_health()
     assert status['Buffer']['status'] == 'skipped'
     assert status['Cloudinary']['status'] == 'skipped'
-
-
-def test_piper_does_not_silently_use_robot(monkeypatch, tmp_path):
-    import motivation.voice as v
-    monkeypatch.setenv('MOTIVATION_VOICE', 'piper')
-    monkeypatch.delenv('ALLOW_ROBOTIC_VOICE', raising=False)
-    monkeypatch.setattr(v, '_piper_model', lambda: (_ for _ in ()).throw(RuntimeError('unavailable')))
-    with pytest.raises(PipelineError, match='Neural narration unavailable'):
-        v.synthesize_sentences(['Go.'], tmp_path)
-
-
-def test_diagnostic_uses_robotic_voice_explicitly(monkeypatch, tmp_path):
-    import motivation.voice as v
-    monkeypatch.setenv('MOTIVATION_VOICE', 'espeak')
-    result = v.synthesize_sentences(['Move forward.'], tmp_path)
-    assert 'eSpeak' in result['engine']
-    assert result['paths'][0].is_file()
