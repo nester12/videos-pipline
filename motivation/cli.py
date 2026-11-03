@@ -5,7 +5,7 @@ import json
 import os
 import subprocess
 from pathlib import Path
-from .analysis import gemini_original_script, gemini_selection, music_check, original_narration, shift_cues, slice_audio, transcribe
+from .analysis import gemini_original_script, gemini_selection, gemini_model, music_check, original_narration, shift_cues, slice_audio, transcribe
 from .audio import demucs_vocals, make_music
 from .scenes import montage
 from .common import PipelineError, duration, save_json, tool
@@ -101,7 +101,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="", right
               "voice": source_info.get("voice", "licensed recording"),
               "rights_review_required": bool(speech_path or source_info.get("reuse_requires_review") or
                                               source_info.get("license", "").startswith("http")),
-              "model": os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")}
+              "model": gemini_model()}
     if post != "off" and source_info.get("reuse_requires_review") and not archive_reviewed:
         raise PipelineError("Archive recordings require a human rights review before creating any Buffer post. Use --archive-reviewed after checking the actual recording and license")
     if upload or post != "off":

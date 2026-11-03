@@ -129,3 +129,9 @@ jobs:
             output/live-smoke/result.json
           retention-days: 1
           if-no-files-found: warn
+      - name: Verify Gemini can generate original script (one-off)
+        if: ${{ github.event_name == 'push' && contains(github.event.head_commit.message, 'GEMINI-SMOKE') }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python -c 'from motivation.analysis import gemini_model, gemini_original_script; s=gemini_original_script("discipline and resilience"); print("Selected model:", gemini_model(), "sentences generated:", len(s or [])); assert s and len(s)>=4, "Gemini did not produce an original script"'

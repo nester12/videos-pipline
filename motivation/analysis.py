@@ -8,11 +8,37 @@ from pathlib import Path
 import requests
 from .common import PipelineError, duration, tool
 
+_CACHED_MODEL = None
+
+
+def gemini_model() -> str:
+    """Choose an actually available Flash/Lite model. GEMINI_MODEL overrides this."""
+    global _CACHED_MODEL
+    explicit = os.getenv("GEMINI_MODEL")
+    if explicit:
+        if not re.fullmatch(r"gemini-[a-zA-Z0-9.-]+", explicit):
+            raise PipelineError("Invalid GEMINI_MODEL identifier")
+        return explicit
+    if _CACHED_MODEL:
+        return _CACHED_MODEL
+    preferred = ("gemini-3.5-flash-lite", "gemini-3-flash", "gemini-2.5-flash-lite", "gemini-2.5-flash")
+    available = set()
+    key = os.getenv("GEMINI_API_KEY")
+    if key:
+        try:
+            r = requests.get("https://generativelanguage.googleapis.com/v1beta/models",
+                             headers={"x-goog-api-key": key}, params={"pageSize": 100}, timeout=18)
+            r.raise_for_status()
+            available = {m["name"].split("/")[-1] for m in r.json().get("models", [])
+                         if "generateContent" in m.get("supportedGenerationMethods", [])}
+        except (KeyError, ValueError, requests.RequestException):
+            pass
+    _CACHED_MODEL = next((m for m in preferred if m in available), "gemini-2.5-flash")
+    return _CACHED_MODEL
+
+
 def gemini_endpoint() -> str:
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-    if not re.fullmatch(r"gemini-[a-zA-Z0-9.-]+", model):
-        raise PipelineError("Invalid GEMINI_MODEL identifier")
-    return "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent"
+    return "https://generativelanguage.googleapis.com/v1beta/models/" + gemini_model() + ":generateContent"
 
 
 MOTIVATIONAL_SCRIPT = [

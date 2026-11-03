@@ -7,14 +7,34 @@ import requests
 from .common import PipelineError, download, run, tool
 
 
+def relevance_score(title: str, query: str) -> int:
+    """Prefer genuinely relevant actions over loosely related stock videos."""
+    import re
+    words = set(re.findall(r"[a-z]{3,}", query.lower()))
+    title_words = set(re.findall(r"[a-z]{3,}", title.lower()))
+    value = 3 * len(words & title_words)
+    query_text = query.lower()
+    if any(x in query_text for x in ("gym", "training", "athlete", "workout")):
+        value += 2 * len(title_words & {"exercise", "fitness", "lifting", "weights", "weightlifting",
+                                         "squat", "sprinting", "trainer", "training", "workout"})
+        value -= 4 * len(title_words & {"massage", "massaging", "treatment", "relaxation", "office"})
+    if "runner" in query_text:
+        value += 3 * len(title_words & {"running", "runner", "jogging", "sprint", "sprinting"})
+    return value
+
+
 def pexels(query: str, folder: Path):
     key = os.getenv("PEXELS_API_KEY")
     if not key:
         return None
     response = requests.get("https://api.pexels.com/v1/videos/search", headers={"Authorization": key},
-            params={"query": query, "orientation": "portrait", "per_page": 6}, timeout=30)
+            params={"query": query, "orientation": "portrait", "per_page": 14}, timeout=30)
     response.raise_for_status()
-    for item in response.json().get("videos", []):
+    videos = response.json().get("videos", [])
+    videos.sort(key=lambda x: relevance_score(x.get("url", "").replace("-", " "), query), reverse=True)
+    for item in videos:
+        if relevance_score(item.get("url", "").replace("-", " "), query) <= 0:
+            continue
         files = [f for f in item.get("video_files", []) if f.get("file_type") == "video/mp4" and f.get("link")]
         files.sort(key=lambda f: abs((f.get("width") or 720) - 720) + abs((f.get("height") or 1280) - 1280))
         for f in files[:2]:
@@ -33,7 +53,11 @@ def pixabay(query: str, folder: Path):
         return None
     response = requests.get("https://pixabay.com/api/videos/", params={"key": key, "q": query, "per_page": 5}, timeout=30)
     response.raise_for_status()
-    for item in response.json().get("hits", []):
+    hits = response.json().get("hits", [])
+    hits.sort(key=lambda x: relevance_score(x.get("tags", ""), query), reverse=True)
+    for item in hits:
+        if relevance_score(item.get("tags", ""), query) <= 0:
+            continue
         options = item.get("videos", {})
         for size in ("medium", "small", "large", "tiny"):
             video = options.get(size, {})
