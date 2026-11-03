@@ -1,0 +1,88 @@
+name: 0 - Validate pipeline and connected APIs
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'motivation/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - '.github/workflows/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: motivation-validation
+  cancel-in-progress: false
+jobs:
+  offline-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak
+          python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Unit tests
+        run: python -m pytest -q
+      - name: Render an entire offline video
+        env:
+          MOTIVATION_VOICE: espeak
+        run: |
+          python -m motivation full-video --source original --offline --output output/ci-full
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of default=noprint_wrappers=1 output/ci-full/final.mp4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validated-offline-production
+          path: |
+            output/ci-full/final.mp4
+            output/ci-full/result.json
+          retention-days: 1
+          if-no-files-found: warn
+  neural-voice-and-api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install audio tools and neural TTS
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak
+          python -m pip install --disable-pip-version-check requests numpy cloudinary piper-tts
+      - uses: actions/cache@v4
+        with:
+          path: .cache/piper
+          key: piper-john-medium-voice-v1
+      - name: Render test preview with real neural voice
+        env:
+          MOTIVATION_VOICE: piper
+          ALLOW_ROBOTIC_VOICE: '0'
+        run: python -m motivation test-video --offline --output output/neural-preview
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: neural-narration-preview
+          path: |
+            output/neural-preview/final.mp4
+            output/neural-preview/result.json
+          retention-days: 1
+          if-no-files-found: warn
+      - name: Probe services (read-only; no social posts)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python -m motivation doctor --live

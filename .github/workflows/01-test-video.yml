@@ -26,7 +26,11 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg espeak
-          python -m pip install --disable-pip-version-check requests numpy cloudinary
+          python -m pip install --disable-pip-version-check -r requirements.txt piper-tts
+      - uses: actions/cache@v4
+        with:
+          path: .cache/piper
+          key: piper-john-medium-voice-v1
       - name: Generate preview with original speech
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -34,6 +38,8 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          MOTIVATION_VOICE: piper
+          ALLOW_ROBOTIC_VOICE: '0'
           UPLOAD: ${{ inputs.upload_cloudinary }}
         run: |
           if [ "$UPLOAD" = "true" ]; then

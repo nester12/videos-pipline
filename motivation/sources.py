@@ -39,12 +39,28 @@ def discover_archive(query: str = "speech", max_candidates: int = 30):
                "item_url": ARCHIVE + "/details/" + hit["identifier"]}
 
 
-def licensed_audio(query: str, dest: Path, max_files: int = 20) -> dict:
-    """Download explicitly CC0/PD/CC BY audio with track provenance and size bounds."""
+def relevance_score(title: str, query: str) -> int:
+    """Prefer spoken motivational material to music tagged with 'speech'."""
+    text = str(title).lower()
+    tokens = {t for t in re.findall(r"[a-z]{3,}", query.lower()) if t not in {"the", "and", "for"}}
+    value = 2 * sum(word in text for word in tokens)
+    value += sum(word in text for word in ("speech", "talk", "inspiration", "inspirational", "motivation", "lecture", "address", "sermon", "discipline"))
+    value -= 3 * sum(word in text for word in ("song", "album", "dj mix", "music", "beat", "instrumental", "soundtrack"))
+    return value
+
+
+def licensed_audio(query: str, dest: Path, max_files: int = 25, exclude: set[str] | None = None) -> dict:
+    """Download one verified-license candidate, preferring speech-like metadata.
+
+    An item license is only a claim by its uploader, never definitive rights clearance.
+    Human review is necessary before publishing an externally sourced recording.
+    """
     errors = []
-    for hit in discover_archive(query, max_files):
-        if not hit["eligible"]:
-            continue
+    excluded = exclude or set()
+    candidates = sorted((c for c in discover_archive(query, max_files)
+                         if c["eligible"] and c["identifier"] not in excluded),
+                        key=lambda x: relevance_score(x["title"], query), reverse=True)
+    for hit in candidates:
         try:
             r = requests.get(ARCHIVE + "/metadata/" + quote(hit["identifier"], safe=""), timeout=25)
             r.raise_for_status()
@@ -60,19 +76,22 @@ def licensed_audio(query: str, dest: Path, max_files: int = 20) -> dict:
             tracks.sort(key=lambda f: (f.get("source") != "original", int(f.get("size", "0") or "0")))
             for track in tracks:
                 size = int(track.get("size", "0") or "0")
-                if size and not 1024 < size < 55 * 1024 * 1024:
+                if size and not 1024 < size < 45 * 1024 * 1024:
                     continue
                 name = track["name"]
-                if "/" in name or ".." in name:
+                if "/" in name or ".." in name or "\\" in name:
                     continue
                 remote = ARCHIVE + "/download/" + quote(hit["identifier"], safe="") + "/" + quote(name)
                 ext = Path(name).suffix.lower()
-                download(remote, dest.with_suffix(ext), max_mb=55)
-                return {"path": str(dest.with_suffix(ext)), "origin": hit["item_url"], "license": actual_license,
-                        "title": hit["title"], "attribution": details.get("metadata", {}).get("creator", "unknown")}
+                output = dest.with_suffix(ext)
+                download(remote, output, max_mb=45)
+                return {"path": str(output), "origin": hit["item_url"], "license": actual_license,
+                        "title": hit["title"], "identifier": hit["identifier"],
+                        "attribution": details.get("metadata", {}).get("creator", "unknown"),
+                        "license_verified": False, "reuse_requires_review": True}
         except (requests.RequestException, ValueError, PipelineError) as exc:
-            errors.append(str(exc)[:180])
-    raise PipelineError("No verifiably licensed downloadable Archive recording found. Supply your own licensed speech file. " + "; ".join(errors[:2]))
+            errors.append(type(exc).__name__)
+    raise PipelineError("No downloadable Archive track with a suitable asserted license found. " + ", ".join(errors[:3]))
 
 
 def youtube_suggestions(query: str, limit: int = 5):

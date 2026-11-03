@@ -38,7 +38,11 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg espeak
-          python -m pip install --disable-pip-version-check requests numpy cloudinary
+          python -m pip install --disable-pip-version-check -r requirements.txt piper-tts
+      - uses: actions/cache@v4
+        with:
+          path: .cache/piper
+          key: piper-john-medium-voice-v1
       - name: Verify API or create explicitly requested post
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
@@ -47,6 +51,8 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          MOTIVATION_VOICE: piper
+          ALLOW_ROBOTIC_VOICE: '0'
           MODE: ${{ inputs.action }}
           CHANNEL_ID: ${{ inputs.channel_id }}
           VIDEO_URL: ${{ inputs.video_url }}

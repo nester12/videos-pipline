@@ -17,29 +17,51 @@ MOODS = {
 
 
 def make_music(path: Path, seconds: float, mood: str = "determined") -> Path:
-    """Gentle sustained synth chords; self-generated so no third-party music license needed."""
-    sample_rate = 22050
-    voices, amp = MOODS.get(mood, MOODS["determined"])
-    total = max(1, int(seconds * sample_rate))
+    """Compose a royalty-free cinematic bed with a chord progression, pulse, and swells.
+
+    Streaming synthesis caps RAM regardless of duration. This is original audio,
+    not a third-party song or imitation of an existing copyrighted composition.
+    """
+    import numpy as np
+    sr = 22050
+    length = max(1.0, float(seconds))
+    progressions = {
+        "determined": [(110, 130.81, 164.81), (98, 123.47, 146.83), (87.31, 110, 130.81), (98, 123.47, 164.81)],
+        "hopeful": [(130.81, 164.81, 196), (146.83, 174.61, 220), (164.81, 196, 246.94), (146.83, 196, 220)],
+        "calm": [(110, 146.83, 174.61), (98, 130.81, 164.81), (87.31, 130.81, 174.61), (98, 146.83, 196)],
+        "intense": [(98, 116.54, 146.83), (87.31, 110, 130.81), (82.41, 98, 123.47), (98, 123.47, 146.83)]
+    }
+    chords = progressions.get(mood, progressions["determined"])
+    bpm = 96 if mood == "calm" else 108 if mood == "hopeful" else 116
+    beat = 60 / bpm
+    total = int(length * sr)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with wave.open(str(path), "wb") as w:
-        w.setnchannels(1)
-        w.setsampwidth(2)
-        w.setframerate(sample_rate)
-        step = sample_rate * 3
-        for offset in range(0, total, step):
-            count = min(step, total - offset)
-            t = (np.arange(offset, offset+count, dtype=np.float64)) / sample_rate
-            shape = (1 - np.exp(-np.mod(t, 8.0)*.8)) * np.minimum(1, (seconds - t) / 2.0)
-            wave_data = np.zeros(count, dtype=np.float64)
-            for j, freq in enumerate(voices):
-                wave_data += np.sin(2*np.pi*freq*t + 0.15*np.sin(2*np.pi*0.13*t+j)) / (j+2)
-                wave_data += 0.12*np.sin(2*np.pi*(freq/2)*t) / (j+2)
-            # Low-level arpeggio adds pulse to otherwise sustained chords.
-            melody_freq = np.asarray(voices)[(np.floor(t / 2).astype(int)) % len(voices)]*2
-            melody = 0.075*np.sin(2*np.pi*melody_freq*t)
-            out = np.clip((wave_data+melody)*shape*amp, -1.0, 1.0)
-            w.writeframes((out*32767).astype("<i2").tobytes())
+    with wave.open(str(path), "wb") as wav:
+        wav.setnchannels(1); wav.setsampwidth(2); wav.setframerate(sr)
+        rng = np.random.default_rng(4096)
+        for offset in range(0, total, sr * 3):
+            t = np.arange(offset, min(total, offset+sr*3), dtype=np.float64) / sr
+            chord_idx = np.floor(t / (beat * 8)).astype(int) % len(chords)
+            phase_in_beat = np.mod(t, beat)
+            y = np.zeros(len(t), dtype=np.float64)
+            for k, chord in enumerate(chords):
+                mask = chord_idx == k
+                if not mask.any():
+                    continue
+                tm = t[mask]
+                pad = sum(np.sin(2*np.pi*f*tm + .2*np.sin(2*np.pi*.09*tm+j)) / (j+2)
+                          for j, f in enumerate(chord))
+                bass = np.sin(2*np.pi*(chord[0]/2)*tm) * .27
+                y[mask] = .22*pad + .18*bass
+            # Original low-frequency kick, soft snare, and a periodic rising swell.
+            kick = .20*np.sin(2*np.pi*(53 - 23*np.minimum(phase_in_beat, .18)/.18)*t) * np.exp(-26*phase_in_beat)
+            snare_phase = np.mod(t + beat, beat*2)
+            snare = .07*rng.standard_normal(len(t)) * np.exp(-34*snare_phase)
+            shimmer = .028*np.sin(2*np.pi*440*t) * np.sin(np.pi*np.mod(t,beat*8)/(beat*8))**4
+            fade_in = np.minimum(1, t / 2.0)
+            fade_out = np.minimum(1, np.maximum(0, length - t) / 2.0)
+            y = np.tanh((y + kick + snare + shimmer) * fade_in * fade_out * 1.2)
+            wav.writeframes((np.clip(y, -.97, .97) * 32767).astype('<i2').tobytes())
     return path
 
 

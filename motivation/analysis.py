@@ -8,6 +8,13 @@ from pathlib import Path
 import requests
 from .common import PipelineError, duration, tool
 
+def gemini_endpoint() -> str:
+    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    if not re.fullmatch(r"gemini-[a-zA-Z0-9.-]+", model):
+        raise PipelineError("Invalid GEMINI_MODEL identifier")
+    return "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent"
+
+
 MOTIVATIONAL_SCRIPT = [
     "The person you become is decided by what you do when nobody is watching.",
     "Start before you feel ready. Take the first step even when it feels uncomfortable.",
@@ -19,22 +26,17 @@ MOTIVATIONAL_SCRIPT = [
 
 
 def original_narration(directory: Path, script: list[str] | None = None) -> dict:
-    """Generate royalty-free prototype narration with locally installed eSpeak."""
-    import shutil
+    """Create original narration with licensed local neural TTS and caption timings."""
+    from .voice import synthesize_sentences
     directory.mkdir(parents=True, exist_ok=True)
     script = script or MOTIVATIONAL_SCRIPT
-    engine = shutil.which("espeak-ng") or shutil.which("espeak")
-    if not engine:
-        raise PipelineError("eSpeak is required for no-key synthetic narration")
-    paths, cues = [], []
+    synthesis = synthesize_sentences(script, directory)
+    paths = synthesis["paths"]
+    cues = []
     elapsed = 0.0
-    for i, phrase in enumerate(script):
-        path = directory / f"line_{i:02}.wav"
-        subprocess.run([engine, "-v", "en", "-s", "142", "-w", str(path), phrase], check=True, capture_output=True)
+    for phrase, path in zip(script, paths):
         d = duration(path)
-        paths.append(path)
         words = phrase.split()
-        # eSpeak creates one WAV per sentence; split into short caption chunks.
         chunks = [words[j:j+4] for j in range(0, len(words), 4)]
         weights = [sum(len(w) for w in chunk) for chunk in chunks]
         total_weight = max(1, sum(weights))
@@ -45,13 +47,13 @@ def original_narration(directory: Path, script: list[str] | None = None) -> dict
                          "text": " ".join(chunk)})
             prior += weight
         elapsed += d
-    # concat wav by demuxer and normalize before rendering
     lst = directory / "narration_files.txt"
     lst.write_text("\n".join("file '" + p.name + "'" for p in paths), encoding="utf-8")
     merged = directory / "narration.wav"
     subprocess.run([tool("ffmpeg"), "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
                     "-ac", "1", "-ar", "22050", str(merged)], check=True)
-    return {"path": merged, "cues": cues, "duration": elapsed, "script": " ".join(script), "origin": "original royalty-free prototype speech"}
+    return {"path": merged, "cues": cues, "duration": elapsed, "script": " ".join(script),
+            "origin": "original licensed offline narration", "voice": synthesis["engine"]}
 
 
 def transcribe(audio: Path, model_size="tiny") -> list[dict]:
@@ -99,8 +101,8 @@ def music_check(audio: Path) -> dict:
 def gemini_selection(cues: list[dict]) -> dict:
     """Use model to suggest an emotionally complete excerpt; conservative local fallback."""
     transcript = "\n".join(f'{c["start"]:.1f}-{c["end"]:.1f}: {c["text"]}' for c in cues[:200])
-    fallback = {"start": cues[0]["start"], "end": cues[-1]["end"], "mood": "determined",
-                "visual_query": "athlete running outdoors", "score": 6, "reason": "fallback: use complete available speech"}
+    from .quality import best_window
+    fallback = best_window(cues)
     key = os.getenv("GEMINI_API_KEY")
     if not key:
         return fallback
@@ -108,7 +110,7 @@ def gemini_selection(cues: list[dict]) -> dict:
               "Choose natural length based on hook and payoff, never artificially extend. Avoid taking words out of context. "
               "Respond ONLY JSON: start (seconds), end (seconds), mood (one of determined, hopeful, calm, intense), "
               "visual_query (brief Pexels footage query), score (1-10), reason (short). The selected interval must be within timestamps.\n" + transcript)
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+    url = gemini_endpoint()
     try:
         r = requests.post(url, params={"key": key}, json={"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": .25}}, timeout=45)
@@ -150,7 +152,7 @@ def gemini_original_script(topic: str = "discipline") -> list[str] | None:
               "Make a complete arc, with a satisfying final sentence. Avoid quoting existing speeches or famous people. "
               "Return only JSON object {\"sentences\": [\"...\"]}.")
     try:
-        r = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+        r = requests.post(gemini_endpoint(),
              params={"key": key}, json={"contents": [{"parts": [{"text": prompt}]}],
                                      "generationConfig": {"responseMimeType": "application/json", "temperature": .8}}, timeout=45)
         r.raise_for_status()

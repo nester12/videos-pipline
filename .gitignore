@@ -10,3 +10,6 @@ output/
 *.ass
 *.log
 *.key
+.cache/
+*.onnx
+*.onnx.json
