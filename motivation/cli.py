@@ -68,7 +68,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="", right
                 # Fail closed on unverified music, but generate an original demo so the workflow remains operational.
                 archive_failure = "Archive speech music status unverified; generated original narration instead"
                 generated_script = gemini_original_script(query)
-            made = original_narration(folder / "tts", generated_script)
+                made = original_narration(folder / "tts", generated_script)
                 audio, cues = made["path"], made["cues"]
                 source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", ""), "script_source": "Gemini" if generated_script else "built-in original script"}
             else:
