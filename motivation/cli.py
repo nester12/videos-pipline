@@ -34,9 +34,10 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="", right
             raise PipelineError(f"Speech audio does not exist: {audio}")
         source_info = {"origin": "user-provided licensed speech", "license": "rights confirmed by operator"}
     elif preview or source == "original":
-        made = original_narration(folder / "tts", None if preview else gemini_original_script(query))
+        generated_script = None if preview else gemini_original_script(query)
+        made = original_narration(folder / "tts", generated_script)
         audio, cues = made["path"], made["cues"]
-        source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", "") }
+        source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", ""), "script_source": "Gemini" if generated_script else "built-in original script"}
     else:
         try:
             chosen = select_archive_recording(query, folder / "archive_speech", separate_music=separate_music,
@@ -51,9 +52,10 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="", right
             if source == "archive":
                 raise
             archive_failure = str(exc)[:300]
-            made = original_narration(folder / "tts", gemini_original_script(query))
+            generated_script = gemini_original_script(query)
+            made = original_narration(folder / "tts", generated_script)
             audio, cues = made["path"], made["cues"]
-            source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", "") }
+            source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", ""), "script_source": "Gemini" if generated_script else "built-in original script"}
 
     if not cues:
         check = music_check(audio)
@@ -65,9 +67,10 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="", right
             if source == "auto" and not speech_path:
                 # Fail closed on unverified music, but generate an original demo so the workflow remains operational.
                 archive_failure = "Archive speech music status unverified; generated original narration instead"
-                made = original_narration(folder / "tts", gemini_original_script(query))
+                generated_script = gemini_original_script(query)
+            made = original_narration(folder / "tts", generated_script)
                 audio, cues = made["path"], made["cues"]
-                source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", "") }
+                source_info = {"origin": made["origin"], "license": "original", "voice": made.get("voice", ""), "script_source": "Gemini" if generated_script else "built-in original script"}
             else:
                 raise PipelineError("Music detection uncertain or music present; need clean audio confirmation or reviewed separation")
         if not cues:

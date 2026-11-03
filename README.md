@@ -35,7 +35,7 @@ BUFFER_API_KEY
 FREESOUND_API_KEY
 ```
 
-Freesound is intentionally not used in this release: its API and individual asset commercial-use permissions must be confirmed first. No invented or extra secrets are needed. Optional environment `GEMINI_MODEL` can select a model available to your key (default `gemini-2.5-flash`).
+Freesound is intentionally not used in this release: its API and individual asset commercial-use permissions must be confirmed first. No invented or extra secrets are needed. The default is automatically selected from available Flash/Lite models (the live check selected `gemini-3.5-flash-lite`). Set optional `GEMINI_MODEL` to override it.
 
 ## First-use validation
 
