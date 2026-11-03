@@ -1,4 +1,4 @@
-name: 0 - Validate real-voice pipeline
+name: 0 - CHECK SYSTEM (Pipeline Tests and Connections)
 on:
   push:
     branches: [main]

@@ -2,6 +2,19 @@
 
 This pipeline is built for dark, cinematic motivational edits featuring the **original recorded voices of real people**. The production paths contain **no text-to-speech** and do not generate synthetic instrumental music. The TikTok example videos are styling references, not a licence to copy their music, speeches, or footage.
 
+## Start here: clearly named GitHub Actions
+
+- **0 - CHECK SYSTEM:** runs tests and checks connected services; no video or post.
+- **1 - CREATE SAMPLE VIDEO:** choose *Find licensed human speech automatically* (leave the speaker-video URL blank, no permission checkbox) or *Use my licensed speaker video* (direct MP4 URL and check **rights_confirmed** only if you have permission).
+- **2 - CHECK BUFFER / MAKE DRAFT:** check accounts, create a nonpublic draft, or explicitly queue a post. Default is a harmless check.
+- **3 - CREATE FULL VIDEO:** same two real-voice source options, plus a clear choice between making an MP4 only, saving a Buffer draft, or queueing a real post. Default: video only.
+
+### If GitHub says "Importing a real speaker video requires --rights-confirmed"
+
+That message means you selected a speaker video but did not confirm rights to reuse its audio AND footage. For your own or otherwise authorized video, tick **rights_confirmed** in the Run workflow form. Otherwise use **Find licensed human speech automatically** and leave the URL empty. A TikTok page link is not a supported direct video URL and does not itself give reuse rights.
+
+A speaker-video URL will now be **ignored if automatic search is selected**; it no longer silently triggers imported-video mode.
+
 ## How it works
 1. Obtain a licensed recording of someone speaking (search Internet Archive for CC0/public-domain/CC BY audio with publisher assertions, or provide an authorised original speaker MP4 from Cloudinary).
 2. Check for existing music. If needed, run optional Demucs to separate the human voice. No additional soundtrack is layered on uncertain/unreviewed audio.

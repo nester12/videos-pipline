@@ -1,32 +1,36 @@
-name: 1 - Test Video (original human voice)
+name: 1 - CREATE SAMPLE VIDEO (Real Human Voice)
+run-name: 'Sample video #${{ github.run_number }} — ${{ inputs.source }}'
 on:
   workflow_dispatch:
     inputs:
       source:
-        description: Archive finds licensed speech; Clip preserves a real speaker on camera
+        description: "Step 1: Where should the REAL voice come from?"
         type: choice
-        options: [archive, clip]
-        default: archive
+        options:
+          - "Find licensed human speech automatically"
+          - "Use my licensed speaker video"
+        default: "Find licensed human speech automatically"
       topic:
+        description: "Search topic - AUTOMATIC SEARCH ONLY"
         type: string
         default: motivational speech
       speaker_video_url:
-        description: Approved direct Cloudinary MP4 URL in clip mode
+        description: 'SPEAKER VIDEO ONLY: direct MP4 link from Cloudinary, Wikimedia, or Archive'
         type: string
       rights_confirmed:
-        description: I have reuse rights for the supplied speaker video
+        description: 'SPEAKER VIDEO ONLY: I own or have permission to reuse BOTH audio and video'
         type: boolean
         default: false
       clean_confirmed:
-        description: I reviewed the recording and it has no background music
+        description: 'I listened: the recording has NO music behind the speech'
         type: boolean
         default: false
       separate_music:
-        description: Separate speech from existing music using Demucs
+        description: 'Recording HAS music: try to separate voice (slow and imperfect)'
         type: boolean
         default: false
       upload_cloudinary:
-        description: Upload only if source rights have been reviewed
+        description: 'Optional Cloudinary upload - review rights first'
         type: boolean
         default: false
 permissions:
@@ -40,6 +44,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Check selected speech source and permission before installing tools
+        env:
+          CHOICE: ${{ inputs.source }}
+          VIDEO_URL: ${{ inputs.speaker_video_url }}
+          RIGHTS: ${{ inputs.rights_confirmed }}
+        run: |
+          if [ "$CHOICE" = "Find licensed human speech automatically" ]; then
+            echo "SPEECH_MODE=archive" >> "$GITHUB_ENV"
+            if [ -n "$VIDEO_URL" ]; then echo "::notice::Speaker URL ignored in automatic search mode."; fi
+          elif [ "$CHOICE" = "Use my licensed speaker video" ]; then
+            echo "SPEECH_MODE=clip" >> "$GITHUB_ENV"
+            if [ -z "$VIDEO_URL" ]; then
+              echo "::error::Speaker-video mode requires a public direct MP4 URL in speaker_video_url."
+              exit 1
+            fi
+            if [ "$RIGHTS" != true ]; then
+              echo "::error::Tick rights_confirmed ONLY if you own this video or have permission to reuse both audio and footage. Otherwise select automatic search."
+              exit 1
+            fi
+          else
+            echo "::error::Unknown speech source selected."
+            exit 1
+          fi
       - name: Install real-speech tools (no synthetic voice)
         run: |
           sudo apt-get update -qq
@@ -48,7 +75,7 @@ jobs:
       - name: Optional voice separator
         if: ${{ inputs.separate_music }}
         run: python -m pip install --disable-pip-version-check demucs
-      - name: Render preview using original voice and recorded CC0 soundtrack
+      - name: Create sample with original HUMAN voice and licensed recorded music
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -56,7 +83,6 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          SOURCE: ${{ inputs.source }}
           TOPIC: ${{ inputs.topic }}
           VIDEO_URL: ${{ inputs.speaker_video_url }}
           RIGHTS: ${{ inputs.rights_confirmed }}
@@ -64,7 +90,8 @@ jobs:
           SEPARATE: ${{ inputs.separate_music }}
           UPLOAD: ${{ inputs.upload_cloudinary }}
         run: |
-          ARGS=(test-video --source "$SOURCE" --query "$TOPIC" --speaker-video-url "$VIDEO_URL")
+          ARGS=(test-video --source "$SPEECH_MODE" --query "$TOPIC")
+          if [ "$SPEECH_MODE" = clip ]; then ARGS+=(--speaker-video-url "$VIDEO_URL"); fi
           if [ "$RIGHTS" = true ]; then ARGS+=(--rights-confirmed); fi
           if [ "$CLEAN" = true ]; then ARGS+=(--clean-confirmed); fi
           if [ "$SEPARATE" = true ]; then ARGS+=(--separate-music); fi

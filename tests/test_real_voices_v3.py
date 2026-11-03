@@ -50,3 +50,14 @@ def test_cc0_music_download_records_provenance(monkeypatch,tmp_path):
     result=commons_track("determined",tmp_path)
     assert result["license"].endswith("/zero/1.0/")
     assert result["type"]=="recorded instrumental"
+
+
+def test_archive_source_does_not_auto_import_an_unused_speaker_url(tmp_path):
+    with pytest.raises(PipelineError, match="needs internet"):
+        produce(tmp_path, source="archive", offline=True,
+                speaker_video_url="https://res.cloudinary.com/example/video/upload/speech.mp4")
+
+def test_speaker_mode_gives_clear_permission_instructions(tmp_path):
+    with pytest.raises(PipelineError, match="rights_confirmed"):
+        produce(tmp_path, source="clip",
+                speaker_video_url="https://res.cloudinary.com/example/video/upload/speech.mp4")

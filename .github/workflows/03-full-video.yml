@@ -1,42 +1,48 @@
-name: 3 - Real speaker video and optional Buffer posting
+name: 3 - CREATE FULL VIDEO (Real Speaker, Optional Posting)
+run-name: 'Full video #${{ github.run_number }} — ${{ inputs.audio_source }}'
 on:
   workflow_dispatch:
     inputs:
       audio_source:
-        description: Auto/archive search human recordings; Clip keeps real speaker on camera
+        description: "Step 1: Where should the REAL speaker recording come from?"
         type: choice
-        options: [auto, archive, clip]
-        default: auto
+        options:
+          - "Find licensed human speech automatically"
+          - "Use my licensed speaker video"
+        default: "Find licensed human speech automatically"
       topic:
-        description: Search phrase for licensed speeches
+        description: 'Search words for AUTOMATIC SEARCH only'
         type: string
         default: motivational speech
       speaker_video_url:
-        description: Cloudinary MP4 of a real speaker with reuse permission
+        description: 'SPEAKER VIDEO ONLY: direct Cloudinary/Wikimedia/Archive MP4 link'
         type: string
       rights_confirmed:
-        description: I have permission to reuse supplied speaker video
+        description: 'SPEAKER VIDEO ONLY: I own or can reuse BOTH voice and footage'
         type: boolean
         default: false
       clean_confirmed:
-        description: I reviewed the recording and speech is free of music
+        description: 'I listened: the speech has NO existing background music'
         type: boolean
         default: false
       separate_music:
-        description: Extract real speech from existing music via Demucs
+        description: 'Existing recording HAS music: attempt voice separation (slow)'
         type: boolean
         default: true
       archive_rights_reviewed:
-        description: I reviewed the actual Archive source and publication rights
+        description: 'ARCHIVE UPLOAD/POST ONLY: I reviewed the chosen original recording and its rights'
         type: boolean
         default: false
       posting_mode:
-        description: Off does not post; draft for review; queue schedules a real social post
+        description: "Step 2: Save only, create Buffer draft, or schedule a real social post"
         type: choice
-        options: ['off', draft, queue]
-        default: 'off'
+        options:
+          - "Save video only (do not post)"
+          - "Create Buffer draft (not public)"
+          - "Queue social post (may go public)"
+        default: "Save video only (do not post)"
       channel_id:
-        description: Buffer channel ID, needed for draft or queue
+        description: 'Connected Buffer channel ID - needed only for draft or queue'
         type: string
 permissions:
   contents: read
@@ -49,6 +55,46 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Check source, reuse permission and posting choice before installing tools
+        env:
+          CHOICE: ${{ inputs.audio_source }}
+          VIDEO_URL: ${{ inputs.speaker_video_url }}
+          RIGHTS: ${{ inputs.rights_confirmed }}
+          POSTING_CHOICE: ${{ inputs.posting_mode }}
+          CHANNEL: ${{ inputs.channel_id }}
+          REVIEWED: ${{ inputs.archive_rights_reviewed }}
+        run: |
+          if [ "$CHOICE" = "Find licensed human speech automatically" ]; then
+            echo "SPEECH_MODE=archive" >> "$GITHUB_ENV"
+            if [ -n "$VIDEO_URL" ]; then echo "::notice::Speaker URL ignored in automatic search mode."; fi
+          elif [ "$CHOICE" = "Use my licensed speaker video" ]; then
+            echo "SPEECH_MODE=clip" >> "$GITHUB_ENV"
+            if [ -z "$VIDEO_URL" ]; then
+              echo "::error::Speaker-video mode requires speaker_video_url with a direct MP4 link."
+              exit 1
+            fi
+            if [ "$RIGHTS" != true ]; then
+              echo "::error::Tick rights_confirmed ONLY if you own or have permission to reuse the recording and its audio, or switch to automatic search."
+              exit 1
+            fi
+          else
+            echo "::error::Unknown source selected."
+            exit 1
+          fi
+          case "$POSTING_CHOICE" in
+            "Save video only (do not post)") echo "POST_MODE=off" >> "$GITHUB_ENV" ;;
+            "Create Buffer draft (not public)") echo "POST_MODE=draft" >> "$GITHUB_ENV" ;;
+            "Queue social post (may go public)") echo "POST_MODE=queue" >> "$GITHUB_ENV" ;;
+            *) echo "::error::Unknown posting choice"; exit 1 ;;
+          esac
+          if [ "$POSTING_CHOICE" != "Save video only (do not post)" ] && [ -z "$CHANNEL" ]; then
+            echo "::error::Buffer draft and queue need a channel_id."
+            exit 1
+          fi
+          if [ "$CHOICE" = "Find licensed human speech automatically" ] && [ "$POSTING_CHOICE" != "Save video only (do not post)" ] && [ "$REVIEWED" != true ]; then
+            echo "::error::Review the Archive recording and its rights before creating a social draft or post."
+            exit 1
+          fi
       - name: Install real speech, caption and video tools without TTS
         run: |
           sudo apt-get update -qq
@@ -57,7 +103,7 @@ jobs:
       - name: Install optional speech-only separator
         if: ${{ inputs.separate_music }}
         run: python -m pip install --disable-pip-version-check demucs
-      - name: Real-voice production and optional Cloudinary/Buffer
+      - name: Make real-human-voice video with music and optional Buffer posting
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -66,20 +112,16 @@ jobs:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          SOURCE: ${{ inputs.audio_source }}
           TOPIC: ${{ inputs.topic }}
           VIDEO_URL: ${{ inputs.speaker_video_url }}
           RIGHTS: ${{ inputs.rights_confirmed }}
           CLEAN: ${{ inputs.clean_confirmed }}
           SEPARATE: ${{ inputs.separate_music }}
           REVIEWED: ${{ inputs.archive_rights_reviewed }}
-          POSTING: ${{ inputs.posting_mode }}
           CHANNEL: ${{ inputs.channel_id }}
         run: |
-          if [ "$POSTING" != off ] && [ -z "$CHANNEL" ]; then
-            echo 'Posting needs Buffer channel ID'; exit 1
-          fi
-          ARGS=(full-video --source "$SOURCE" --query "$TOPIC" --speaker-video-url "$VIDEO_URL" --post "$POSTING" --channel-id "$CHANNEL")
+          ARGS=(full-video --source "$SPEECH_MODE" --query "$TOPIC" --post "$POST_MODE" --channel-id "$CHANNEL")
+          if [ "$SPEECH_MODE" = clip ]; then ARGS+=(--speaker-video-url "$VIDEO_URL"); fi
           if [ "$RIGHTS" = true ]; then ARGS+=(--rights-confirmed); fi
           if [ "$CLEAN" = true ]; then ARGS+=(--clean-confirmed); fi
           if [ "$SEPARATE" = true ]; then ARGS+=(--separate-music); fi

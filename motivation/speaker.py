@@ -7,7 +7,7 @@ from .common import PipelineError, download, duration, tool
 
 def licensed_video(url: str, directory: Path, *, rights_confirmed: bool) -> dict:
     if not rights_confirmed:
-        raise PipelineError("Importing a real speaker video requires --rights-confirmed")
+        raise PipelineError("Speaker-video permission not confirmed. In the GitHub Run workflow form tick rights_confirmed ONLY if you own or may reuse BOTH audio and footage; or select automatic licensed-speech search. CLI equivalent: --rights-confirmed")
     host=(urlsplit(url).hostname or "").lower()
     if host not in ("res.cloudinary.com","upload.wikimedia.org","archive.org"):
         raise PipelineError("Speaker video must be a public Cloudinary, Wikimedia or Archive URL")

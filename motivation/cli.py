@@ -27,14 +27,14 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
     source_info, selected, check, cues, speaker_visual = None,None,None,[],None
     if source=="original":
         raise PipelineError("AI generated voices are disabled. Select auto, archive, clip or audio.")
-    if speaker_video_url or source=="clip":
+    if source=="clip":
         if not speaker_video_url:
             raise PipelineError("Clip source needs --speaker-video-url")
         record=licensed_video(speaker_video_url,folder/"original_speaker",rights_confirmed=rights_confirmed)
         audio=record["audio"]
         speaker_visual=record["video"]
         source_info=record["source"]
-    elif speech_path or source=="audio":
+    elif source=="audio":
         if not speech_path:
             raise PipelineError("Audio source requires --speech-path")
         if not rights_confirmed:
