@@ -33,14 +33,14 @@ def render_video(speech: Path, backdrop: Path, srt: Path, music: Path | None,
     # Relative filename used inside -vf avoids Windows/Unix FFmpeg subtitles escaping bugs.
     # Render in SRT directory so subtitles=filename works.
     captions = srt.resolve()
-    subtitle_arg = "subtitles=" + captions.name + ":force_style='FontName=DejaVu Sans,FontSize=11,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=3,Alignment=2,MarginV=54,Bold=1'"
+    subtitle_arg = "subtitles=" + captions.name + ":force_style='FontName=DejaVu Sans,FontSize=12,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=2,Alignment=5,Bold=1'"
     if speaker_start is not None:
         filters = ("scale=540:650:force_original_aspect_ratio=decrease,"
                    "pad=540:960:(ow-iw)/2:(oh-ih)/2:black,"
-                   "fps=24,format=yuv420p,hue=s=0,eq=contrast=1.16:brightness=-0.035," + subtitle_arg)
+                   "fps=24,format=yuv420p,hue=s=0.10,eq=contrast=1.19:brightness=-0.042," + subtitle_arg)
     else:
         filters = ("scale=540:960:force_original_aspect_ratio=increase,crop=540:960,"
-                   "fps=24,format=yuv420p,hue=s=0,eq=contrast=1.16:brightness=-0.035," + subtitle_arg)
+                   "fps=24,format=yuv420p,eq=contrast=1.06:brightness=-0.015," + subtitle_arg)
     fade_out = max(0.0, length - 1.5)
     if music is None:
         # Preserve the source recording. Do not introduce another possibly-overlapping soundtrack.

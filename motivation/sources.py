@@ -39,6 +39,16 @@ def discover_archive(query: str = "speech", max_candidates: int = 30):
                "item_url": ARCHIVE + "/details/" + hit["identifier"]}
 
 
+AUDIOBOOK_MARKERS = ("librivox", "audiobook", "audio book", "chapter", "book reading",
+                     "complete book", "full book", "narrated by", "reading of", "novel")
+
+
+def suitable_motivational_recording(hit: dict) -> bool:
+    """Avoid replacing emotional real-person speeches with audiobook narrators."""
+    descriptor = (str(hit.get("title", "")) + " " + str(hit.get("identifier", ""))).lower()
+    return not any(marker in descriptor for marker in AUDIOBOOK_MARKERS)
+
+
 def relevance_score(title: str, query: str) -> int:
     """Prefer spoken motivational material to music tagged with 'speech'."""
     text = str(title).lower()
@@ -46,6 +56,9 @@ def relevance_score(title: str, query: str) -> int:
     value = 2 * sum(word in text for word in tokens)
     value += sum(word in text for word in ("speech", "talk", "inspiration", "inspirational", "motivation", "lecture", "address", "sermon", "discipline"))
     value -= 3 * sum(word in text for word in ("song", "album", "dj mix", "music", "beat", "instrumental", "soundtrack"))
+    value -= 20 * sum(word in text for word in AUDIOBOOK_MARKERS)
+    value += 2 * sum(word in text for word in ("real speaker", "motivational speech", "motivational talk",
+                                                "inspirational talk", "mindset", "resilience", "perseverance"))
     return value
 
 
@@ -58,7 +71,8 @@ def licensed_audio(query: str, dest: Path, max_files: int = 25, exclude: set[str
     errors = []
     excluded = exclude or set()
     candidates = sorted((c for c in discover_archive(query, max_files)
-                         if c["eligible"] and c["identifier"] not in excluded),
+                         if c["eligible"] and c["identifier"] not in excluded and
+                         suitable_motivational_recording(c)),
                         key=lambda x: relevance_score(x["title"], query), reverse=True)
     for hit in candidates:
         try:
@@ -91,7 +105,9 @@ def licensed_audio(query: str, dest: Path, max_files: int = 25, exclude: set[str
                         "license_verified": False, "reuse_requires_review": True}
         except (requests.RequestException, ValueError, PipelineError) as exc:
             errors.append(type(exc).__name__)
-    raise PipelineError("No downloadable Archive track with a suitable asserted license found. " + ", ".join(errors[:3]))
+    raise PipelineError("No usable licensed, non-audiobook motivational SPEECH was found. "
+                        "Try a specific speaker/topic or supply a real speaker video you may reuse. "
+                        + ", ".join(errors[:3]))
 
 
 def youtube_suggestions(query: str, limit: int = 5):

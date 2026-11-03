@@ -4,14 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       source:
-        description: "Step 1: Where should the REAL voice come from?"
+        description: "Select style: cinematic B-roll vs SAME real speaker visible on camera"
         type: choice
         options:
-          - "Find licensed human speech automatically"
-          - "Use my licensed speaker video"
-        default: "Find licensed human speech automatically"
+          - "Cinematic montage (licensed speech audio)"
+          - "Actual speaker on camera (my licensed video)"
+        default: "Cinematic montage (licensed speech audio)"
       topic:
-        description: "Search topic - AUTOMATIC SEARCH ONLY"
+        description: "Montage mode: search for licensed real speech (audiobooks rejected)"
         type: string
         default: motivational speech
       speaker_video_url:
@@ -46,10 +46,11 @@ jobs:
           VIDEO_URL: ${{ inputs.speaker_video_url }}
           RIGHTS: ${{ inputs.rights_confirmed }}
         run: |
-          if [ "$CHOICE" = "Find licensed human speech automatically" ]; then
+          if [ "$CHOICE" = "Cinematic montage (licensed speech audio)" ]; then
             echo "SPEECH_MODE=archive" >> "$GITHUB_ENV"
+            echo "::notice::Montage uses separate dramatic B-roll; it does not show the person who recorded the speech."
             if [ -n "$VIDEO_URL" ]; then echo "::notice::Speaker URL ignored in automatic search mode."; fi
-          elif [ "$CHOICE" = "Use my licensed speaker video" ]; then
+          elif [ "$CHOICE" = "Actual speaker on camera (my licensed video)" ]; then
             echo "SPEECH_MODE=clip" >> "$GITHUB_ENV"
             if [ -z "$VIDEO_URL" ]; then
               echo "::error::Speaker-video mode requires a public direct MP4 URL in speaker_video_url."

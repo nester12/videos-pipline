@@ -76,8 +76,8 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
     if preview:
         cut_end=next((c["end"] for c in cues if c["end"]-cues[0]["start"]>=18),cues[-1]["end"])
         selection={"start":float(cues[0]["start"]),"end":min(float(cut_end),duration(audio)),
-                   "mood":"determined","visual_query":"dramatic motivational speaker",
-                   "score":6,"reason":"Short human speech preview"}
+                   "mood":"determined","visual_query":"lonely athlete running outdoors dawn",
+                   "score":6,"reason":"Short human speech preview; authentic speaker video or cinematic B-roll"}
     else:
         selection=selected or gemini_selection(cues)
     cut_start=max(0.,float(selection["start"]))
@@ -100,7 +100,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
                "warning":"Existing background music has not been verified; no new music added"}
     if speaker_visual:
         background={"path":speaker_visual,"source":source_info["origin"],
-                    "style":"speaker on camera, black letterbox framing"}
+                    "style":"actual speaker on camera, black letterbox framing"}
     else:
         background=montage(selection.get("visual_query","cinematic runner training"),
                            folder/"scenes",duration(speech),offline=offline,preview=preview)
@@ -109,6 +109,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
                        folder/"final.mp4",preview=preview,
                        speaker_start=cut_start if speaker_visual else None)
     result={"video":str(video),"seconds":round(duration(video),2),
+            "editing_style":"REAL SPEAKER ON CAMERA" if speaker_visual else "DARK CINEMATIC B-ROLL",
             "selection":selection,"source":source_info,
             "voice":"original recorded human voice (no TTS)",
             "music":{k:str(v) for k,v in music.items() if k!="path"},

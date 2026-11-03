@@ -2,10 +2,18 @@
 
 This pipeline is built for dark, cinematic motivational edits featuring the **original recorded voices of real people**. The production paths contain **no text-to-speech** and do not generate synthetic instrumental music. The TikTok example videos are styling references, not a licence to copy their music, speeches, or footage.
 
+## Why the initial Cloudinary test looked wrong
+
+The first live test used narration from a LibriVox audiobook with **unrelated conference footage**, a single continuous scene, no verified replacement soundtrack, and subtitles at the bottom. That was not representative of your reference examples.
+
+**The automatic mode now creates a short-cut, low-saturation athlete/training montage and rejects known audiobooks**. It will not show unrelated speaker stock video that appears to mouth another person's audio. Speaker-on-camera mode uses the actual permitted source video so audio and mouth movements remain connected. The caption alignment has been adjusted toward the reference's centred minimalist format.
+
+The cinematic montage is still an approximation, not a guarantee of the emotional voice, copyrighted film/anime footage, or exact music from your references. Unverified musical backgrounds are not layered. Public output requires source rights review.
+
 ## Start here: clearly named GitHub Actions
 
 - **0 - CHECK SYSTEM:** runs tests and checks connected services; no video or post.
-- **1 - CREATE SAMPLE VIDEO:** always uploads the generated sample MP4 to **Cloudinary Media Library > motivation-test-previews**, using authenticated access (private). Choose *Find licensed human speech automatically* (leave the speaker-video URL blank, no permission checkbox) or *Use my licensed speaker video* (direct MP4 URL and check **rights_confirmed** only if you have permission).
+- **1 - CREATE SAMPLE VIDEO:** automatically uploads private MP4s to **Cloudinary Media Library > motivation-test-previews**. Choose **Cinematic montage (licensed speech audio)** or **Actual speaker on camera (my licensed video)**. The latter needs a direct MP4 URL and **rights_confirmed** only if you have permission.
 - **2 - CHECK BUFFER / MAKE DRAFT:** check accounts, create a nonpublic draft, or explicitly queue a post. Default is a harmless check.
 - **3 - CREATE FULL VIDEO:** same two real-voice source options, plus a clear choice between making an MP4 only, saving a Buffer draft, or queueing a real post. Default: video only.
 

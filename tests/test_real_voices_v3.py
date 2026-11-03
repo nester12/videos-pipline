@@ -138,3 +138,30 @@ def test_auto_discovered_archive_test_video_uploads_to_private_cloudinary(monkey
 def test_preview_cannot_publish_to_buffer(tmp_path):
     with pytest.raises(PipelineError, match="private Cloudinary previews"):
         produce(tmp_path, preview=True, source="archive", post="queue", channel_id="123")
+
+
+def test_reject_audiobooks_when_searching_for_real_motivational_speeches():
+    from motivation.sources import suitable_motivational_recording
+    assert not suitable_motivational_recording({"title": "Your Invisible Power", "identifier": "your_invisible_power_2104_librivox"})
+    assert not suitable_motivational_recording({"title": "Chapter 14 - Motivation", "identifier": "book_ch14"})
+    assert suitable_motivational_recording({"title": "Discipline: motivational speech", "identifier": "speaker_123"})
+
+
+def test_cinematic_montage_uses_multiple_shots_and_no_random_speaker(monkeypatch, tmp_path):
+    from motivation import scenes as s
+    from pathlib import Path
+    seen=[]
+    monkeypatch.setattr(s, "get_background", lambda q, dir: seen.append(q) or {
+        "path":tmp_path/"stock.mp4", "source":"stock", "credit":"licensed"})
+    monkeypatch.setattr(s, "run", lambda *args, **kwargs: None)
+    result=s.montage("dramatic motivational speaker", tmp_path/"scenes",18.8,preview=True)
+    assert result["scene_count"] >= 4
+    assert all("speaker" not in x and "conference" not in x for x in seen)
+    assert "B-roll" in result["style"]
+
+
+def test_cinematic_montage_fails_instead_of_filler_when_no_licensed_clip(monkeypatch,tmp_path):
+    from motivation import scenes as s
+    monkeypatch.setattr(s, "get_background", lambda *a, **kw: None)
+    with pytest.raises(PipelineError,match="No licensed cinematic footage"):
+        s.montage("motivational speaker",tmp_path,18.8,preview=True)
