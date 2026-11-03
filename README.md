@@ -76,3 +76,5 @@ No paid TTS or music-generation API is used. GitHub Actions, Cloudinary, speech-
 `motivation/cli.py` orchestrates; `speaker.py` handles licensed on-camera videos; `music_library.py` selects verified-licence recordings; `discovery.py` searches speech; `analysis.py` transcribes and selects; `render.py` makes the final mix and subtitles.
 
 The preceding v2 prototype used Piper neural voices and synthesized music. Those production paths have been replaced; any leftover v2 helper code is deprecated and not invoked by these three workflows.
+
+**Preview validation:** On-camera mode and cinematic B-roll mode should be reviewed separately for visual/audio quality; technical upload success is not equivalent to matching the references.
