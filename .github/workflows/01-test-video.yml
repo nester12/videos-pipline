@@ -26,7 +26,7 @@ on:
         type: boolean
         default: false
       separate_music:
-        description: 'Recording HAS music: try to separate voice (slow and imperfect)'
+        description: 'EXPERIMENTAL/slow: try CPU-only separation; default keeps original audio'
         type: boolean
         default: false
       upload_cloudinary:
@@ -67,14 +67,19 @@ jobs:
             echo "::error::Unknown speech source selected."
             exit 1
           fi
-      - name: Install real-speech tools (no synthetic voice)
+      - name: Install lightweight real-speech tools (no CUDA/TensorFlow)
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-          python -m pip install --disable-pip-version-check -r requirements.txt inaSpeechSegmenter
+          python -m pip install --disable-pip-version-check --no-cache-dir -r requirements.txt
+          echo 'Using lightweight dependencies: no TensorFlow, CUDA or inaSpeechSegmenter.'
       - name: Optional voice separator
         if: ${{ inputs.separate_music }}
-        run: python -m pip install --disable-pip-version-check demucs
+        run: |
+          python -m pip install --disable-pip-version-check --no-cache-dir torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --disable-pip-version-check --no-cache-dir demucs
+          python -m pip cache purge || true
+          df -h .
       - name: Create sample with original HUMAN voice and licensed recorded music
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

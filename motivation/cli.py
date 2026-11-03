@@ -49,7 +49,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
             raise PipelineError("Automatic licensed speech discovery needs internet; use a local audio recording")
         try:
             chosen=select_archive_recording(query,folder/"archive_speech",
-                      separate_music=separate_music,clean_confirmed=False,allow_unknown_music=False)
+                      separate_music=separate_music,clean_confirmed=False,allow_unknown_music=True)
         except Exception as exc:
             raise PipelineError("No suitable licensed real-person speech found; no AI substitute will be generated. "+str(exc)[:400]) from exc
         audio=Path(chosen["path"])
@@ -67,7 +67,7 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
             check=music_check(audio)
             check["manual_review"]="Separated recording requires human listening review"
         if check["status"]!="likely_clean" and not clean_confirmed:
-            raise PipelineError("Original recording may contain background music: separate it or use --clean-confirmed after listening")
+            check["soundtrack_policy"]="Keep original audio; no added music until source is reviewed"
         cues=transcribe(audio)
         if not cues:
             raise PipelineError("No intelligible real human speech detected")
@@ -85,15 +85,25 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
     speech=folder/"human_speech.wav"
     slice_audio(audio,speech,cut_start,cut_end)
     captions=write_srt(shift_cues(cues,cut_start,cut_end),folder/"captions.srt")
-    music=select_music(folder/"soundtracks",mood=selection.get("mood","determined"),
-                       music_path=music_path,music_rights_confirmed=music_rights_confirmed)
+    # Never layer a second soundtrack over music that may already be present.
+    # Without the huge classifier we cannot honestly claim source audio is clean.
+    verified_clean=(check.get("status")=="likely_clean" or clean_confirmed)
+    if check.get("status")=="music_detected":
+        verified_clean=False
+    if verified_clean:
+        music=select_music(folder/"soundtracks",mood=selection.get("mood","determined"),
+                           music_path=music_path,music_rights_confirmed=music_rights_confirmed)
+    else:
+        music={"path":None,"title":"Original recording only","type":"original audio preserved",
+               "warning":"Existing background music has not been verified; no new music added"}
     if speaker_visual:
         background={"path":speaker_visual,"source":source_info["origin"],
                     "style":"speaker on camera, black letterbox framing"}
     else:
         background=montage(selection.get("visual_query","cinematic runner training"),
                            folder/"scenes",duration(speech),offline=offline,preview=preview)
-    video=render_video(speech,Path(background["path"]),captions,Path(music["path"]),
+    video=render_video(speech,Path(background["path"]),captions,
+                       Path(music["path"]) if music["path"] else None,
                        folder/"final.mp4",preview=preview,
                        speaker_start=cut_start if speaker_visual else None)
     result={"video":str(video),"seconds":round(duration(video),2),
@@ -103,7 +113,9 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
             "background":{k:v for k,v in background.items() if k!="path"},
             "music_check":check,
             "rights_review_required":bool(source_info.get("reuse_requires_review") or music.get("rights_review_required")),
-            "posting_mode":post}
+            "posting_mode":post,
+            "soundtrack_added":bool(music["path"]),
+            "music_classification":check.get("status")}
     save_json(folder/"result.json",result)
     if (upload or post!="off") and source_info.get("reuse_requires_review") and not (archive_reviewed or rights_confirmed):
         raise PipelineError("Review actual Archive recording rights before uploading or publishing")

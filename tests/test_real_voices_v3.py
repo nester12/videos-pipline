@@ -61,3 +61,49 @@ def test_speaker_mode_gives_clear_permission_instructions(tmp_path):
     with pytest.raises(PipelineError, match="rights_confirmed"):
         produce(tmp_path, source="clip",
                 speaker_video_url="https://res.cloudinary.com/example/video/upload/speech.mp4")
+
+
+
+def test_archive_unknown_music_can_be_previewed_without_ai_or_classifier(monkeypatch, tmp_path):
+    from motivation import discovery as d
+    def fake_licensed(query, output, exclude=None):
+        return {"identifier":"example123", "path":str(tmp_path/"speech.wav"),
+                "origin":"https://archive.org/details/example123",
+                "license":"https://creativecommons.org/licenses/by/4.0/",
+                "reuse_requires_review":True}
+    monkeypatch.setattr(d, "licensed_audio", fake_licensed)
+    monkeypatch.setattr(d, "music_check", lambda p: {"status":"unknown"})
+    monkeypatch.setattr(d, "transcribe", lambda p: [
+        {"start":0.,"end":20.,"text":"Keep going today until you reach your goals."}])
+    monkeypatch.setattr(d, "gemini_selection", lambda cues: {
+        "start":0., "end":20., "score":7, "mood":"determined", "visual_query":"runner"})
+    result=d.select_archive_recording("speech", tmp_path / "archive", allow_unknown_music=True, max_candidates=1)
+    assert result["music_check"]["status"]=="unknown"
+    assert "no" in result["music_check"]["soundtrack_policy"].lower()
+
+
+def test_unknown_music_removes_added_soundtrack(monkeypatch, tmp_path):
+    import motivation.cli as cli
+    from pathlib import Path
+    monkeypatch.setattr(cli, "licensed_video", lambda url, path, rights_confirmed: {
+        "audio":tmp_path/"voice.wav", "video":tmp_path/"speaker.mp4",
+        "source":{"origin":url, "license":"operator-confirmed", "reuse_requires_review":True}})
+    monkeypatch.setattr(cli, "music_check", lambda audio: {"status":"unknown"})
+    monkeypatch.setattr(cli, "transcribe", lambda audio: [
+        {"start":0.,"end":18.,"text":"Keep going to build your future."}])
+    monkeypatch.setattr(cli, "duration", lambda path: 18.0)
+    monkeypatch.setattr(cli, "slice_audio", lambda *args: None)
+    monkeypatch.setattr(cli, "write_srt", lambda cues, path: path)
+    def fail_music(*args, **kwargs):
+        raise AssertionError("A soundtrack must not be added to unknown audio")
+    monkeypatch.setattr(cli, "select_music", fail_music)
+    seen={}
+    def fake_render(speech, background, captions, music, output, **kwargs):
+        seen["music"]=music
+        return output
+    monkeypatch.setattr(cli, "render_video", fake_render)
+    result=cli.produce(tmp_path / "out", preview=True, source="clip",
+            speaker_video_url="https://res.cloudinary.com/sample/video/upload/example.mp4",
+            rights_confirmed=True)
+    assert seen["music"] is None
+    assert result["soundtrack_added"] is False

@@ -26,9 +26,9 @@ on:
         type: boolean
         default: false
       separate_music:
-        description: 'Existing recording HAS music: attempt voice separation (slow)'
+        description: 'EXPERIMENTAL/slow: try CPU-only vocal separation on a recording with music'
         type: boolean
-        default: true
+        default: false
       archive_rights_reviewed:
         description: 'ARCHIVE UPLOAD/POST ONLY: I reviewed the chosen original recording and its rights'
         type: boolean
@@ -95,14 +95,19 @@ jobs:
             echo "::error::Review the Archive recording and its rights before creating a social draft or post."
             exit 1
           fi
-      - name: Install real speech, caption and video tools without TTS
+      - name: Install lightweight human-speech and video tools (no CUDA/TensorFlow)
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-          python -m pip install --disable-pip-version-check -r requirements.txt inaSpeechSegmenter
+          python -m pip install --disable-pip-version-check --no-cache-dir -r requirements.txt
+          echo 'Using lightweight dependencies: no TensorFlow, CUDA or inaSpeechSegmenter.'
       - name: Install optional speech-only separator
         if: ${{ inputs.separate_music }}
-        run: python -m pip install --disable-pip-version-check demucs
+        run: |
+          python -m pip install --disable-pip-version-check --no-cache-dir torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --disable-pip-version-check --no-cache-dir demucs
+          python -m pip cache purge || true
+          df -h .
       - name: Make real-human-voice video with music and optional Buffer posting
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

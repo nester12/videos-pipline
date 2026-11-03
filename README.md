@@ -15,6 +15,14 @@ That message means you selected a speaker video but did not confirm rights to re
 
 A speaker-video URL will now be **ignored if automatic search is selected**; it no longer silently triggers imported-video mode.
 
+## Important: GitHub runner disk-space fix
+
+The previous sample failed before rendering because **inaSpeechSegmenter installed TensorFlow plus massive CUDA/GPU packages**, exhausting GitHub Actions disk space. Sample and full-video workflows now install only normal Python video dependencies. CPU-only voice separation is off by default and experimental.
+
+When the recording contains music or its music status is unknown, the pipeline preserves **the real person's original recorded audio**, and intentionally does not add a second cinematic soundtrack. This avoids accidental music overlap. To layer the new CC0 cinematic soundtrack on a supplied clip, select **clean_confirmed** only after listening to it and verifying that the source speech has no music.
+
+An Archive item licence is only a claim; review the source and audio rights before uploading or publishing it. There are **no AI-generated narrators**.
+
 ## How it works
 1. Obtain a licensed recording of someone speaking (search Internet Archive for CC0/public-domain/CC BY audio with publisher assertions, or provide an authorised original speaker MP4 from Cloudinary).
 2. Check for existing music. If needed, run optional Demucs to separate the human voice. No additional soundtrack is layered on uncertain/unreviewed audio.
