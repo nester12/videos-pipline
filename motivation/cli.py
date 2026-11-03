@@ -24,6 +24,8 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
             archive_reviewed=False, music_path="", music_rights_confirmed=False) -> dict:
     """Fail closed: never synthesize voices or soundtracks."""
     folder.mkdir(parents=True,exist_ok=True)
+    if preview and post!="off":
+        raise PipelineError("Test videos are private Cloudinary previews, not social posts. Use the full-video workflow for drafts/queue.")
     source_info, selected, check, cues, speaker_visual = None,None,None,[],None
     if source=="original":
         raise PipelineError("AI generated voices are disabled. Select auto, archive, clip or audio.")
@@ -117,10 +119,16 @@ def produce(folder: Path, *, preview=False, source="auto", speech_path="",
             "soundtrack_added":bool(music["path"]),
             "music_classification":check.get("status")}
     save_json(folder/"result.json",result)
-    if (upload or post!="off") and source_info.get("reuse_requires_review") and not (archive_reviewed or rights_confirmed):
-        raise PipelineError("Review actual Archive recording rights before uploading or publishing")
+    private_preview=bool(preview and post=="off")
+    if (upload or post!="off") and source_info.get("reuse_requires_review") and not (archive_reviewed or rights_confirmed or private_preview):
+        raise PipelineError("Review actual Archive recording rights before publicly uploading or publishing")
     if upload or post!="off":
-        result["cloudinary_url"]=upload_cloudinary(video)
+        result["cloudinary_url"]=upload_cloudinary(video, authenticated_preview=private_preview)
+        result["cloudinary_delivery"]="authenticated" if private_preview else "public"
+        result["cloudinary_folder"]="motivation-test-previews" if private_preview else "motivation-prototype"
+        if private_preview:
+            result["cloudinary_note"]="Preview is saved in Cloudinary Media Library under motivation-test-previews. The unsigned URL is access-controlled and cannot be used for Buffer posting."
+        print("Cloudinary upload confirmed:", result["cloudinary_folder"], "-", result["cloudinary_delivery"])
     if post!="off":
         words=" ".join(c["text"] for c in cues if c["end"]>=cut_start and c["start"]<=cut_end)
         description=(words[:220].rsplit(" ",1)[0] if len(words)>220 else words)+"\n#motivation #discipline"

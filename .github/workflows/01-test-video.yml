@@ -29,10 +29,6 @@ on:
         description: 'EXPERIMENTAL/slow: try CPU-only separation; default keeps original audio'
         type: boolean
         default: false
-      upload_cloudinary:
-        description: 'Optional Cloudinary upload - review rights first'
-        type: boolean
-        default: false
 permissions:
   contents: read
 jobs:
@@ -80,7 +76,7 @@ jobs:
           python -m pip install --disable-pip-version-check --no-cache-dir demucs
           python -m pip cache purge || true
           df -h .
-      - name: Create sample with original HUMAN voice and licensed recorded music
+      - name: Generate sample, then ALWAYS upload a private Cloudinary preview
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -93,15 +89,15 @@ jobs:
           RIGHTS: ${{ inputs.rights_confirmed }}
           CLEAN: ${{ inputs.clean_confirmed }}
           SEPARATE: ${{ inputs.separate_music }}
-          UPLOAD: ${{ inputs.upload_cloudinary }}
         run: |
           ARGS=(test-video --source "$SPEECH_MODE" --query "$TOPIC")
           if [ "$SPEECH_MODE" = clip ]; then ARGS+=(--speaker-video-url "$VIDEO_URL"); fi
           if [ "$RIGHTS" = true ]; then ARGS+=(--rights-confirmed); fi
           if [ "$CLEAN" = true ]; then ARGS+=(--clean-confirmed); fi
           if [ "$SEPARATE" = true ]; then ARGS+=(--separate-music); fi
-          if [ "$UPLOAD" = true ]; then ARGS+=(--upload); fi
+          ARGS+=(--upload)
           python -m motivation "${ARGS[@]}"
+          echo "Uploaded PRIVATE sample to Cloudinary Media Library > motivation-test-previews."
       - uses: actions/upload-artifact@v4
         if: always()
         with:

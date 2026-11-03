@@ -5,7 +5,7 @@ This pipeline is built for dark, cinematic motivational edits featuring the **or
 ## Start here: clearly named GitHub Actions
 
 - **0 - CHECK SYSTEM:** runs tests and checks connected services; no video or post.
-- **1 - CREATE SAMPLE VIDEO:** choose *Find licensed human speech automatically* (leave the speaker-video URL blank, no permission checkbox) or *Use my licensed speaker video* (direct MP4 URL and check **rights_confirmed** only if you have permission).
+- **1 - CREATE SAMPLE VIDEO:** always uploads the generated sample MP4 to **Cloudinary Media Library > motivation-test-previews**, using authenticated access (private). Choose *Find licensed human speech automatically* (leave the speaker-video URL blank, no permission checkbox) or *Use my licensed speaker video* (direct MP4 URL and check **rights_confirmed** only if you have permission).
 - **2 - CHECK BUFFER / MAKE DRAFT:** check accounts, create a nonpublic draft, or explicitly queue a post. Default is a harmless check.
 - **3 - CREATE FULL VIDEO:** same two real-voice source options, plus a clear choice between making an MP4 only, saving a Buffer draft, or queueing a real post. Default: video only.
 
@@ -30,10 +30,10 @@ An Archive item licence is only a claim; review the source and audio rights befo
 4. If an actual speaker MP4 is provided, show the original speaker on-camera with dark grading and black letterbox framing. For licensed audio-only speeches, assemble a grayscale Pexels/Pixabay montage.
 5. Download recorded cinematic instrumentals from the curated **Wikimedia Commons CC0** catalogue. Current picks by John Bartmann include dark-dyne, bowed-voices and ethereal-moments. Metadata is checked at runtime, with provenance saved to result.json.
 6. Normalize the human voice, automatically duck the music under speech, fade music in/out and burn synchronized captions.
-7. Save final.mp4 and captions as GitHub Actions artifacts. Cloudinary upload and Buffer draft/queue require permission confirmation. No automatic public publishing.
+7. Save final.mp4 and captions as GitHub Actions artifacts. Every test-video upload is automatically saved as an **authenticated** Cloudinary asset under `motivation-test-previews`, even for automatically found Archive speech. This is a private review copy; it cannot be publicly viewed through the unsigned Cloudinary URL. Public full-video uploads and Buffer drafts/queue still require rights review. No automatic public publishing.
 
 ## GitHub Actions
-- **1 — Test Video**: find licensed human speech with Archive, or use a direct Cloudinary MP4 recording of an authorized speaker. Cloudinary upload is off by default.
+- **1 — Test Video**: find licensed human speech with Archive, or use a direct Cloudinary MP4 recording of an authorized speaker. Cloudinary upload is **automatic and private** on every successful test. Look in **Cloudinary Media Library → motivation-test-previews**. You can also download the MP4 from the GitHub Actions artifact.
 - **2 — Test Posting**: check Buffer channel IDs without posting, or explicitly create a draft or queued post from a reviewed Cloudinary video URL.
 - **3 — Real speaker video and optional Buffer posting**: use Archive or an approved speaker MP4; output artifacts even when social posting is off.
 - **0 — Validate**: automatic tests and read-only service health checks on push.
@@ -45,7 +45,7 @@ Requires Python 3.11+, FFmpeg/ffprobe (built with libass), and dependencies from
 python -m pip install -r requirements.txt
 python -m motivation doctor
 python -m motivation discover --query "motivational speech"
-python -m motivation test-video --source archive --query "motivational speech"
+python -m motivation test-video --source archive --query "motivational speech" --upload
 python -m motivation full-video --source archive --query "motivational speech" --separate-music
 python -m motivation full-video --source clip --speaker-video-url 'https://res.cloudinary.com/your-cloud/video/upload/approved.mp4' --rights-confirmed --clean-confirmed
 python -m pytest -q

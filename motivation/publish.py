@@ -9,18 +9,31 @@ from .common import PipelineError
 BUFFER_ENDPOINT = "https://api.buffer.com"
 
 
-def upload_cloudinary(path: Path) -> str:
+def upload_cloudinary(path: Path, *, authenticated_preview: bool = False) -> str:
+    """Upload a finished video. Previews remain access-controlled in Cloudinary.
+
+    Authenticated assets are visible in the account's Media Library but cannot be
+    fetched via the unsigned secure_url. Public delivery requires confirmed rights.
+    """
     import cloudinary
     import cloudinary.uploader
     keys = ["CLOUDINARY_CLOUD_NAME", "CLOUDINARY_API_KEY", "CLOUDINARY_API_SECRET"]
     if any(not os.getenv(x) for x in keys):
-        raise PipelineError("Cloudinary credentials missing")
+        raise PipelineError("Cloudinary credentials missing: configure CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET in GitHub Actions Secrets")
     cloudinary.config(cloud_name=os.environ[keys[0]], api_key=os.environ[keys[1]],
                       api_secret=os.environ[keys[2]], secure=True)
-    result = cloudinary.uploader.upload(str(path), resource_type="video", folder="motivation-prototype",
-                                         overwrite=False)
-    url = result.get("secure_url", "")
+    options = {"resource_type": "video",
+               "folder": "motivation-test-previews" if authenticated_preview else "motivation-prototype",
+               "overwrite": False}
+    if authenticated_preview:
+        # Unlike 'private', 'authenticated' also restricts transformed versions.
+        options["type"] = "authenticated"
+        options["tags"] = ["test-preview", "rights-review-required"]
+    response = cloudinary.uploader.upload(str(path), **options)
+    url = response.get("secure_url", "")
     validate_public_video_url(url)
+    if authenticated_preview and response.get("type") not in ("authenticated",):
+        raise PipelineError("Cloudinary did not confirm authenticated preview access; check the asset's access before sharing it")
     return url
 
 

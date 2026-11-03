@@ -107,3 +107,34 @@ def test_unknown_music_removes_added_soundtrack(monkeypatch, tmp_path):
             rights_confirmed=True)
     assert seen["music"] is None
     assert result["soundtrack_added"] is False
+
+
+
+def test_auto_discovered_archive_test_video_uploads_to_private_cloudinary(monkeypatch, tmp_path):
+    import motivation.cli as cli
+    monkeypatch.setattr(cli, "select_archive_recording", lambda *a, **kw: {
+        "path": str(tmp_path / "recording.wav"),
+        "cues": [{"start": 0., "end": 19., "text": "Keep going. Keep working."}],
+        "selection": None, "music_check": {"status": "unknown"},
+        "source": {"origin": "https://archive.org/details/test_speech", "license": "CC0",
+                   "reuse_requires_review": True}
+    })
+    monkeypatch.setattr(cli, "duration", lambda path: 19.0)
+    monkeypatch.setattr(cli, "slice_audio", lambda *a: None)
+    monkeypatch.setattr(cli, "write_srt", lambda cues, path: path)
+    monkeypatch.setattr(cli, "montage", lambda *a, **kw: {"path": tmp_path / "bg.mp4"})
+    monkeypatch.setattr(cli, "render_video", lambda speech, bg, sub, music, out, **kw: out)
+    seen = {}
+    def fake_upload(video, *, authenticated_preview=False):
+        seen["authenticated_preview"] = authenticated_preview
+        return "https://res.cloudinary.com/test/video/authenticated/sample.mp4"
+    monkeypatch.setattr(cli, "upload_cloudinary", fake_upload)
+    result=cli.produce(tmp_path / "out", preview=True, source="archive", upload=True)
+    assert seen["authenticated_preview"] is True
+    assert result["cloudinary_delivery"] == "authenticated"
+    assert result["cloudinary_folder"] == "motivation-test-previews"
+
+
+def test_preview_cannot_publish_to_buffer(tmp_path):
+    with pytest.raises(PipelineError, match="private Cloudinary previews"):
+        produce(tmp_path, preview=True, source="archive", post="queue", channel_id="123")

@@ -58,13 +58,25 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           python -m pip install --no-cache-dir --disable-pip-version-check -r requirements.txt
           df -h .
-      - name: Create actual MP4 using publicly licensed real human speech (no posting)
+      - name: Render and upload actual real-voice MP4 as a PRIVATE Cloudinary preview
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
-          python -m motivation test-video --source archive --query "motivational speech" --output output/ci-archive-preview
+          python -m motivation test-video --source archive --query "motivational speech" --upload --output output/ci-archive-preview
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result=json.loads(Path("output/ci-archive-preview/result.json").read_text())
+          assert result["cloudinary_delivery"]=="authenticated", "Test video must stay private"
+          assert result["cloudinary_url"].startswith("https://res.cloudinary.com/"), "Cloudinary URL missing"
+          assert result["cloudinary_folder"]=="motivation-test-previews", "Expected preview folder"
+          print("Confirmed uploaded private Cloudinary preview:", result["cloudinary_folder"])
+          PY
           ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 output/ci-archive-preview/final.mp4
       - uses: actions/upload-artifact@v4
         if: always()
