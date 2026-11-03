@@ -1,106 +1,98 @@
-name: 3 - Full Video and Posting
-run-name: Full motivational video ${{ github.run_number }}
+name: 3 - Real speaker video and optional Buffer posting
 on:
   workflow_dispatch:
     inputs:
       audio_source:
-        description: Original speech guarantees a clean first run; auto attempts Archive first
-        required: true
+        description: Auto/archive search human recordings; Clip keeps real speaker on camera
         type: choice
-        options:
-          - original
-          - auto
-          - archive
-        default: original
+        options: [auto, archive, clip]
+        default: auto
       topic:
-        description: Speech search phrase for licensed Archive material
+        description: Search phrase for licensed speeches
         type: string
-        default: speech
-      posting_mode:
-        description: Off = just video, Draft = review in Buffer, Queue = publish through Buffer
-        required: true
-        type: choice
-        options:
-          - 'off'
-          - draft
-          - queue
-        default: 'off'
+        default: motivational speech
+      speaker_video_url:
+        description: Cloudinary MP4 of a real speaker with reuse permission
+        type: string
+      rights_confirmed:
+        description: I have permission to reuse supplied speaker video
+        type: boolean
+        default: false
+      clean_confirmed:
+        description: I reviewed the recording and speech is free of music
+        type: boolean
+        default: false
       separate_music:
-        description: Attempt heavyweight vocal separation with Demucs for Archive audio (higher runner usage)
+        description: Extract real speech from existing music via Demucs
         type: boolean
-        default: false
+        default: true
       archive_rights_reviewed:
-        description: Confirm rights and recording personally reviewed before Buffer submission for Archive audio
+        description: I reviewed the actual Archive source and publication rights
         type: boolean
         default: false
+      posting_mode:
+        description: Off does not post; draft for review; queue schedules a real social post
+        type: choice
+        options: ['off', draft, queue]
+        default: 'off'
       channel_id:
-        description: Buffer channel ID (required only for Draft/Queue)
+        description: Buffer channel ID, needed for draft or queue
         type: string
-        required: false
 permissions:
   contents: read
-concurrency:
-  group: motivation-full-production
-  cancel-in-progress: false
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install free production tools
+      - name: Install real speech, caption and video tools without TTS
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg espeak
-          python -m pip install --disable-pip-version-check -r requirements.txt piper-tts
-      - name: Install optional licensed-speech analysis
-        if: ${{ inputs.audio_source != 'original' }}
-        run: python -m pip install --disable-pip-version-check inaSpeechSegmenter
-      - name: Install optional vocal separator
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --disable-pip-version-check -r requirements.txt inaSpeechSegmenter
+      - name: Install optional speech-only separator
         if: ${{ inputs.separate_music }}
         run: python -m pip install --disable-pip-version-check demucs
-      - uses: actions/cache@v4
-        with:
-          path: .cache/piper
-          key: piper-john-medium-voice-v1
-      - name: Generate, upload, and optionally create Buffer post
+      - name: Real-voice production and optional Cloudinary/Buffer
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          MOTIVATION_VOICE: piper
-          ALLOW_ROBOTIC_VOICE: '0'
           SOURCE: ${{ inputs.audio_source }}
           TOPIC: ${{ inputs.topic }}
+          VIDEO_URL: ${{ inputs.speaker_video_url }}
+          RIGHTS: ${{ inputs.rights_confirmed }}
+          CLEAN: ${{ inputs.clean_confirmed }}
+          SEPARATE: ${{ inputs.separate_music }}
+          REVIEWED: ${{ inputs.archive_rights_reviewed }}
           POSTING: ${{ inputs.posting_mode }}
           CHANNEL: ${{ inputs.channel_id }}
-          REVIEWED: ${{ inputs.archive_rights_reviewed }}
-          SEPARATE: ${{ inputs.separate_music }}
         run: |
-          if [ "$POSTING" != "off" ] && [ -z "$CHANNEL" ]; then
-            echo 'Buffer posting requires a channel ID'; exit 1
+          if [ "$POSTING" != off ] && [ -z "$CHANNEL" ]; then
+            echo 'Posting needs Buffer channel ID'; exit 1
           fi
-          REVIEW_FLAG=""
-          if [ "$REVIEWED" = "true" ]; then REVIEW_FLAG="--archive-reviewed"; fi
-          SEPARATE_FLAG=""
-          if [ "$SEPARATE" = "true" ]; then SEPARATE_FLAG="--separate-music"; fi
-          python -m motivation full-video --source "$SOURCE" --query "$TOPIC" --upload --post "$POSTING" --channel-id "$CHANNEL" $REVIEW_FLAG $SEPARATE_FLAG
+          ARGS=(full-video --source "$SOURCE" --query "$TOPIC" --speaker-video-url "$VIDEO_URL" --post "$POSTING" --channel-id "$CHANNEL")
+          if [ "$RIGHTS" = true ]; then ARGS+=(--rights-confirmed); fi
+          if [ "$CLEAN" = true ]; then ARGS+=(--clean-confirmed); fi
+          if [ "$SEPARATE" = true ]; then ARGS+=(--separate-music); fi
+          if [ "$REVIEWED" = true ]; then ARGS+=(--archive-reviewed); fi
+          if [ "$RIGHTS" = true ] || [ "$REVIEWED" = true ]; then ARGS+=(--upload); fi
+          python -m motivation "${ARGS[@]}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: motivational-full-production
+          name: real-speaker-full-video
           path: |
             output/full-video/final.mp4
             output/full-video/result.json
             output/full-video/captions.srt
           if-no-files-found: warn
-          retention-days: 1
+          retention-days: 2

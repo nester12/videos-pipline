@@ -1,77 +1,43 @@
-name: 2 - Test Posting (Buffer)
-run-name: Buffer test ${{ github.run_number }}
+name: 2 - Test Posting (reviewed video only)
 on:
   workflow_dispatch:
     inputs:
       action:
-        description: Check channels, create draft, or explicitly add to queue
-        required: true
+        description: Check does not post; draft holds for review; queue schedules a real post
         type: choice
-        options:
-          - check
-          - draft
-          - queue
+        options: [check, draft, queue]
         default: check
       channel_id:
-        description: Buffer channel ID (required for draft/queue)
-        required: false
+        description: Required for draft/queue
         type: string
       video_url:
-        description: Public direct MP4 URL (blank creates a demo if drafting/queuing)
-        required: false
+        description: Reviewed public direct MP4 URL, required for draft/queue
         type: string
 permissions:
   contents: read
-concurrency:
-  group: motivation-buffer-test
-  cancel-in-progress: false
 jobs:
   buffer-check:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install tools
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg espeak
-          python -m pip install --disable-pip-version-check -r requirements.txt piper-tts
-      - uses: actions/cache@v4
-        with:
-          path: .cache/piper
-          key: piper-john-medium-voice-v1
-      - name: Verify API or create explicitly requested post
+      - name: Install HTTP client (no video generation needed)
+        run: python -m pip install --disable-pip-version-check requests numpy cloudinary
+      - name: Check channel or explicitly create draft/queue
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
-          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
-          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          MOTIVATION_VOICE: piper
-          ALLOW_ROBOTIC_VOICE: '0'
           MODE: ${{ inputs.action }}
-          CHANNEL_ID: ${{ inputs.channel_id }}
+          CHANNEL: ${{ inputs.channel_id }}
           VIDEO_URL: ${{ inputs.video_url }}
         run: |
-          python -m motivation test-posting --mode check
-          if [ "$MODE" != "check" ]; then
-            if [ -z "$CHANNEL_ID" ]; then echo 'Select a channel ID from check output first'; exit 1; fi
-            if [ -z "$VIDEO_URL" ]; then
-              python -m motivation test-video --upload
-              VIDEO_URL=$(python -c 'import json; print(json.load(open("output/test-video/result.json"))["cloudinary_url"])')
+          if [ "$MODE" = check ]; then
+            python -m motivation test-posting --mode check
+          else
+            if [ -z "$CHANNEL" ] || [ -z "$VIDEO_URL" ]; then
+              echo 'Both Buffer channel and reviewed video URL are required'; exit 1
             fi
-            python -m motivation test-posting --mode "$MODE" --channel-id "$CHANNEL_ID" --video-url "$VIDEO_URL"
+            python -m motivation test-posting --mode "$MODE" --channel-id "$CHANNEL" --video-url "$VIDEO_URL"
           fi
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: posting-test-output
-          path: |
-            output/test-video/result.json
-            output/test-video/final.mp4
-          if-no-files-found: ignore
-          retention-days: 1

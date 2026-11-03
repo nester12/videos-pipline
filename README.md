@@ -1,69 +1,49 @@
-# Motivational Video Pipeline — Version 2
+# Real Human-Voice Motivational Video Pipeline
 
-Three independent, manually triggered GitHub Actions pipelines built for free-tier operation. Previous version preserved at `backup-2026-11-03` branch. **No recurring automated publishing, paid voice services or paid music APIs.** A full production run uploads an MP4 to Cloudinary and only creates Buffer posts when `draft` or `queue` is deliberately selected.
+This pipeline is built for dark, cinematic motivational edits featuring the **original recorded voices of real people**. The production paths contain **no text-to-speech** and do not generate synthetic instrumental music. The TikTok example videos are styling references, not a licence to copy their music, speeches, or footage.
 
-## Workflows
+## How it works
+1. Obtain a licensed recording of someone speaking (search Internet Archive for CC0/public-domain/CC BY audio with publisher assertions, or provide an authorised original speaker MP4 from Cloudinary).
+2. Check for existing music. If needed, run optional Demucs to separate the human voice. No additional soundtrack is layered on uncertain/unreviewed audio.
+3. Transcribe with faster-whisper and select a coherent passage, optionally using Gemini for **editing decisions only**, not for any voice generation.
+4. If an actual speaker MP4 is provided, show the original speaker on-camera with dark grading and black letterbox framing. For licensed audio-only speeches, assemble a grayscale Pexels/Pixabay montage.
+5. Download recorded cinematic instrumentals from the curated **Wikimedia Commons CC0** catalogue. Current picks by John Bartmann include dark-dyne, bowed-voices and ethereal-moments. Metadata is checked at runtime, with provenance saved to result.json.
+6. Normalize the human voice, automatically duck the music under speech, fade music in/out and burn synchronized captions.
+7. Save final.mp4 and captions as GitHub Actions artifacts. Cloudinary upload and Buffer draft/queue require permission confirmation. No automatic public publishing.
 
-| Workflow | Purpose | Default consequence |
-| --- | --- | --- |
-| **1 - Test Video** (`01-test-video.yml`) | Offline male neural voice, cinematic original soundtrack, one stock clip where available, high-contrast black-and-white captions, optional Cloudinary upload | Creates downloadable artifact; does NOT publish |
-| **2 - Test Posting** (`02-test-posting.yml`) | Read Buffer channels; optionally create one explicitly requested video draft/queue post. Creates a test video and Cloudinary upload when URL left empty | `check` only; no post |
-| **3 - Full Video and Posting** (`03-full-video.yml`) | Source speech or generate original script; extract/score speech; assemble 2–5 distinct Pexels/Pixabay clips or original fallback; original cinematic music; timed subtitles; render/upload to Cloudinary; optional Buffer submission | Video upload; posting off |
-| **0 - Validation** (`00-validation.yml`) | On code changes: unit tests and real offline render; a second job tries neural TTS and *read-only* service probes | No public posts or social draft mutations |
+## GitHub Actions
+- **1 — Test Video**: find licensed human speech with Archive, or use a direct Cloudinary MP4 recording of an authorized speaker. Cloudinary upload is off by default.
+- **2 — Test Posting**: check Buffer channel IDs without posting, or explicitly create a draft or queued post from a reviewed Cloudinary video URL.
+- **3 — Real speaker video and optional Buffer posting**: use Archive or an approved speaker MP4; output artifacts even when social posting is off.
+- **0 — Validate**: automatic tests and read-only service health checks on push.
 
-## Voice and media
+## Local examples
+Requires Python 3.11+, FFmpeg/ffprobe (built with libass), and dependencies from requirements.txt.
 
-- **Offline, male neural TTS**: Piper `en_US-john-medium` (rhasspy/Piper; model card documents public-domain LibriVox training data). Model ~64 MB downloaded to GitHub Actions cache, never committed.
-- **Original words**: optional Gemini script generator; fails back to a predefined original script and logs its origin. If a free API key is missing/blocked, the pipeline stays runnable, but output quality may drop.
-- **Licensed-source discovery**: Internet Archive with explicit CC0/public-domain or CC BY metadata, then speech/music inspection, transcription with faster-whisper and passage ranking. Archive items are uploader-asserted licensing, **not independently cleared rights**; a human review is required before publishing an Archive recording. YouTube is discovery-only, never auto-downloaded.
-- **Music detection**: optional inaSpeechSegmenter, or manual approval for user-owned clean audio. Speech-over-music classification is uncertain; overlap can go undetected. Optional Demucs performs vocal isolation, but **cannot guarantee perfect source separation**. If no trustworthy clean speech is found, `auto` records its fallback to original speech; strict `archive` fails instead.
-- **Stock footage**: Pexels with Pixabay fallback, up to five individual clips with matching searches, resized and rendered into a vertical 540 × 960 montage. If stock API credentials/footage are unavailable, original abstract visuals are generated (the workflow remains operational but video quality is lower).
-- **Music**: new original synthetic cinematic chord progression with low pulse/percussion, matched to mood; not a third-party copyright claim. Quality remains different from professionally recorded licensed tracks.
-- **Burned captions**: timestamps from Whisper words or known original TTS sentence durations.
-
-## GitHub Secrets
-
-```text
-GEMINI_API_KEY
-YOUTUBE_API_KEY
-PEXELS_API_KEY
-PIXABAY_API_KEY
-CLOUDINARY_CLOUD_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-BUFFER_API_KEY
-FREESOUND_API_KEY
-```
-
-Freesound is intentionally not used in this release: its API and individual asset commercial-use permissions must be confirmed first. No invented or extra secrets are needed. The default is automatically selected from available Flash/Lite models (the live check selected `gemini-3.5-flash-lite`). Set optional `GEMINI_MODEL` to override it.
-
-## First-use validation
-
-1. Go to **Actions → 0 - Validate pipeline and connected APIs** after the code update. Read both job statuses and download the preview artifact. The second job must successfully download and synthesize with Piper; this is tested on GitHub, not locally.
-2. Go to **Actions → 1 - Test Video**, leave Cloudinary upload off. Review `motivational-test-preview` artifact. Switch upload on only after this succeeds.
-3. Go to **Actions → 2 - Test Posting**, select `check`. Inspect the Buffer channel IDs in the workflow output (your repo is public, so don't post sensitive info). Next, choose `draft`, give the connected channel ID, and leave `video_url` empty if you want a newly generated Cloudinary test video. Review draft in Buffer. **Never select `queue` for a harmless test.**
-4. Go to **Actions → 3 - Full Video and Posting**, use `audio_source=original`, `posting_mode=off` first. This creates a full video, uploads to Cloudinary, and saves a GitHub artifact. For reusing internet speech, select `archive` or `auto` and read the output's origin/licensing report.
-5. Choose `draft` for a real publication candidate only after reviewing its audio, wording and footage. `queue` schedules a real social post and requires explicit selection and valid channel ID.
-
-## Locally
-
-Requires Python 3.11+, FFmpeg with libass, and 
-
-```sh
-pip install -r requirements.txt piper-tts
+```bash
+python -m pip install -r requirements.txt
 python -m motivation doctor
-python -m motivation doctor --live # read-only API checks
-python -m motivation test-video --offline
-python -m motivation full-video --source original --offline
-pytest -q
+python -m motivation discover --query "motivational speech"
+python -m motivation test-video --source archive --query "motivational speech"
+python -m motivation full-video --source archive --query "motivational speech" --separate-music
+python -m motivation full-video --source clip --speaker-video-url 'https://res.cloudinary.com/your-cloud/video/upload/approved.mp4' --rights-confirmed --clean-confirmed
+python -m pytest -q
 ```
 
-On Windows, install FFmpeg separately. `MOTIVATION_VOICE=espeak` plus installed eSpeak is a **diagnostic-only** fallback that sounds robotic; it is used for fast offline CI to avoid downloading the neural voice model. Full workflows use Piper without silent fallback.
+For a locally licensed speech-only recording:
+```bash
+python -m motivation full-video --source audio --speech-path approved.wav --rights-confirmed --clean-confirmed
+```
 
-## Limits and safety
+Use a separately licensed recording as soundtrack with `--music-path music.mp3 --music-rights-confirmed`.
 
-- Commercial reuse rights of uploaded or discovered recordings must be evaluated. A Creative Commons tag on YouTube is **not** permission to download arbitrary audio or use its music.
-- Full-run quality depends on footage availability, speech quality, API quotas, and local CPU. Do not treat a successful software test as proof that every chosen speech is suitable for publication.
-- Live Buffer and Cloudinary behaviour requires credentials and connected channels; local unit tests use mocks. The validation workflow uses safe read-only checks; only a separately requested `draft`/`queue` run can test Buffer post creation.
-- GitHub Actions free minutes, Cloudinary storage/bandwidth, Gemini and stock-video API quotas vary. This project does not deliberately enable billing or auto-charge, but external service accounts must stay on no-cost plans.
-- Keep your repo public if relying on GitHub Actions public-repository quotas; never commit tokens or private files.
+## Rights and limitations
+A Creative Commons label on an Internet Archive item is **not verified ownership**; a human must review source rights before uploading or posting. Other audio in the speech, images of individuals, film/music rights and platform licensing can still matter. If no suitable human speech recording is found, the pipeline **fails rather than changing to an AI narrator**. Auto discovery cannot guarantee a specific celebrity or motivational quote. Music files are from Wikimedia Commons, with claimed CC0 status checked at runtime; recordings still merit review. Freesound API downloads are intentionally unused due to free-API commercial terms.
+
+## Costs and secrets
+No paid TTS or music-generation API is used. GitHub Actions, Cloudinary, speech-analysis CPU, stock-video and Buffer quotas may apply. Secrets are set in GitHub Actions Settings; no credentials are committed. Known optional secrets are `GEMINI_API_KEY`, `PEXELS_API_KEY`, `PIXABAY_API_KEY`, `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`, `BUFFER_API_KEY`.
+
+## Files
+`motivation/cli.py` orchestrates; `speaker.py` handles licensed on-camera videos; `music_library.py` selects verified-licence recordings; `discovery.py` searches speech; `analysis.py` transcribes and selects; `render.py` makes the final mix and subtitles.
+
+The preceding v2 prototype used Piper neural voices and synthesized music. Those production paths have been replaced; any leftover v2 helper code is deprecated and not invoked by these three workflows.
