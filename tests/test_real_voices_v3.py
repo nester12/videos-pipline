@@ -165,3 +165,11 @@ def test_cinematic_montage_fails_instead_of_filler_when_no_licensed_clip(monkeyp
     monkeypatch.setattr(s, "get_background", lambda *a, **kw: None)
     with pytest.raises(PipelineError,match="No licensed cinematic footage"):
         s.montage("motivational speaker",tmp_path,18.8,preview=True)
+
+
+def test_speech_quality_filter_disallows_generic_audiobook_ids():
+    from motivation.sources import suitable_motivational_recording
+    assert not suitable_motivational_recording({
+        "title": "How to Win Friends and Influence People", "identifier": "book_librivox_123"})
+    assert suitable_motivational_recording({
+        "title": "Motivational talk on resilience", "identifier": "resilience_keynote_2026"})
